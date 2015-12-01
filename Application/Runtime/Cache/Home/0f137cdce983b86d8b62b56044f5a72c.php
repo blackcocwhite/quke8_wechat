@@ -1,0 +1,449 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/Application/Home/View/Public/css/lanrenzhijia.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/Application/Home/View/Public/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Application/Home/View/Public/css/editor.css" />
+    <link rel="stylesheet" type="text/css" href="/Application/Home/View/Public/css/toastr.min.css">
+
+
+	<style type="text/css">
+	    *{margin:0;padding:0;list-style-type:none;}
+	    a,img{border:0;}
+	    body{ margin:0 20px;font:14px/180% '微软雅黑 Bold', '微软雅黑';}
+	    a{
+	        color:#060;
+	        text-decoration:none;
+	    }
+	    a:hover{
+	        color:#F30;
+	        text-decoration:none;
+	    }
+	    .header{ width: 100%; height: 40px; background: #E4E4E4; border: 1px solid #dddddd; position: relative; font-size: 14px; margin-top: 10px; margin-bottom: 10px;}
+	    .header .header-left{ margin:5px 5px; padding: 0; }
+	    .header .header-left button{ width: 100px; height: 30px;   background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';}
+	    .header .header-right{ margin: 5px 0px; padding: 0; position: absolute; left: 450px; top:0px;}
+	    .header .header-left select{width: 75px; height: 30px; cursor:pointer; }
+	    .header .header-left input{border: 1px solid #dddddd; height:26px; width: 200px; }
+	    .header-left .add{ width: 120px; height: 30px;  background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';cursor:pointer;}
+	    .fenzu{ width: 120px; height: 30px;  background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';cursor:pointer;}
+
+	    /* tabbtn */
+	    .tabbtn{height:35px;}
+	    .tabbtn li{float:left;position:relative;margin:0; top: 2px; border-left:#eee 1px solid; border-right:#eee 1px solid; border-top:#eee 1px solid;}
+	    .tabbtn li a{display:block;float:left;height:33px;line-height:33px;overflow:hidden;width:120px;text-align:center;font-size:14px;cursor:pointer;}
+	    .tabbtn li.current a{height:33px;line-height:33px;background:#5ea60f;color:#fff;font-weight:800;}
+	    /* tabcon */
+	    .tabcon{border:1px #ddd solid;position:relative;/*必要元素*/height:auto;overflow:hidden; width: 100%; height:auto;}
+	    .tabcon .subbox{position:absolute;/*必要元素*/left:0;top:0;}
+	    .tabcon .sublist{padding:5px 10px;height:auto;}
+	    /*表格颜色*/
+	    .tdcolor{background: #f4f4f4;}
+	    .page{margin-top:20px; position: absolute; left: 380px;}
+	    .page ul li{float: left; display: block; width: 40px;}
+	    td button{ width: 100px; height: 30px;   background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';}
+		.all{ width:1240px; height:auto; padding:10px; margin:5px auto; border:1px #ddd solid;}
+		.all-left{
+		float:left;
+		width:375px;
+		height:795px;
+		/*background-image: url(images/phone.png);
+		background-repeat: no-repeat;*/
+		}
+		.all-right{ float:left; width:auto; margin-left:15px;}
+		.tuwei{ width:780px; margin:10px;}
+		.tuwei-left{ float:left;}
+		.tuwei-right{ float:right;}
+		.tuwei-left-test{ width:550px; padding:5px;}
+		.tuwei-left-test input{ width:400px; height:30px; font-size:14px; padding:5px; border:1px #ddd solid;}
+		.tuwei-left-test-span { float:right; width:130px; height:40px; line-height:40px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;}
+		.tuwei-right-img-span { float:right;width:90px; height:90px; line-height:90px; text-align:center; margin-left:20px; background:#5ea60f;}
+		.wuwei-right-img
+	        {
+	            position: relative; margin-top:5px;
+	        }
+	    .wuwei-right-img input
+	        {
+	            opacity:0;
+	            filter:alpha(opacity=0);
+	            height: 95px;
+	            width: 210px;
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+	            z-index: 9;
+	        }
+		#im{      	
+        	width:100px;
+        	height:90px;
+        }
+		.content-edit{ width:800px; height:auto; margin:0 auto; text-align:center;}
+		.content-edit textarea{ width:800px; height:400px; border:1px #ddd solid;}
+		.content-edit input{ width:790px; height:30px; font-size:14px; margin:10px auto; padding:5px; border:1px #ddd solid;}
+		.content-edit button{ width:130px; height:40px; line-height:40px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;}
+		.content-font{ width:800px; height:auto; margin:0 auto; text-align:center;}
+		.content-font textarea{ width:800px; height:600px; border:1px #ddd solid;}
+		.content-img{width:800px; height:600px; border:1px #ddd solid;position: relative; margin-top:5px; padding-top:10px;}
+		.content-img input
+	        {
+	        	opacity:0;
+	            filter:alpha(opacity=0); 
+	            height: 240px;
+	            width: 240px;
+	            position: absolute;
+	            top: 10;
+	            left: 200;
+	            z-index: 19;
+	        }
+	
+		.content-media{width:800px; height:600px; border:1px #ddd solid;position: relative; margin-top:5px; padding-top:10px;}
+		.content-media-left{ float:left; width:300px; margin:90px 10px;}
+		.content-media-right{ float:right; width:450px; margin:90px 10px;}
+		.content-media-right input
+	        {
+	            opacity:0;
+	            filter:alpha(opacity=0);
+	            height: 240px;
+	            width: 240px;
+	            position: absolute;
+	            top: 10;
+	            left: 200;
+	            z-index: 19;
+	        }
+		.content-media-left input{ width:260px; height:30px; font-size:14px; padding:5px; border:1px #ddd solid; margin:10px 0;}
+		.content-media-left textarea{ width:260px; height:312px; font-size:14px; padding:5px; border:1px #ddd solid;}
+
+		.box{ width:500px; margin:0 auto; background:url(/Application/Home/View/Public/images/img.png) no-repeat center 40%;}
+		.box .left-box{ width:180px; float:left; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		.box ul{margin: 0;padding: 0;}
+		.box ul li{ list-style:none; line-height:30px; cursor:pointer; padding:0px 5px;}
+		.box ul li:hover{ background:#f60; color:#FFF;}
+		.box .right-box{ width:180px; float:right; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		.box .clear{ clear:both;}
+		.box .leftnum{ width:180px; text-align:center; float:left; line-height:30px;}
+		.box .leftnum p{ line-height:20px;}
+		.box .rightnum{ width:180px; text-align:center; float:right; line-height:30px;}
+		.box .rightnum p{ line-height:20px;}
+		.box .btn{ display:block; width:150px; line-height:30px; background:#F60; color:#FFF; font-size:15px; font-weight:bold; border:none; margin:0 auto; outline:none; cursor:pointer;}
+		.box .search {height:36px; margin:10px auto}
+		.box .search select{ width:120px;height:32px;}
+		.box .search input{ width:180px;height:30px; border:1px #abadb3 solid;}
+		.box .search button{ width:60px;height:30px; border:1px #abadb3 solid;}
+		.rinfo{font-size: 20px; color: #888; margin: 0 auto; position: relative; top:250px; left: 60%; }
+		.top-edit{position: absolute; top: 200px;}
+		.top-button{ width:130px; height:40px; line-height:40px; margin-left: 20px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center; }
+	</style>
+</head>
+<body>
+<!-- 预览给个人 -->
+<div class="theme-popover-view">
+     <div class="theme-poptit-view">
+          <a href="javascript:" title="关闭" class="close">×</a>
+          <h3 style=" color:red; font-size:18px; font-weight:bold; text-align:center;">创建素材预览给个人</h3>
+     </div>
+     <div class="theme-popbod-view dform-view">
+          <div class="wx-left">
+            <div class="wx-gongzonghao">
+            <select style="width:235px; height:30px; border:1px #aeaeae solid; padding-left:10px;">
+            <option selected value="宿松城关小学">宿松城关小学</option>
+            <option value="合肥第一中学">合肥第一中学</option>
+            <option value="芜湖第三小学">芜湖第三小学</option>
+            <option value="安庆第二中学">安庆第二中学</option>
+            <option value="合肥第十中学">合肥第十中学</option>
+            <option value="安庆第二小学">安庆第二小学</option>
+        	</select></div>
+          </div>
+          <div class="wx-right">
+            <div class="wx-gongzonghao"><input type="text" placeholder="请输入用户名"></div>
+          </div> 
+          <div style="clear:both"></div>
+       <div class="wx-button-view"><input name="提 交" type="submit" value="预 览"> </div>
+     </div>
+</div>
+<!-- 预览给个人 END-->
+
+
+
+<div class="all">
+<!--手机-->
+	<div class="all-left">
+	<!--手机模拟器-->
+	<div class="viewBox">
+	    <img src="/Application/Home/View/Public/images/iphone.png" width="375" />
+	    <div class="viewCon over-mark">
+	        <div class="appmsg-content ui-sortable" id="J_sortable">
+	            <?php if(is_array($articles)): foreach($articles as $key=>$vo): if($vo["istop"] == 1): ?><div class="appmsg-item padding-10" data-id="1" >
+	            <?php else: ?>
+	            <div class="appmsg-item"><?php endif; ?>
+	                <div class="appmsg-wrap">
+	                <input type='hidden' name='aid' id="aid" value='<?php echo ($vo["id"]); ?>'>
+	                    <h4 class="appmsg-titleh4"><?php echo ($vo["article_title"]); ?></h4>
+	                    <div class="appmsg-thumb">
+	                        <i class="appmsg-default-suo"><img src="/<?php echo ($vo["fm_url"]); ?>" /></i>
+	                    </div>
+	                </div>
+	                <div class="appmsg-mark">
+	                    <a class="glyphicon glyphicon-pencil item-edit" aid="<?php echo ($vo["id"]); ?>"></a>
+	                    <a class="glyphicon glyphicon-trash item-del" ></a>
+	                    <a class="J_move">按住可上下调整位置</a>
+	                </div>
+	            </div><?php endforeach; endif; ?>
+	            <!--end（以此类推）-->
+	        </div>
+	        <a class="create-access" id="js_add_appmsg"> <i class="glyphicon glyphicon-plus"></i> </a>
+	    </div>
+	</div>
+
+
+</div>
+<!--手机 END-->
+<form action="/Home/Material/modify/" method="post" enctype="multipart/form-data">
+<input id="txt_id" value=""  name="txt_id" type="hidden">
+<input id="bb" value="aa"  name="aa" type="hidden">
+
+
+	<div class="all-right" >
+		<div class="rinfo">
+			<p>如需编辑文章，请点击左侧 <i class="glyphicon glyphicon-pencil"></i> 修改！</p>
+			<p>如需添加文章，请点击左侧 <i class="glyphicon glyphicon-plus"></i> 添加！</p>
+			<div class="top-edit">
+				<button type="button" style="cursor:pointer;" class="top-button"><a class="theme-login-sc" href="javascript:save()"><span style="color:#fff;">提交审核</span></a></button>
+				<button type="button" style="cursor:pointer;" class="top-button"><a href="http://weixin.quke8.com/Home/Material/article_list.html"><span style="color:#fff;">返回文章管理</span></a></button>
+			</div>
+		</div>
+	    <!--图文标签-->
+	        <div class="sublist" style="display: none">
+	            <ul>
+	                <div id="u40" class="text-title">
+	                    <div class="tuwei" id="alist">
+	                	<!--图文头部-->
+	                    <div class="tuwei-left">
+	                    	<div class="tuwei-left-test">
+	                        <!--<input type="text" placeholder="必须为微信发表文章URL"><span ><button style="width:130px; height:40px; line-height:40px; margin-left:5px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;cursor:pointer;" type="button">抓取</button></span>-->
+							</div>
+	                        <div class="tuwei-left-test">
+                        
+	                        <input type="text" placeholder="文章标题:(必填)" name='article_title' class="article_title" id="article_title">
+	                        <input style="width:120px; float:right;" type="text" placeholder="文章作者:(选填)" name='article_publisher' class="article_publisher" >
+	                        </div>
+	                        <!--<div class="tuwei-left-test">-->
+	                        <!--正文：-->
+	                        <!--</div>-->
+	                    </div>
+	                    <div class="tuwei-right" style="margin-bottom: 20px;">
+	                    	<div class="wuwei-right-img"><input name="photo" id='fiUrl' type="file"/>
+	        				<img src="/Application/Home/View/Public/images/u13.jpg" id="im" /><span><button type="button" class="tuwei-right-img-span" style="cursor:pointer; color:#fff; font-size:14px; font-weight:bold;">上传封面</button></span></div>
+
+	                    </div>
+	                    <div style="clear:both;"></div>
+	                   <!--图文头部 end-->
+	                   <div class="content-edit">
+						<textarea id ='content' name="cont" cols="20" rows="5"></textarea>
+                           <script>
+                               window.UEDITOR_HOME_URL = "/Public/ueditor/";
+                               window.onload = function () {window.UEDITOR_CONFIG.initialFrameHeight = 300;
+                                   UE.getEditor('content');
+                               }
+                           </script>
+
+					</div>
+					<div class="content-edit">
+					<input type="text" placeholder="原文链接（选填）" name='txt_url'>
+					</div>
+
+	                <div class="content-edit">
+                        <button type="submit" style="cursor:pointer;" onclick='return checkAll();' ><span style="color:#fff;">保存当前文章内容</span></button>
+	                <button type="button" style="cursor:pointer;"> 
+	                <a class="theme-login-sc" href="javascript:save()"><span style="color:#fff;">提交审核</span></a></button>
+
+	                <button type="button" style="cursor:pointer;"><a href="http://weixin.quke8.com/Home/Material/article_list.html"><span style="color:#fff;">返回文章管理</span></a></button>
+	                </div>
+	                
+	                </div>
+	            </div>
+	            </ul>
+	    </div>
+    	<!--图文标签 END-->
+
+	<!--</div>-->
+
+</div>
+<div style="clear:both"></div>
+
+</form>
+</div>
+<script src="/Application/Home/View/Public/js/jquery-1.10.2.min.js"></script>
+<script src="/Application/Home/View/Public/js/jquery-ui.js"></script>
+<script src="/Application/Home/View/Public/js/toastr.min.js"></script>
+<script src="/Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src='/Public/ueditor/ueditor.config.js'></script>
+<script src='/Public/ueditor/ueditor.all.min.js'></script>
+<script src="/Application/Home/View/Public/js/uploadPreview.js"></script>
+<script>
+
+    $("#fadetab").tabso({
+        cntSelect:"#fadecon",
+        tabEvent:"click",
+        tabStyle:"fade"
+    });
+    function checkAll(){	
+    	var title = document.getElementById("article_title");    	
+    	var fiUrl= document.getElementById("fiUrl");
+    	var im=document.getElementById("im").src;
+    	if(title.value == ""){    		
+    		alert("标题不能为空！");
+    	    return false;
+    	}
+    	if(im.indexOf("u13")>0){
+    	    alert("封面不可为空");
+    	    return false;
+    	}
+    	}
+    function save(){
+    	var aid = $("[name=aid]");
+    	var articles = '';
+    	for(var j = 0;j<aid.length;j++){ 		
+    		articles += aid[j].value+",";
+    	}
+
+    		articles=articles.substr(0,articles.length-1);
+
+            window.location.href="/Home/Material/tosave/aids/"+articles;
+    }
+
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('content').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+
+
+
+//	手机拖动
+
+	$(function() {
+
+
+
+		//移动位置
+		$(".appmsg-item").eq(0).addClass('padding-10');
+		$("#J_sortable").sortable({
+			axis: 'y',
+			revert: false,
+			placeholder: "ui-state-highlight",
+			cancel:"#js_add_appmsg",
+			items:".appmsg-item",
+			scroll:false
+		}).bind('sortstop', function(event, ui) {
+			$(".appmsg-item").eq(0).addClass('padding-10').siblings().removeClass('padding-10');
+		});
+
+		//增加图文
+		$("#js_add_appmsg").click(function () {
+			if ($(".appmsg-item").length >= 8) {
+				toastr.error("你最多只可以加入8条图文消息！", "提示");
+				return false;
+			}else{
+				$("#J_sortable").last().append("<div class=\"appmsg-item\"> <div class=\"appmsg-wrap\"> <h4 class=\"appmsg-titleh4\">请输入标题</h4> <div class=\"appmsg-thumb\"> <i class=\"appmsg-default-suo\">缩略图</i> </div> </div> <div class=\"appmsg-mark\"> <a class=\"glyphicon glyphicon-pencil item-edit\" aid=\"0\"></a> <a class=\"glyphicon glyphicon-trash item-del\" ></a> <a class=\"J_move\">按住可上下调整位置</a> </div> </div>");
+
+			}
+
+		});
+
+		//删除图文
+		$(document).on("click",".item-del",function(){
+			if($(".appmsg-item").length <= 2){
+				toastr.error("多图文消息至少需要两条！","提示");
+			}else{
+				if(window.confirm("你确定要删除此条消息吗")){
+					$(this).parent('.appmsg-mark').parent('.appmsg-item').remove();
+				}else{}
+
+			}
+		});
+
+		//图文hover
+
+		$(".appmsg-content").on("mouseover mouseout",".appmsg-item",function(event){
+			if(event.type == "mouseover"){
+				$(this).find(".appmsg-mark").show();
+			}else if(event.type == "mouseout"){
+				$(this).find(".appmsg-mark").hide();
+			}
+		});
+
+
+//		修改
+	$(document).on("click",".item-edit",function(){
+		$('.sublist').show();
+		$('.rinfo').hide();
+		var b=$(this).attr("aid");
+		if(b==0){
+			$('#txt_id').val("");
+			$('.article_title').val("");
+			$('.article_publisher').val("");			
+			UE.getEditor('content').setContent("");
+		}else{
+			$.ajax({
+				type: "POST",
+				url: "/Home/Material/mod/aid/"+$(this).attr("aid"),
+				dataType:'json',
+				timeout:30000,
+				cache: false,
+				success:function(data){
+
+					$('#txt_id').val(b);
+					$('.article_title').val(data.title);
+					$('.article_publisher').val(data.article_publisher);
+					$('.wuwei-right-img img').attr('src',"http://weixin.quke8.com/"+data.fmurl);
+					UE.getEditor('content').setContent(data.content);
+				},
+				error: function(err){
+					alert("错误，暂未获取到文章内容");
+				}
+			});
+		}
+	});
+        $('#saveMaterial').click(function(){
+
+            var title = $('.article_title').val();
+            var pub = $('.article_publisher').val();
+//            var con = UE.getEditor('editor').getContent();
+            var aid = $('#aid').val();
+
+            $.ajax({
+                cache: true,
+                type: "POST",
+                url:"/Home/Material/modify/",
+                data:{aid:aid,title:title,pub:pub},
+                async: false,
+                error: function(request) {
+                    alert("修改失败");
+                },
+                success: function(data) {
+                    if(data=1){
+                        alert("保存成功");
+                    }
+
+                }
+            });
+        });
+
+	});	 			
+uploadPreview({ UpBtn: "fiUrl", ImgShow: "im" });    	
+	
+</script>
+</body>
+</html>

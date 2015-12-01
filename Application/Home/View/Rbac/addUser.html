@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>权限管理</title>
+<link href="__PUBLIC__/css/main.css" type="text/css" rel="stylesheet">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+</head>
+<body class="warp">
+<div id="artlist" class="addn">
+<form action="{:U('addUser')}" method="post">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="addn">
+  <tbody><tr>
+    <th colspan="4" style="font-size:18px; color:#F60; font-weight:bold;background:#ddd">添加用户</th>
+    </tr>
+	<tr> 
+      <td height="48" align="right"><strong>用户登录名称：</strong></td>
+      <td><input type="text" name="user_name" class="ipt" size="45"></td>
+    </tr>
+  <tr>
+      <td height="48" align="right"><strong>用户登录密码：</strong></td>
+      <td><input type="password" name="user_pass" class="ipt" size="45"></td>
+  </tr>
+	<tr>
+	  <td height="48" align="right"><strong>用户真实姓名：</strong></td>
+	  <td height="48"><input type="text" name="user_realname" class="ipt" size="45" /></td>
+    </tr>
+  <tr>
+      <td height="48" align="right"><strong>用户联系方式：</strong></td>
+      <td height="48"><input type="text" name="user_phone" class="ipt" size="45" /></td>
+  </tr>
+  <tr>
+      <td height="48" align="right"><strong>用户联系邮箱：</strong></td>
+      <td height="48"><input type="text" name="user_email" class="ipt" size="45" /></td>
+  </tr>
+  <tr>
+      <td height="48" align="right"><strong>用户所属角色：</strong></td>
+      <td height="48">
+          <select name="role_id">
+              <foreach name="role" item="v">
+              <option value="{$v['id']}" <if condition="$v['id'] eq 1">disabled='disabled'</if>/>{$v.remark}</option>
+              </foreach>
+          </select>
+      </td>
+  </tr>
+	<tr> 
+      <td height="48" align="right"><strong>状态：</strong></td>
+      <td height="48">
+		<input type="radio" name="user_status" value="1" class="ipt" checked="">开启								<input type="radio" name="user_status" value="0" class="ipt">关闭
+
+	  </td>
+    </tr>
+    <tr> 
+      <td height="48" colspan="2" align="center">
+        <input type="submit" name="button" id="button" value="确定添加" />
+      </td>
+    </tr>
+</tbody>
+</table>
+</form>
+</body>
+</html>

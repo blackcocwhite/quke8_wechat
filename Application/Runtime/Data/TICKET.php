@@ -1,0 +1,5 @@
+s:571:"<xml>
+    <AppId><![CDATA[wxef0739105b12ff8d]]></AppId>
+    <Encrypt><![CDATA[ocvcBRnVSGwn7mjtgCRaS0nH5+9GlWc74LdxhdyFWG+KELn1WKaoHgUF3LaY9CTR29gmX0S82JbfXNpKf+rd4VpRspe6WpeLMw9jL0aCkeKRcuiKSkBXWH9wTwtgNKDkdtZtIrFokx2eWQmD3ipjUuSgzwc2xSIvyJRxVBooAZp56rkd6+cYHVZdTm4ao0pRiQs4Tx0HGeqBM/BOM5t8H6do9apJkrj85iobv1xo5rLHg+xY9P0QH6hgE4TfajsR0UNo/tjCWVRoL43CTiQdzUiKZTDR4ncUoIOXdLb9n60XF1AIBAll11eNWTddG27dVn9IihHNOcd1Dadb/sG1ETWm+xVvNAXtvL6sN6JN2cZJ5AcRSYHCIF+8A0vrBLcnTLA/z65z9CXdLYxf9u/j4JqGtHEQnXetHn4/CkUWcO0byFWGAWwix9X0NQyHLuqopvoo/8N6AXCR0a0KkqoeSg==]]></Encrypt>
+</xml>
+";

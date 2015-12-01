@@ -1,0 +1,84 @@
+[ 2015-10-20T16:49:48+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:49:48+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:50:08+08:00 ] ::1 /backup/wxtest./Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002258s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:50:08+08:00 ] ::1 /backup/wxtest./Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:50:29+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:50:30+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:51:02+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:54:08+08:00 ] ::1 /backup/wxtest./Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:54:08+08:00 ] ::1 /backup/wxtest./Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:54:17+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:54:18+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:54:36+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:59:04+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-10-20T16:59:05+08:00 ] ::1 /backup/wxtest/Uploads/2015-10-20/fm_5625fd20571a8.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+ERR: 无法加载模块:Uploads
+

@@ -1,0 +1,2092 @@
+[ 2015-10-05T00:09:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=f105a987e03c1323aa2ca11a0b9e03581c055893&timestamp=1443975045&nonce=650402080&encrypt_type=aes&msg_signature=1064884c889fdf344e3247d7a69adfec5732898f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@dlyCHk58QBas2WhPUgTFZB3A4PtqqGpRh8_9W-c4eKFxRSlRIvelzlwqDphfsxMTi_xVwKFmDI4iBOh8KTRkMw',`ticket_c_time`='2015-10-05 00:09:25' [ RunTime:0.0614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2015-10-05T00:19:24+08:00 ] 101.226.62.85 /home/receive/sysmsg?signature=652842d898993ec8b11c3d5021dbc244fbbde97f&timestamp=1443975644&nonce=1103793844&encrypt_type=aes&msg_signature=4c7cfa0a5c242459a41034f3b22d00c2825ff82f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@dlyCHk58QBas2WhPUgTFZB3A4PtqqGpRh8_9W-c4eKFxRSlRIvelzlwqDphfsxMTi_xVwKFmDI4iBOh8KTRkMw',`ticket_c_time`='2015-10-05 00:19:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2015-10-05T00:29:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3be0b8544e96228030d13972c98e27c132e9cd0a&timestamp=1443976245&nonce=1377806940&encrypt_type=aes&msg_signature=5e886910302228ffc162b518b2f40a7d4a67b88f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@dlyCHk58QBas2WhPUgTFZB3A4PtqqGpRh8_9W-c4eKFxRSlRIvelzlwqDphfsxMTi_xVwKFmDI4iBOh8KTRkMw',`ticket_c_time`='2015-10-05 00:29:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-10-05T00:39:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=5088ba127ead156af340b570f2363fd0d1fdeede&timestamp=1443976844&nonce=1394054326&encrypt_type=aes&msg_signature=4cba2f13609d98362da12f834b192bd9842bf410
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@dlyCHk58QBas2WhPUgTFZB3A4PtqqGpRh8_9W-c4eKFxRSlRIvelzlwqDphfsxMTi_xVwKFmDI4iBOh8KTRkMw',`ticket_c_time`='2015-10-05 00:39:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-10-05T00:49:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=1691e8731da54ad87164959a6f2dcb5cc83ac615&timestamp=1443977444&nonce=975409953&encrypt_type=aes&msg_signature=0da6c905ff033996efa4575b7b6e774470b3420a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@dlyCHk58QBas2WhPUgTFZB3A4PtqqGpRh8_9W-c4eKFxRSlRIvelzlwqDphfsxMTi_xVwKFmDI4iBOh8KTRkMw',`ticket_c_time`='2015-10-05 00:49:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2015-10-05T00:59:30+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=6f564124dfe7d58ba44837f82ada50acde9d2f73&timestamp=1443978050&nonce=411922868&encrypt_type=aes&msg_signature=3d615fdf4c08f61928e112568eb6330030aac168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 00:59:30' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2015-10-05T01:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=cdb10b70e4951505c5b4ac943a86dc0546477839&timestamp=1443978646&nonce=1907515165&encrypt_type=aes&msg_signature=3890b2caa204bc543cc972a3980e9e09bde30d49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 01:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2015-10-05T01:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=f7c8d2c18a2a4350ff5e0ff53bf824b89b391cf0&timestamp=1443979247&nonce=485403786&encrypt_type=aes&msg_signature=72fcb52e62c86aa199c9fdb5161b1fed53ce8fe3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 01:19:26' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-10-05T01:21:27+08:00 ] 101.226.62.84 /home/receive/eventmsg/aaa/wx892e99da456d3313?signature=6abecc88587be6feab073759a1a0111ff1a89605&timestamp=1443979367&nonce=1434383662&encrypt_type=aes&msg_signature=218ed44ce53e70e2b7267e89539c5d49ebeb3f75
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] Undefined variable: time /lbw/wwwroot/wxtest/Application/Home/Controller/ReceiveController.class.php 第 134 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2015-10-05T01:29:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=1bf69f9a28cc2c64d19756557cf116f218700bf0&timestamp=1443979846&nonce=691495665&encrypt_type=aes&msg_signature=16e01c815c756f495ecc812d7bfdadcc95665820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 01:29:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-10-05T01:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=ed7d0c499196be1c07c07360900487c19cffaf9e&timestamp=1443980446&nonce=844948644&encrypt_type=aes&msg_signature=931d35be82595e8a6aea9b4fd4a1705c91b01369
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 01:39:26' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2015-10-05T01:49:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=54cecd0b9b1de60b7d1bd451f5d1409a9314041a&timestamp=1443981044&nonce=1170700349&encrypt_type=aes&msg_signature=1b6e5b8a50aa382a925a272b913fd804b35b8236
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@r5hKUb2T6MhsoH4N1fQrGehF3p97KjggaErxWyCadPQS6qmqmwWSIuDLM-fPmcqP_dNh6mXfKNkxYBkMnWsucg',`ticket_c_time`='2015-10-05 01:49:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-10-05T01:59:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=8d7d604706bd2827a1d1fb473c8f06bff0788646&timestamp=1443981644&nonce=989895305&encrypt_type=aes&msg_signature=1bc06e5d7d5d77bac87bf68e7247b42c75340eff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 01:59:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-10-05T02:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=5646af51804a1d517a3e9248d804b2d8407538ac&timestamp=1443982246&nonce=1051998881&encrypt_type=aes&msg_signature=a7d2606f57759a1835eefe83068833e6ecdf660c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 02:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2015-10-05T02:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=587114862ded4d0aa16f60eb13e32899c8b47369&timestamp=1443982846&nonce=1084489299&encrypt_type=aes&msg_signature=d1e2dd9ba952bfcd260785f130d35f0fc514c183
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 02:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2015-10-05T02:29:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=7665a61271efd970f370ee1c4754845e498b9b99&timestamp=1443983446&nonce=2078500541&encrypt_type=aes&msg_signature=3b953ff79a804248ebe1fa4b8155fe464345ff3b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 02:29:25' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-10-05T02:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b6dcde1a8ee743e373eb56a1edeee24dc291aebb&timestamp=1443984047&nonce=1544648126&encrypt_type=aes&msg_signature=67ea798aa7ecb3b2d3502aa2bd88e2369d9a667b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 02:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-05T02:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c9d927ab4652d048c3735a5e32cc1706c57d43e1&timestamp=1443984647&nonce=733069991&encrypt_type=aes&msg_signature=1f4c5e2f5f82317ae9b42a45c7fdcd112c4efebd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TYjn-UdP41pl69lC_jFYNRvhkgHblUW7MvokwDG3l3iVCW9q20ZDPPIacT7rIHFNpb5pgLeEcikguR-Tz9qeMg',`ticket_c_time`='2015-10-05 02:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-10-05T02:59:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=435094c08892d9952a7be9f59ee06b1be66bfecb&timestamp=1443985245&nonce=654206498&encrypt_type=aes&msg_signature=82a2c53694fc02709903310b1a2a47507f31e9d5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 02:59:25' [ RunTime:0.0145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-10-05T03:09:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=370732b3aecdb68f7b9114b9bf5878fd221ca7b7&timestamp=1443985844&nonce=820765191&encrypt_type=aes&msg_signature=fa9d31a98289ee8a0e3ba51a2f5ff1adef44f5f4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 03:09:24' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2015-10-05T03:19:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=8b4a221b3e5048618bf03abf78748bcd554f1c1b&timestamp=1443986444&nonce=1299927741&encrypt_type=aes&msg_signature=53c0d6c941635ea4db1864b799a4608eabdc3168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 03:19:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-05T03:29:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3d77688078aefc4c2073e0679f763d940c554c01&timestamp=1443987045&nonce=395756070&encrypt_type=aes&msg_signature=58e0e1a413870291e85d87522e56e1388100288d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 03:29:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2015-10-05T03:39:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=fed955875dfe0ec31c47b272e8c260bf0031a496&timestamp=1443987644&nonce=252580478&encrypt_type=aes&msg_signature=8dcd22ccf758e0295e6c19c15922683a545528e7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 03:39:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-10-05T03:49:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c35662dfcb44f9d8b46d9fb01826abecd21861e6&timestamp=1443988244&nonce=1886461312&encrypt_type=aes&msg_signature=562e99cb37d3c2a5364f1295b1aaff816196e367
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@MUOwr_rTRXT7_EX9EFox1G4B6UBI7YFkGx937MxY-FPTNY8ShzGuzfBYE3CXeIGrI0f3qeocf0t_rYlfu7g0pA',`ticket_c_time`='2015-10-05 03:49:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2015-10-05T03:59:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=90fbacbb05c85a9e31ec3ad9b7f5c2a16f316c5f&timestamp=1443988843&nonce=361336312&encrypt_type=aes&msg_signature=5ba2c4ad51b2eec818e57cd812efeb3a75d44ffd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 03:59:23' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2015-10-05T04:09:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=2cbf3581f2a9b3c976ba982a3402549ae85dec0c&timestamp=1443989443&nonce=648082097&encrypt_type=aes&msg_signature=9a3f9e2f5a039afda0a015af971c50e61cb307a2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 04:09:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2015-10-05T04:19:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=4b438c3f8a211353df625e19f4ecdae644d1b814&timestamp=1443990043&nonce=929291369&encrypt_type=aes&msg_signature=f4fda3c579e04bd50858b5525988903e5b1ed8de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 04:19:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-10-05T04:29:22+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a6f74d24a3fb110e059960b40fa6ddb941677264&timestamp=1443990643&nonce=1367387183&encrypt_type=aes&msg_signature=91c11700015b20c7ef45a11ec5893fb6d13b20bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 04:29:22' [ RunTime:0.0305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2015-10-05T04:39:22+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b6133a7c41c9e66cfef5e50237ef8c351861df07&timestamp=1443991243&nonce=337791052&encrypt_type=aes&msg_signature=2995277346d430739e7e2c2a89e52d678cd8fb54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 04:39:22' [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2015-10-05T04:49:22+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=ccd031138aa8e82501aa0862b1931d14616a54e6&timestamp=1443991842&nonce=1906135443&encrypt_type=aes&msg_signature=c339343b2a23f0777f06c1db169482abdff00a66
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@7a3K8fwrIktEYRsCX34SKZWl2Qrf0Rk5bVJfTfh-FYAQpbWZLo7_e2oIp6isliO8Y-d_wZIcaWoL9eQzuUSbZg',`ticket_c_time`='2015-10-05 04:49:22' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-10-05T04:59:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=e7a5ea61fd561eee6ded690cca5a934415c304e7&timestamp=1443992445&nonce=1740622742&encrypt_type=aes&msg_signature=3433ad6021af84c950a64138a34687b33ef58505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 04:59:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-10-05T05:09:22+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=d9b7e901a0fd170c1bd2d3bb675f6d249547e7fd&timestamp=1443993043&nonce=43205536&encrypt_type=aes&msg_signature=a05c8d268ac2db222e2962789b1163c8a95e045c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 05:09:22' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2015-10-05T05:19:22+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=61f6df23af9199bb621d1ec56b368051de200de3&timestamp=1443993643&nonce=1591887926&encrypt_type=aes&msg_signature=7da1d0929611788d7d53689e92287e55116f22e4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 05:19:22' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-05T05:29:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=52310ad59d2630786a6294925972133ff3c855a7&timestamp=1443994242&nonce=1200850606&encrypt_type=aes&msg_signature=73643bbf52336faecb58246a7e3215e2bccc2e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 05:29:21' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2015-10-05T05:39:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=8bbe78a1e0c453626751d50b83cfb7fa7423bd8f&timestamp=1443994841&nonce=1924074112&encrypt_type=aes&msg_signature=f76e4b32c767c045c0fd3b3b10956e49ddb60933
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 05:39:21' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2015-10-05T05:49:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=4faff1e18eeddaf985f99cf642c39f858845e28a&timestamp=1443995442&nonce=116790196&encrypt_type=aes&msg_signature=8adc0a36edec88ba7ac72278da57c0ed40e4afd5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gtv-OhIzmtBNe5jvD3Mxe58tHN-Lp0atGNMmfuJGYw6sirOGy8P3hhzGq7qGl-u5DLpKFE-b-_tVelk-E3Y3Dw',`ticket_c_time`='2015-10-05 05:49:21' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2015-10-05T05:59:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a8f108eab38316212428709750c21cc1c86bf369&timestamp=1443996042&nonce=1256449256&encrypt_type=aes&msg_signature=555f6e4e4fb51281452548c698564679f1460653
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 05:59:21' [ RunTime:0.0215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-10-05T06:09:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=9708b8b8b6ad594e6c88eae4b336e3fa45d6f12d&timestamp=1443996642&nonce=297939043&encrypt_type=aes&msg_signature=a1d1e2581230004ca4565715a99f3ae772abe011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 06:09:21' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-10-05T06:19:21+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=d62bcb27de556f891310815a9fb19d9641453331&timestamp=1443997242&nonce=2114890479&encrypt_type=aes&msg_signature=b6500dabd18e9ba81196926e0f95312853d33da3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 06:19:21' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2015-10-05T06:29:22+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=7341fe9d4a04799f48b8e7b0a2a7cf9c4496591b&timestamp=1443997842&nonce=228698867&encrypt_type=aes&msg_signature=7beb3a33a78d9e40d7448e00370ef9a6b07568ad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 06:29:22' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2015-10-05T06:39:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=e8f0771bad109282b65913d79e96c6f8ab974921&timestamp=1443998443&nonce=1206010376&encrypt_type=aes&msg_signature=db15331f238ebfc656227d9c25293edf7cc6789d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 06:39:23' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2015-10-05T06:49:23+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=87902ba23c32700f79900360e227f99534e6dc48&timestamp=1443999043&nonce=612848432&encrypt_type=aes&msg_signature=67ed9bacdd3e4d3b70bfe135208a6ad6d8332889
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c25uF8_1yJ0WS2in7b_puTFPHUecG2tiLf8bfJrxB6TibW9YSi84jDy1cucwZLBt_tHd-1zBkqhH_kp88zBmJA',`ticket_c_time`='2015-10-05 06:49:23' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2015-10-05T06:59:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=0257cb41315ad19c51b916f8cf6659ff83b3fd7d&timestamp=1443999644&nonce=374819460&encrypt_type=aes&msg_signature=d1fd2aaa849b59c93a0def05748615e9576ab2cc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 06:59:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-10-05T07:09:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c697cf66a2d3971ad5ff7f1d79a1cd3aad1409f0&timestamp=1444000244&nonce=1036407995&encrypt_type=aes&msg_signature=994aebe3654ebe6a6388f34a011fcfd1f3f366c3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 07:09:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-10-05T07:19:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=553d330857de46000f946fefce0c19af4fa8c6a4&timestamp=1444000844&nonce=1057524435&encrypt_type=aes&msg_signature=f4dd3e7b2d3d6a6118221719ad255eacb21c3b3e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 07:19:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-10-05T07:29:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3ad2a7408130d8716735cc1ca6088ae88b701131&timestamp=1444001445&nonce=1894990515&encrypt_type=aes&msg_signature=5016742c546297b4058993b960d39e7923e5d32e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 07:29:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2015-10-05T07:39:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=07ca5516f3e4467c3d743a5a39feb5d325a46943&timestamp=1444002044&nonce=1043696118&encrypt_type=aes&msg_signature=24db2b425d9541b8d323eac1c864bb4820ee7109
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 07:39:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-10-05T07:49:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=188490968db5006f1f4a404761470b2a57c5b5a5&timestamp=1444002644&nonce=621691741&encrypt_type=aes&msg_signature=4d2aee9e5849b4741ebb9405937da1ffc6f6d88e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_-rUuVPCmJhh-_L1H0eQRuYW9P_MzcwNkE9oYFcWlcVl9T66NHj9JDJ_EV0igtLw5K05Z7frFUOW_XArTudCZg',`ticket_c_time`='2015-10-05 07:49:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-10-05T07:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=69f8062c5837014ef5a21d7913740220db42af06&timestamp=1444003248&nonce=1287370256&encrypt_type=aes&msg_signature=59dc16cdefddb4af0eafc0a788e7e2041995a7ea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 07:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-05T08:09:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c1a311c7adb1b639adab617be096a4cf82d61d3a&timestamp=1444003845&nonce=1784970176&encrypt_type=aes&msg_signature=055eddb1ff3463428e13470d2139c7e4db799b38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 08:09:24' [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2015-10-05T08:19:24+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=a915d3f1cc850064bcc8530138a8ada72f237e8c&timestamp=1444004445&nonce=513027109&encrypt_type=aes&msg_signature=110c6ee3ff77202c87a609243fed976450e16944
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 08:19:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2015-10-05T08:29:24+08:00 ] 101.226.62.82 /home/receive/sysmsg?signature=c3d58d406d86649df9adb68a4e85433519a587ff&timestamp=1444005045&nonce=824250942&encrypt_type=aes&msg_signature=f06f8fd47e211c150c6134b7a7ba8afee14ced14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 08:29:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-10-05T08:39:26+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=5bf326f83a23a082f2fc1c8a6d5adc8672bd9cc1&timestamp=1444005646&nonce=923833349&encrypt_type=aes&msg_signature=5e74b9ab9dab18803f154bd16b508c4b4a969c5c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 08:39:26' [ RunTime:0.0169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2015-10-05T08:49:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3503a91fb8c0ff8d1094c20b7aab61436d33a174&timestamp=1444006245&nonce=1203905125&encrypt_type=aes&msg_signature=905e21e8d6cecbbf01280d276e867462a99f8565
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@KXbjAgWLlShbbfOG3JMKpAExbJ7e58CgpbK4V4lLsP87NM2nTqF4uPGWdgBkFddwmHAK1ynbNUJox1yWYeeSFg',`ticket_c_time`='2015-10-05 08:49:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-05T08:59:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a2f2838b2c4092af5e70a9dfb02caba03252bc18&timestamp=1444006846&nonce=1085625271&encrypt_type=aes&msg_signature=711ae402f58dcfdc3a530f98d6a1e14a396c7302
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 08:59:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-10-05T09:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=313c7d56a70231dd39beacc87141b408805fa73b&timestamp=1444007446&nonce=1993645477&encrypt_type=aes&msg_signature=7e03567cb5bd6e5b0adc939167de6cfbcb810632
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 09:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2015-10-05T09:19:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b84f763360d70d59309e125f6deb130f66fa8862&timestamp=1444008046&nonce=467191289&encrypt_type=aes&msg_signature=ccf2f7949efc6830bc8ba6ae4d0f958d9c306e4f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 09:19:25' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2015-10-05T09:29:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=8f60f0c0a6bc740335c2fecaa2ee8169d3c9997b&timestamp=1444008647&nonce=1305249721&encrypt_type=aes&msg_signature=47b32cbbe7adf9875ad98e627923e7504e54db5a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 09:29:26' [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2015-10-05T09:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=f0b94500aaaa667b54748b72c6c6976ae39daf66&timestamp=1444009247&nonce=729094891&encrypt_type=aes&msg_signature=e2283fb12080e60ddab3e53cd2650e2140461adf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 09:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-10-05T09:49:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=926f8e721d6ff5c0fd2c76e6a8c72ad8d3b07fae&timestamp=1444009847&nonce=942309627&encrypt_type=aes&msg_signature=8eebfb00ad19f7068b58abeec6380e11faf835ff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_A1W4MHxMk6GR-bwW1aWBkRjOdbbGx0viLcTJItVwpOZTADB7N0toSAX4JQGaV0aRvjHniOL1lt9S5czCDJQsQ',`ticket_c_time`='2015-10-05 09:49:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-05T09:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=997bfa76b129ca350ab887d012fc465b6c170612&timestamp=1444010447&nonce=1518611605&encrypt_type=aes&msg_signature=c9ff85a52d10c3cc6a80fe0b88543ec9adac6993
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 09:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-10-05T10:08:38+08:00 ] 121.42.0.19 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+
+[ 2015-10-05T10:08:38+08:00 ] 121.42.0.19 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2015-10-05T10:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=9d00983bf160b6f0aac9909b47cb0fecba5a069a&timestamp=1444011047&nonce=1308953196&encrypt_type=aes&msg_signature=8ed09d9f4a61e417976a49420cb68508c3173f9f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 10:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-05T10:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=46c01c9239f0a63dc1fd0974376c40992c154e7a&timestamp=1444011647&nonce=1458720398&encrypt_type=aes&msg_signature=10bde21d50000acc8dd07cd4c13610918b3c6d91
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 10:19:26' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2015-10-05T10:29:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a08dde400e1a2a16d8b3beb2e6bedb9334288e6a&timestamp=1444012248&nonce=1039962379&encrypt_type=aes&msg_signature=515948e4ba69aab4741940cc4f4e0fba4c84871e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 10:29:27' [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2015-10-05T10:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=0791be8e4ba959b6eb3186e685004b4e4605835b&timestamp=1444012847&nonce=1308716061&encrypt_type=aes&msg_signature=c31bad82185bcce82e12daa7e76b82ef6176ce8b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 10:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2015-10-05T10:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=dbd6c2854e9af9a020ace4eb2121b8789588aa44&timestamp=1444013447&nonce=1216465231&encrypt_type=aes&msg_signature=e8e42364caa3757846388b85de1be3b5e48328eb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@h9fXGOsQeJ6a7lo23X5h_vPZQZBA5KATvh1AZYV93r44GHqZ_k24mdAEj3QImsufJo8eopTk483-e7UtIVOkWQ',`ticket_c_time`='2015-10-05 10:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-10-05T10:51:26+08:00 ] 101.226.62.83 /home/receive/eventmsg/aaa/wxaf28a45f3c1bdcef?signature=57225a75d5074d522e0be5eb67a84b9880d5d63e&timestamp=1444013567&nonce=1527413891&encrypt_type=aes&msg_signature=1aea47454873c78a1d768e19a52bd1b9741876ef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] Undefined variable: time /lbw/wwwroot/wxtest/Application/Home/Controller/ReceiveController.class.php 第 134 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-10-05T10:59:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=576c2ebf34c6312a9cdf4fbb2b30aae143035841&timestamp=1444014048&nonce=201422241&encrypt_type=aes&msg_signature=b75afc0ffd4a0c6837e0da2e03d45671282d1939
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 10:59:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-10-05T11:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=833b0e8398790f9c2130dc2f35437509b625170d&timestamp=1444014647&nonce=1636560124&encrypt_type=aes&msg_signature=a2eb2ebbf39d68c135a642d5e61c75adf5bff2d2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 11:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-10-05T11:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=49048d978371c37f2fa2bd9f0843450ec4f94618&timestamp=1444015247&nonce=737543944&encrypt_type=aes&msg_signature=6c76e7ec9b2784cd0edf62094ffbfb18ad091644
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 11:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-10-05T11:29:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=9826ed10a7441883d45af6b790a0c2dbb7370755&timestamp=1444015848&nonce=1215808502&encrypt_type=aes&msg_signature=27e9ef43185301f674bfa6fbfc4abb2c31045520
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 11:29:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-10-05T11:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=82cffa1b07da36b8476ef1e192dc6eb90c55d565&timestamp=1444016447&nonce=36831922&encrypt_type=aes&msg_signature=b70f36e961348707483400c7424dd8a20b3b6812
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 11:39:27' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2015-10-05T11:49:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=270ab38ccbb8ccd0d00f09e140083685e674b879&timestamp=1444017047&nonce=2147284956&encrypt_type=aes&msg_signature=ca42ac141b91e001a2cd9a666f2bc62e8386a5fd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@4YKwhorrmeVw0Eotj6uQu5DXrNE1DeCJmLqkvqOtCC_IHdec5qf7gKDw8AQNmTL-mWMQ_TRaIKyJ7V9m1MKa_g',`ticket_c_time`='2015-10-05 11:49:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-05T11:59:38+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=4839f4e488977c049431e5f69fecda39360a5949&timestamp=1444017658&nonce=1354026374&encrypt_type=aes&msg_signature=ca39dbc14f4f94f3d410fa5d2cf29be434860b37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 11:59:38' [ RunTime:0.0200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2015-10-05T12:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a2f247a91d74c533bb5adbd87c40f1a6d97cc697&timestamp=1444018247&nonce=1815403421&encrypt_type=aes&msg_signature=60644c48a815857efa496207b6b60a7b7d10df25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 12:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2015-10-05T12:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=aee115d8ec2e8fd35d8d8171e54b43653ba93384&timestamp=1444018847&nonce=422130966&encrypt_type=aes&msg_signature=b077d52558da6e472058d893a1af3b48a6a0292b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 12:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2015-10-05T12:29:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=787e4fb7f4ae87713c66b3c75aa5e6772f8c7e3c&timestamp=1444019449&nonce=2091706503&encrypt_type=aes&msg_signature=003be8f3bd730822b473af15fd33d3d74e67619d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 12:29:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-10-05T12:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=9d543d5abf7233e5539dcf5d73a6643d0fbc94df&timestamp=1444020047&nonce=867354918&encrypt_type=aes&msg_signature=9e24f14fe6fb714bb5c1a2096228af9235a89e5f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 12:39:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-10-05T12:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=72112a3d96abb37a3a3fc461b62f9e7b3634ea36&timestamp=1444020647&nonce=1385972926&encrypt_type=aes&msg_signature=98348af347ebbb6323e3d686a6a0e7db0447661d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@2LAACWWxVEWCFf6sJbitpyuTEN_g38UOlgeFzRsd7DvsxmQbC1yL0XY8S0IO-0vMfWjzzeRz8LrLHDaBG6E4YQ',`ticket_c_time`='2015-10-05 12:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2015-10-05T12:59:26+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=c1bf1e25e64417ffd426adafed99223e33e05cb8&timestamp=1444021247&nonce=1646996353&encrypt_type=aes&msg_signature=7fe2a059a0783cb3c0925abe1961765a4a871ddd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 12:59:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2015-10-05T13:09:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=fcf7da2012df99c9705c6306146ee9abbcd370f7&timestamp=1444021848&nonce=1866720791&encrypt_type=aes&msg_signature=58c303fd4768946fcde2d0eefbcb77f32c04481b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 13:09:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2015-10-05T13:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=7f0ee9c791f3ca0d00ff2eb20d6c519479e0615f&timestamp=1444022447&nonce=1646371958&encrypt_type=aes&msg_signature=8566c53a4eb4c551ca3d892a57eca4457fd89dcf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 13:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-10-05T13:29:27+08:00 ] 101.226.62.82 /home/receive/sysmsg?signature=0e7a53f11857fdfd4625c83c9240e51504cbfc17&timestamp=1444023048&nonce=206451819&encrypt_type=aes&msg_signature=b2198ccb8525ac42063dc4689ac916288f8a13e2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 13:29:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2015-10-05T13:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=55d8ed060a2238410bbf867473d9732588d4d4c9&timestamp=1444023647&nonce=1948980895&encrypt_type=aes&msg_signature=f9279dc7fa470fc4fadc10e0c47876b60ae38f9c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 13:39:26' [ RunTime:0.0157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2015-10-05T13:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=0a23bc970008a6059b1e6bd63de4eb9ef9d467ae&timestamp=1444024247&nonce=567050386&encrypt_type=aes&msg_signature=32fb4d2840a20426ed189ade32c1c1145c453084
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@gGcJs6UZDRw7M7owdOvV_Q6OLGpwVvbafya-reSTeE4bGoQK49f4S6Fqqo9p9xSnsjo2hCdllS7Bs1DK3f_gZg',`ticket_c_time`='2015-10-05 13:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-10-05T13:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3a9f3e90d2fd94f788fba02fb93e987b03df5a49&timestamp=1444024847&nonce=932581429&encrypt_type=aes&msg_signature=dc79712fcf013e311f0fcfb2bcbc8129c14c173f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 13:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2015-10-05T14:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=fbd6c4bf3563f0205f1031e787abfa1a374644b2&timestamp=1444025447&nonce=944684535&encrypt_type=aes&msg_signature=22ffefd84c5a3f01e8167ab96da663c026d4f83a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 14:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-10-05T14:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=9293219ae1724d4c603fd85bf876238e876c33da&timestamp=1444026047&nonce=1909804151&encrypt_type=aes&msg_signature=85eb856af1bcf5fc6f4550a676e5cd8483d28d4e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 14:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-05T14:29:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a3c0fd102711f706e501fdf97e2dc48f0366d7f5&timestamp=1444026648&nonce=54543190&encrypt_type=aes&msg_signature=e329d058403405bad239bdd643a91df6dbd119ab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 14:29:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2015-10-05T14:39:26+08:00 ] 101.226.62.82 /home/receive/sysmsg?signature=1472bfae2d367cf8119c41bb2a97e117cb57bf1d&timestamp=1444027246&nonce=343731649&encrypt_type=aes&msg_signature=853e6b1f899659353f9b4b7741f0a5fe4617bd4a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 14:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2015-10-05T14:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=309fb31b59a01f3892ba319d21e82e9c4715d6a4&timestamp=1444027847&nonce=1343852523&encrypt_type=aes&msg_signature=133976b49e61aba2d231281a7d329a0ceb77ebe8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@c83Lp3D3q8qFQfQoVBCzjMHGflVxyn6qeF1Wz6qxNZtHMICnriw4sdQxPoNXo8eF6P1F431qO_Gyqg3p-IerKw',`ticket_c_time`='2015-10-05 14:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-10-05T14:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=41f4a8ee00b8a4dbf6f05b2a78138aee92f4b5d4&timestamp=1444028447&nonce=1242492012&encrypt_type=aes&msg_signature=e62dfff8e9f805e05927219056e6a6b09eebc8c7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 14:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-10-05T15:09:26+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=7bfce20e6de8a60b1c6d460d2a504ef9244b9002&timestamp=1444029047&nonce=1972068102&encrypt_type=aes&msg_signature=23a40399804a0b7cb062a98e13d8e5015308fc9c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 15:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-10-05T15:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=4495b29090acd0dc098867fb44983cde1da5570c&timestamp=1444029647&nonce=1624053205&encrypt_type=aes&msg_signature=917cd783aee7b9be9020bee4594665407d9c748f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 15:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2015-10-05T15:29:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=49bd23d81101756eb676916e86b489e3636c4557&timestamp=1444030247&nonce=364858479&encrypt_type=aes&msg_signature=fc10272d1b9b6e48405b56fa679242f961e67577
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 15:29:26' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2015-10-05T15:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=df2b8e1b059a4ece0750d2b5ff36037d85b5b5c6&timestamp=1444030846&nonce=1403377427&encrypt_type=aes&msg_signature=3667a9be0d39c6e0e81ef90482f8a41e8182061b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 15:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2015-10-05T15:49:26+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=640f04bce1c9217ef3799e64d8762c3c34852ddf&timestamp=1444031446&nonce=1639813360&encrypt_type=aes&msg_signature=2f1a34cd0b72bd3bf9bb55cd23358905ce364f6f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@TWOiqD74NeHhk55PnonxJo2R0hb3MVEttgpJeoSxQqafcWgR4pYxLAF_Fl7vvcZPVFxPcfRUI2-kptdmz-GSsA',`ticket_c_time`='2015-10-05 15:49:26' [ RunTime:0.0177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2015-10-05T15:59:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=80028a1d4edef6aff0435b0fa0cda74796a5ba53&timestamp=1444032047&nonce=1523055416&encrypt_type=aes&msg_signature=33ddd21825f25574755630c406219bea972c3df7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 15:59:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2015-10-05T16:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=439c085287c4d266788e939ff4bd42d272a14101&timestamp=1444032647&nonce=437377220&encrypt_type=aes&msg_signature=1e8bd1e7001729dbe606c256ca236d84703192d1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 16:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-10-05T16:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=6f6199876c2a328697cbe7350473944c9e8ee2d0&timestamp=1444033247&nonce=642013205&encrypt_type=aes&msg_signature=1e8ab76181bb0c4200381d1759673a2c66cc9656
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 16:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-05T16:29:27+08:00 ] 101.226.62.85 /home/receive/sysmsg?signature=92de7bd6805ab70398f7cb4d1b90d22936885347&timestamp=1444033848&nonce=1344521715&encrypt_type=aes&msg_signature=f7b3015181e5a27f0a5366571d2bfc9898a534ec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 16:29:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2015-10-05T16:39:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=76d9c8b1d635f235067cee8d1f8c65771d3f4600&timestamp=1444034447&nonce=73412063&encrypt_type=aes&msg_signature=ee0390ee3f99d80e2d45694dbbf5c17402712fe5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 16:39:26' [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-10-05T16:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=afe7590659a42f4edfe4460962b6715cc5882833&timestamp=1444035047&nonce=233233168&encrypt_type=aes&msg_signature=885e8dbe67f8ab8aa96319330364003eaa3cad28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@_GfWeoqYMgrri2W0tGfGB1NRvwhFrFOJcfooI9TWhCamt6F2hY3PhMMYjkdKQua1VsFFUYOXOTvDJ3XY_TlM9w',`ticket_c_time`='2015-10-05 16:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-10-05T16:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=e6f3017b5f3f6acda7109e8997ca457954e7b17e&timestamp=1444035647&nonce=74042823&encrypt_type=aes&msg_signature=00df79d878d6e278ad6fa7c1fbcf18c060259b03
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 16:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2015-10-05T17:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=5d96afc6939f03a1f06ca90dcc4644a6ef39c83a&timestamp=1444036247&nonce=114327000&encrypt_type=aes&msg_signature=f3f7fdc9f3503e7a66f3335456f8b51d870f55b5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 17:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2015-10-05T17:19:26+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=82572a7e75fb5b6d1b06a202bb9b6d21f18b3cd8&timestamp=1444036847&nonce=1348425376&encrypt_type=aes&msg_signature=0a0f5837dd9e7dcfa7ae2ad8fd430e40d0822d47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 17:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-10-05T17:29:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=d5738b97489d56a3e075f11d2eaabf902b1880dc&timestamp=1444037449&nonce=1804983079&encrypt_type=aes&msg_signature=db81f795823f414635e9b084737aed7e739672d3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 17:29:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2015-10-05T17:39:26+08:00 ] 101.226.62.82 /home/receive/sysmsg?signature=b9969a9802bc65e03369f699733a21c6b4506367&timestamp=1444038047&nonce=921826438&encrypt_type=aes&msg_signature=a099e2137fab1cf3c879c314de824b6ea0c258de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 17:39:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2015-10-05T17:46:08+08:00 ] 101.226.62.83 /home/receive/eventmsg/aaa/wxaf28a45f3c1bdcef?signature=6ef0d46e47d8b3f7c11dc7380ec0c1317d69f18f&timestamp=1444038449&nonce=1686832091&encrypt_type=aes&msg_signature=b10624cbeb9e039b329af0d792bf60ff11daddb6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [8] Undefined variable: time /lbw/wwwroot/wxtest/Application/Home/Controller/ReceiveController.class.php 第 134 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2015-10-05T17:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=5ee2d34dce6e9fa0ca7ecc85cd915baefd4e3dba&timestamp=1444038647&nonce=1123039359&encrypt_type=aes&msg_signature=18c069ff42fd9dd8654f5d8807a79ab8717582fc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@a18nZo5OCNBH1JmtnwxNv05QsyjvaZcXLFXJD3x-xivj8FxDQ-GpQmkrdO_zjeVkDZQSA3mLV0wLek0WJc3DqQ',`ticket_c_time`='2015-10-05 17:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-10-05T17:59:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b23e3383d80a52d574d0b4a16f2cb02afeadf12e&timestamp=1444039249&nonce=165479089&encrypt_type=aes&msg_signature=9b149ea9424c815b191aea764f52064814d53f4c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 17:59:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2015-10-05T18:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c9deea1e6991a2455e1024c116ad298ae277bc36&timestamp=1444039847&nonce=1987420281&encrypt_type=aes&msg_signature=4442ffd61de0462ce05b9214301fa92bc720b8f6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 18:09:26' [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2015-10-05T18:19:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=475eb0643525d45ec73e660df6c1cf0c9c399051&timestamp=1444040447&nonce=821679428&encrypt_type=aes&msg_signature=a69dd94d02c1dd2c7f6ef7afddabbf04f0034d0b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 18:19:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-10-05T18:29:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=347e22ca23f0d39794ae66f753609583885cb1cb&timestamp=1444041048&nonce=1827253457&encrypt_type=aes&msg_signature=67831bc8113198a8eb33d36557ee5dccd229f0cf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 18:29:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-10-05T18:38:12+08:00 ] 101.226.62.80 /home/receive/eventmsg/aaa/wxaf28a45f3c1bdcef?signature=b6f29df460962158b7cbc8125609daf027a76535&timestamp=1444041573&nonce=1627499760&encrypt_type=aes&msg_signature=21abda77ee2bf72d2de491cbb16cbfe751a2420a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined variable: time /lbw/wwwroot/wxtest/Application/Home/Controller/ReceiveController.class.php 第 134 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-10-05T18:39:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=aaac5a6af550e17c6083ed5c83aaa670fba347a1&timestamp=1444041649&nonce=2046564508&encrypt_type=aes&msg_signature=11c626e508d86081d5fb5fcaed6b6d6c775250ec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 18:39:28' [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-10-05T18:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=7821d780eb4a4ef313d54fc00ab855a7a5119f10&timestamp=1444042247&nonce=945495993&encrypt_type=aes&msg_signature=b5a90b6c9e16741a9071fa1ceba02a3a85d5375d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@sTPUJVatGPQWmTnY4Ox7OeUBeWIvgLue8NqjVkLHtsLko53f4UGkswywuSbi6zzkHlzjEHE7-Vp50WDuY0ldmA',`ticket_c_time`='2015-10-05 18:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-10-05T18:59:28+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=146f98f269fc65f654c89d984b6eccfb9a4e6879&timestamp=1444042849&nonce=1178666684&encrypt_type=aes&msg_signature=85ebac50d102115514c55009d1eab937e51832de
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 18:59:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2015-10-05T19:09:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=2a4a50e37acb1497ff8a87a53c83bcea8413ad5b&timestamp=1444043448&nonce=1677208572&encrypt_type=aes&msg_signature=64df40f0063ac1d709e4809999d59bc578c7d541
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 19:09:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2015-10-05T19:19:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=12622f80e0e5c1cfb88ef7b8abf3ace308571a9d&timestamp=1444044048&nonce=671157340&encrypt_type=aes&msg_signature=4fd3e6c9a0afe1ec2aca3b10f074bda1c89f5400
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 19:19:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-05T19:29:38+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=31afc017382057193023f3975519d61c0704305d&timestamp=1444044659&nonce=566099683&encrypt_type=aes&msg_signature=1197c630b492b90e7446479eb6291c22eba53294
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 19:29:38' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-10-05T19:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=1819ce922afed5f7065cea1c91ac559cb7a35e65&timestamp=1444045248&nonce=667001508&encrypt_type=aes&msg_signature=b23cabd9a867bff239374a53732dcf84be11d84f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 19:39:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2015-10-05T19:49:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b36654b3a96973edc4f4beb0923aabf6bff97755&timestamp=1444045847&nonce=1611148999&encrypt_type=aes&msg_signature=19085e31c312409e0f5fa63de56014383a49602e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@X39rQzBSp2UQH4iRBOiK9IC_Gr_UrzkbW7cs3dKcGv9B42yYbk-HXsHik5E3xXmQ8falcfKQpp_ZSJM4bDqRrg',`ticket_c_time`='2015-10-05 19:49:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2015-10-05T19:59:36+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a0ba1f50f38167cee46e9c67b3b830dc4192125a&timestamp=1444046457&nonce=1217272135&encrypt_type=aes&msg_signature=8947028fe8b30a74c4ab83e1ac22c2ccb4895ffc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 19:59:36' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-10-05T20:09:37+08:00 ] 101.226.62.86 /home/receive/sysmsg?signature=a8cce4faf968c32e05842cbfb8afb824d7da792a&timestamp=1444047057&nonce=1501025854&encrypt_type=aes&msg_signature=e0c2719cd194d063aed1df11b7d2774c96e935c3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 20:09:37' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-10-05T20:19:37+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=c9114f36958e9976a8dfdc8ac8e91deac595ba5b&timestamp=1444047658&nonce=330356031&encrypt_type=aes&msg_signature=4e86da1fd76fb561ef74b7319554cf89ca7d2385
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 20:19:37' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-10-05T20:29:29+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=d80ceb20f659f40a7fb45235ca83c61b14830323&timestamp=1444048250&nonce=93914739&encrypt_type=aes&msg_signature=1e7174e9c052b0b1c632e34290a2cd74cb109add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 20:29:29' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2015-10-05T20:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=3ac58de113770d3d799d53d27c7eb381685d39cf&timestamp=1444048848&nonce=1843804116&encrypt_type=aes&msg_signature=77f408e6183b3c45662f3e5937f2c35e4c20676e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 20:39:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2015-10-05T20:49:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=32afbd2def9acc24ff168dd1b67e61debc21d568&timestamp=1444049448&nonce=252307841&encrypt_type=aes&msg_signature=bc97ac0be5b69f96cc04a034ecda5c402437c3bc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@yrHIm3VdB_NprUa5Xn4n2cnWXp-exjvwyCWiBykUscT4FNpq9nAZ7aTR5WFKljirs2zIRH81eX3ML78TEqOOwA',`ticket_c_time`='2015-10-05 20:49:27' [ RunTime:0.0072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2015-10-05T20:59:28+08:00 ] 101.226.62.83 /home/receive/sysmsg?signature=c29a0b3b6931f402fa83db19cdb77bac1151c02f&timestamp=1444050049&nonce=736206008&encrypt_type=aes&msg_signature=5c9ba012a620568a533798bb564e0316c7055c12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 20:59:28' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2015-10-05T21:09:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=47afd5eb0204faf303d977eea14d89ddc7a89a92&timestamp=1444050648&nonce=1648708894&encrypt_type=aes&msg_signature=e62c00934a71d7eb8c1a2f3fb983f36e2f3fee4d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 21:09:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2015-10-05T21:19:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b2577ef568588247af6cb0a402051d43d9c18e2c&timestamp=1444051247&nonce=756034932&encrypt_type=aes&msg_signature=881b9a5cd90feac69b148515b3f4dda99970ad41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 21:19:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-10-05T21:29:36+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=2d089ca3afcd548c5aff8da216b5cedc15b9d762&timestamp=1444051857&nonce=2024586959&encrypt_type=aes&msg_signature=5ac250e571d34758fa8eabe1553462bcfbfb5fe1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 21:29:36' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-10-05T21:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=dfcd124e4386bc79776ec669bea7634fb2736bb0&timestamp=1444052448&nonce=2139144693&encrypt_type=aes&msg_signature=6ce722d1fe779c525581bd00b514699aeb7a2706
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 21:39:27' [ RunTime:0.0067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2015-10-05T21:49:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=feb5864be1a6e2769e82a0dc3ec69adcbac2435e&timestamp=1444053047&nonce=411012471&encrypt_type=aes&msg_signature=dca78fb1fe0d2ed8d038ef0100d72f6c77dca37d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XswcxrAkfK63FcNzZk6TesVv618136cPiQqiNmhloei9usqod0bmnroU1xV-Hmr-_Dn7py5loZcXsZYA58PP9g',`ticket_c_time`='2015-10-05 21:49:27' [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-10-05T21:59:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=a3f7ff6eae38109f367a5f48842c82189e84437f&timestamp=1444053648&nonce=1334625321&encrypt_type=aes&msg_signature=6beaccdfcf60853518ea54f0527d93fc25100cbb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 21:59:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2015-10-05T22:09:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=fe302b271e38599af6c0980eddb4ae5f02fe0522&timestamp=1444054248&nonce=1448643293&encrypt_type=aes&msg_signature=03cef542dc050686f7d542606478a260d71b448e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 22:09:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2015-10-05T22:19:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=bf4092e6abc6039b83e9db50d5579718ef7c2cba&timestamp=1444054848&nonce=1567360749&encrypt_type=aes&msg_signature=49f2d597cbba90c5708957d2aed846ca8190496f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 22:19:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2015-10-05T22:29:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=bdef051231799885509dd917f4359743d95b6604&timestamp=1444055447&nonce=1463108739&encrypt_type=aes&msg_signature=018603060681ad252dea61e24ecc30e370bbedb9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 22:29:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-10-05T22:39:27+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=1263de151f504ed0be9b765e854e5210e896bc58&timestamp=1444056048&nonce=1731339758&encrypt_type=aes&msg_signature=da3432c5da7eca758bb74f8fa6f3214a6f999c69
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 22:39:27' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-10-05T22:49:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b9f2a28491eb21fae8c18541933b684ddca7d899&timestamp=1444056647&nonce=2135169534&encrypt_type=aes&msg_signature=b06c3d6eef25dcc9e5b8df08adea50ef2f37db05
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@kr2DjN2TpSIy_k3ZA8bRupQfyhEeWqPxH11uD834_Kx7O1EriBuctnJRTNnpWieyBaby1OpOEpnrs9u9PAYADA',`ticket_c_time`='2015-10-05 22:49:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2015-10-05T22:59:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=76830dd868296a9cd407a78060994dc0da7051a0&timestamp=1444057247&nonce=380410621&encrypt_type=aes&msg_signature=196d027b8caf042800ef978558bb8e855d4b96f2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 22:59:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-10-05T23:09:26+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=b080dc3502814730c4249f607f64212baedcf162&timestamp=1444057847&nonce=1391981775&encrypt_type=aes&msg_signature=d91878cbf2130c5e7500acadcba87a12acc4a06a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 23:09:26' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2015-10-05T23:19:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=8c19b1581a4631f9617bb6709f082651108accc3&timestamp=1444058446&nonce=450780964&encrypt_type=aes&msg_signature=766f278a7740b70bb0ca7872ad8e8464d3e8235c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 23:19:25' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-10-05T23:29:25+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=93e21170b92995e5dc5ddcc9c1bb8ffacc70d267&timestamp=1444059046&nonce=726778410&encrypt_type=aes&msg_signature=e20ea5dcee7162b475b9b9ad78e349978326790a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 23:29:25' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2015-10-05T23:39:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=1cf1bc24cfb802aa5790b2cf2f0d97ba543fda7f&timestamp=1444059645&nonce=589243771&encrypt_type=aes&msg_signature=9fe9234b90f71f863ed71c4c39667dd28c43cb1f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 23:39:24' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2015-10-05T23:49:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=6b762fa74b6a9d9e4b7b32c7b950015ec1ff0371&timestamp=1444060245&nonce=1173124930&encrypt_type=aes&msg_signature=3231e0460b4a1b74591b3a3c79eddfa913da46e4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@ZyWHdcXIWdWfrJOScPtEVv3wrMXrviyrt8eqyP94acAKYBbYhRAErwXohcY_bhzT6xko53d-xQm4B959HP7KRg',`ticket_c_time`='2015-10-05 23:49:24' [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2015-10-05T23:59:24+08:00 ] 101.226.62.84 /home/receive/sysmsg?signature=bc0dba462239f18d0f2fd93aa277ad2bf5e84061&timestamp=1444060845&nonce=195244837&encrypt_type=aes&msg_signature=7bf94cc426f73b2ccfbac888a3dc0b093af03b88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_account` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `component_verify_ticket`='ticket@@@XwnnCq3jghldxJaGxi5cZER9t-lWvrG13qKlr8Jo2h005KqBjNi0ShoXfaT0AEYbmzWUjN4m7HUJNKPP0PQO8Q',`ticket_c_time`='2015-10-05 23:59:24' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+

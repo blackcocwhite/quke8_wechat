@@ -1,0 +1,634 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class DataStatisticsController extends CommonController{
+    public function index(){
+ 
+        //订阅号
+        if($_GET['csv']==1)
+        {
+            
+            if($_GET['tm']!=1)
+            {
+            $xlsName  = "订阅号统计-".$_GET['tm'];
+            }else{
+             $_GET['tm']=date('Y-m-d');   
+             $xlsName  = "订阅号统计-".$_GET['tm'];
+             $_GET['tm']='';
+            
+            }
+             if($_GET['city']==1)
+             {
+               $_GET['city']='';
+            
+                 
+             }
+             if($_GET['area']==1)
+             {
+                 
+                 $_GET['area']='';
+                  
+             }
+             if($_GET['gz']==1)
+             {
+             $_GET['gz']='';
+                 
+             }
+             
+            $xlsCell  = array(
+                array('id','序列'),
+                array('pubname','公众号名称'),
+                array('district','地区'),
+                array('sudnumber','学生数'),
+                array('sernumber','关注数'),
+                array('attentnum','关注率'),
+                array('newday','日新增'),
+                array('remove','取消'),
+                array('netgrowth','净增'),
+                array('onthenet','日净增(%)'),
+                array('weeknum','周净增(%)'),
+                array('mothnum','月净增(%)'),
+                
+            );
+            $xlsModel = M('pubdate');
+            $tm=strtotime($_GET['tm']);
+            $city=$_GET['city'];
+            $area=$_GET['area'];
+            $gz=$_GET['gz'];           
+            $xlsData=$this->dateFun($xlsModel, $tm,$city,$area,$gz);         
+          $this->exportExcel($xlsName,$xlsCell,$xlsData);         
+        }              
+          $pa=M('pub_account')->select();       
+          $db=M('pubdate');
+          $vb=$db->select();
+        
+           foreach ($pa as $k=> $v)
+           {
+               $data['PubName']=$v['nick_name'];               
+               $res=$db->where($data)->select(); 
+               
+               if(empty($res))
+               {
+                   $data['district']=$v['city'].' '.$v['area'];
+                   $data['shijian']=strtotime(date('Y-m-d'));                
+                   $b=$db->add($data);
+     
+               }
+                           
+           }                          
+             
+        $shi=I('get.shi');
+        $qu=I('get.qu');
+        $sj=strtotime(I('get.sj'));
+        $gz=I('get.gz');
+        $this->assign('shi',$_GET['sj']);
+        $this->assign('atName',$gz);
+        $this->assign('cs',$shi);
+        $this->assign('qu',$qu);
+        import("ORG.Util.AjaxPage");// 导入分页类  注意导入的是自己写的AjaxPage类
+        $credit = M('pubdate');
+        //以下六个和时间有关的
+        if(!empty($sj)&&empty($gz)&&empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("shijian='$sj'")->count(); //计算记录数
+        
+        }elseif(!empty($gz)&&!empty($sj)&&empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("shijian='$sj' and PubName like'%$gz%'")->count(); //计算记录数
+        
+        
+        }elseif(!empty($gz)&&!empty($sj)&&!empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("shijian='$sj' and PubName like'%$gz%' and district like '%$shi%'")->count(); //计算记录数
+        
+        
+        }elseif(!empty($gz)&&!empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+            $count = $credit->where("shijian='$sj' and PubName like'%$gz%' and district like '%$shi%' and district like '%$qu%'")->count(); //计算记录数
+        
+        
+        }elseif(empty($gz)&&!empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+            $count = $credit->where("shijian='$sj' and district like '%$shi%' and district like '%$qu%'")->count(); //计算记录数
+        
+        
+        }elseif(empty($gz)&&!empty($sj)&&!empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("shijian='$sj' and PubName like'%$gz%' and district like '%$shi%' and district like '%$qu%'")->count(); //计算记录数
+        
+        
+        }
+        //以下四个和时间无关的
+        elseif(!empty($gz)&&empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+            $count = $credit->where("PubName like'%$gz%' and district like '%$shi%' and district like '%$qu%'")->count(); //计算记录数
+        
+        
+        }elseif(empty($gz)&&empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+            $count = $credit->where("district like '%$shi%' and district like '%$qu%'")->count(); //计算记录数
+        
+        
+        }elseif(!empty($gz)&&empty($sj)&&!empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("district like '%$shi%' and PubName like '%$gz%'")->count(); //计算记录数
+        
+        
+        }elseif(empty($gz)&&empty($sj)&&!empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("district like '%$shi%'")->count(); //计算记录数
+        
+        
+        }elseif(!empty($gz)&&empty($sj)&&empty($shi)&&empty($qu))
+        {
+            $count = $credit->where("PubName like '%$gz%'")->count(); //计算记录数
+        
+        
+        }
+        else{
+            $count = $credit->count(); //计算记录数
+        
+        }
+        
+        $limitRows = 5; // 设置每页记录数
+        $p = new \Think\AjaxPage($count, $limitRows,"index"); //第三个参数是你需要调用换页的ajax函数名
+        $n = $p->firstRow . "," . $p->listRows;
+        $this->show = $p->show(); // 产生分页信息，AJAX的连接在此处生成
+        $info=$this->dateFun($credit, $sj, $shi, $qu, $gz, $n);
+        $this->assign('info',$info);
+       
+        //查询地市区县
+        $this->city = M('cityarea_info') -> query("select * from wx_cityarea_info where type=1;");
+
+        $this->display();
+       
+    }
+    //素材库
+    public function indexTwo()
+    {       
+        if($_GET['csv']==2)
+        {
+        if($_GET['tm']!=1)
+            {
+                $xlsName  = "素材阅读统计-".$_GET['tm'];
+            }else{
+             $_GET['tm']=date('Y-m-d');   
+             $xlsName  = "素材阅读统计-".$_GET['tm'];
+             $_GET['tm']='';
+            
+            }           
+             if($_GET['gz']==1)
+             {
+             $_GET['gz']='';
+                 
+             }
+            $xlsCell  = array(
+                array('id','序列'),
+                array('articlname','文章标题'),
+                array('appsubnub','应用订阅号数量'),
+                array('sernub','送达人数'), 
+                array('newsnub','图文页阅读人数'),
+                array('pagenub','原文页阅读人数'),
+                array('shareforwnub','分享转发人数'),
+                array('micchannub','微信收藏人数'),
+               
+            );
+            $xlsModel = M('countdate'); 
+            $tm=strtotime($_GET['tm']);          
+            $gz=I('get.gz');            
+            $xlsData=$this->suData($xlsModel,$tm,gz);            
+            $this->exportExcel($xlsName,$xlsCell,$xlsData);
+            exit();
+        }
+        $am=M('article_manage')->select();
+        foreach ($am as $v)
+        {  $time=date('Y-m-d',$v['pub_time']);
+            $pub_name=$v['article_title'];
+           $data['articlName']=$pub_name;
+           $data['shijian']=strtotime($time);
+           $res=M('countdate')->where("articlName='$pub_name'")->select();
+           if(empty($res))           
+           {               
+               M('countdate')->add($data);
+           }
+                       
+        }
+        $sj=strtotime(I('get.sj'));
+        $gz=I('get.gz');
+        $this->assign('shi',$_GET['sj']);
+        $this->assign('atName',$_GET['gz']);
+        import("ORG.Util.AjaxPage");// 导入分页类  注意导入的是自己写的AjaxPage类
+        $credit = M('countdate');
+        if(!empty($sj)&&empty($gz))
+        {
+            $count = $credit->where("shijian='$sj'")->count(); //计算记录数
+            
+        }elseif(!empty($gz)&&!empty($sj))
+        {
+            $count = $credit->where("shijian='$sj' and articlName like '%$gz%'")->count(); //计算记录数
+        }elseif(!empty($gz)&&empty($sj))
+        {
+            $count = $credit->where("articlName like '%$gz%'")->count(); //计算记录数
+        }else{
+            $count = $credit->count(); //计算记录数
+        }
+        
+        $limitRows = 5; // 设置每页记录数         
+        $p = new \Think\AjaxPage($count, $limitRows,"indexTwo"); //第三个参数是你需要调用换页的ajax函数名
+        $n = $p->firstRow . "," . $p->listRows;              
+        $this->show = $p->show(); // 产生分页信息，AJAX的连接在此处生成
+        $rinfo=$this->suData($credit, $sj, $gz, $n);
+        $this->assign('rinfo',$rinfo);        
+        $this->display();
+           
+           
+        
+    }
+   
+    //订阅号统计
+    public function pub_index()
+    {
+        $this->result = M('user_data') -> query("select t.*,t1.*,t2.gname from wx_user_data t,wx_pub_account t1 LEFT JOIN (select * from wx_group where type=1) t2 on t1.pub_group = t2.id where t.pub_id = t1.id;");
+        $this->display();
+        
+        
+    }
+ 
+
+    //根据 时间导出 ,地区,公众号查询
+    public function dateFun($db, $sj,$shi,$qu,$gz,$n)
+    {
+      if(!empty($n))
+      {          
+       $limit=$n;
+      }
+      //以下六个和时间有关的
+        if(!empty($sj)&&empty($gz)&&empty($shi)&&empty($qu))
+        {
+    
+            return $info = $db->where("shijian='$sj'")->order(' shijian desc')->limit($limit)->select();
+        }
+        elseif(!empty($gz)&&!empty($sj)&&empty($shi)&&empty($qu))
+        {
+    
+            return $info = $db->where("shijian='$sj' and PubName like '%$gz%'")->order(' shijian desc')->limit($limit)->select();
+    
+        }elseif(!empty($gz)&&!empty($sj)&&!empty($shi)&&empty($qu))
+        {
+    
+            return $info = $db->where("shijian='$sj' and PubName like '%$gz%' and district like '%$shi%' ")->order(' shijian desc')->limit($limit)->select();
+    
+        }
+        elseif(!empty($gz)&&!empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+    
+            return $info = $db->where("shijian='$sj' and PubName like'%$gz%' and district like '%$shi%' and district like '%$qu%'")->limit($limit)->select();
+    
+        }
+        elseif(empty($gz)&&!empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+       
+            return $info = $db->where("shijian='$sj' and district like '%$shi%' and district like '%$qu%'")->order(' shijian desc')->limit($limit)->select();
+    
+        }elseif(empty($gz)&&!empty($sj)&&!empty($shi)&&empty($qu))
+        {
+            return $info = $db->where("shijian='$sj' and district like '%$shi%'")->order(' shijian desc')->limit($limit)->select();
+    
+        }//以下和时间无关的四个
+        elseif(!empty($gz)&&empty($sj)&&empty($shi)&&empty($qu))
+        {
+    
+            return $info = $db->where("PubName like'%$gz%'")->limit($limit)->select();
+    
+        } elseif(!empty($gz)&&empty($sj)&&!empty($shi)&&empty($qu))
+        {
+    
+            return $info = $db->where("PubName like'%$gz%' and district like '%$shi%'")->limit($limit)->select();
+    
+        } elseif(!empty($gz)&&empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+    
+            return $info = $db->where("PubName like'%$gz%' and district like '%$shi%' and district like '%$qu%'")->limit($limit)->select();
+    
+        }elseif(empty($gz)&&empty($sj)&&!empty($shi)&&empty($qu))
+        {
+    
+           return $info = $db->where("district like '%$shi%'")->limit($limit)->select();
+           
+    
+        } elseif(empty($gz)&&empty($sj)&&!empty($shi)&&!empty($qu))
+        {
+    
+            return $info = $db->where("district like '%$shi%'  and district like '%$qu%'")->limit($limit)->select();
+    
+        } 
+        else{   
+            return $info = $db->order(' shijian desc')->limit($limit)->select();
+             
+    
+        }
+    
+    }
+    
+    public function suData($db,$sj,$gz,$n)
+    {
+        if(!empty($n))
+        {
+            $limit=$n;
+        }
+        if(!empty($sj)&&empty($gz))
+        {
+            
+            return $info = $db->where("shijian='$sj'")->order(' shijian desc')->limit($limit)->select();
+        }
+        elseif(!empty($gz)&&!empty($sj))
+        {
+           
+            return $info = $db->where("shijian='$sj' and articlName like '%$gz%'")->order(' shijian desc')->limit($limit)->select();
+        
+        } elseif(!empty($gz)&&empty($sj))
+        {
+        
+            return $info = $db->where("articlName like '%$gz%'")->order(' shijian desc')->limit($limit)->select();
+        
+        }else{
+            
+          return  $info = $db->order(' shijian desc')->limit($limit)->select();
+            
+        
+        } 
+        
+    }
+    public function exportExcel($expTitle,$expCellName,$expTableData){
+       $xlsTitle = iconv('utf-8', 'gb2312', $expTitle);//文件名称
+        $fileName = $xlsTitle;//or $xlsTitle 文件名称可根据自己情况设定
+        $cellNum = count($expCellName);
+        $dataNum = count($expTableData);        
+        vendor("PHPExcel.PHPExcel");
+       
+        $objPHPExcel = new \PHPExcel();
+        $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ');
+        
+        $objPHPExcel->getActiveSheet(0)->mergeCells('A1:'.$cellName[$cellNum-1].'1');//合并单元格
+       // $objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1', $expTitle.'  Export time:'.date('Y-m-d H:i:s'));  
+        for($i=0;$i<$cellNum;$i++){
+            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($cellName[$i].'2', $expCellName[$i][1]); 
+        } 
+          // Miscellaneous glyphs, UTF-8   
+        for($i=0;$i<$dataNum;$i++){
+          for($j=0;$j<$cellNum;$j++){
+            $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[$j].($i+3), $expTableData[$i][$expCellName[$j][0]]);
+          }             
+        }  
+        
+        header('pragma:public');
+        header('Content-type:application/vnd.ms-excel;charset=utf-8;name="'.$xlsTitle.'.csv"');
+        header("Content-Disposition:attachment;filename=$fileName.csv");//attachment新窗口打印inline本窗口打印
+        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');  
+        $objWriter->save('php://output'); 
+        exit;   
+    }
+    
+    //导入数据    
+    function impUser(){        
+        if (!empty($_FILES)) {                             
+            $upload=new \Think\Upload();          
+            $upload->exts      =     array('xlsx','xls','csv');// 设置附件上传类型
+            $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+            $upload->savePath  =     ''; // 设置附件上传（子）目录
+            $upload->saveRule = 'time';
+            // 上传文件
+             
+            $info=$upload->upload();
+            foreach ($info as $v)
+            {
+                $name=$v['savename'];
+                $path=$v['savepath'];
+            }
+           
+            if (!$info) {
+                $this->error("上传失败");
+            } 
+            vendor("PHPExcel.PHPExcel");           
+            $file_name=$upload->rootPath.$path.$name;            
+            $objReader = \PHPExcel_IOFactory::createReader('Excel5');
+            $objPHPExcel = $objReader->load($file_name,$encode='utf-8');           
+            $sheet = $objPHPExcel->getSheet(0);           
+            $highestRow = $sheet->getHighestRow(); // 取得总行数          
+            $highestColumn = $sheet->getHighestColumn(); // 取得总列数                    
+            if($highestColumn=='L')
+            {
+
+                for($i=3;$i<=$highestRow;$i++)
+                {
+                    $da['id'] = $objPHPExcel->getActiveSheet()->getCell("A".$i)->getValue();
+                    $da['PubName'] = $objPHPExcel->getActiveSheet()->getCell("B".$i)->getValue();
+                    $da['district'] = $objPHPExcel->getActiveSheet()->getCell("C".$i)->getValue();
+                    $da['sudNumber'] = $objPHPExcel->getActiveSheet()->getCell("D".$i)->getValue();
+                    $da['SerNumber'] = $objPHPExcel->getActiveSheet()->getCell("E".$i)->getValue();
+                    $da['AttentNum'] = $objPHPExcel->getActiveSheet()->getCell("F".$i)->getValue();
+                    $da['newDay'] = $objPHPExcel->getActiveSheet()->getCell("G".$i)->getValue();
+                    $da['remove'] = $objPHPExcel->getActiveSheet()->getCell("H".$i)->getValue();
+                    $da['NetGrowth'] = $objPHPExcel->getActiveSheet()->getCell("I".$i)->getValue();
+                    $da['onTheNet'] = $objPHPExcel->getActiveSheet()->getCell("J".$i)->getValue();
+                    $da['weekNum'] = $objPHPExcel->getActiveSheet()->getCell("K".$i)->getValue();
+                    $da['mothNum'] = $objPHPExcel->getActiveSheet()->getCell("L".$i)->getValue();                  
+                    $da['shijian']=strtotime(date('Y-m-d'));
+                    if(!empty($da['id']))
+                    {
+                        M('pubdate')->save($da);
+                    }else{
+                        unset($da['id']);
+                        M('pubdate')->add($da);
+                         
+                    }
+                }
+                
+                    
+            }else {
+                for($c=3;$c<=$highestRow;$c++)
+                {
+                    $data['id'] = $objPHPExcel->getActiveSheet()->getCell("A".$c)->getValue();
+                    $data['articlName'] = $objPHPExcel->getActiveSheet()->getCell("B".$c)->getValue();
+                    $data['appSubNub'] = $objPHPExcel->getActiveSheet()->getCell("C".$c)->getValue();
+                    $data['serNub'] = $objPHPExcel->getActiveSheet()->getCell("D".$c)->getValue();
+                    $data['newsNub'] = $objPHPExcel->getActiveSheet()->getCell("E".$c)->getValue();
+                    $data['pageNub'] = $objPHPExcel->getActiveSheet()->getCell("F".$c)->getValue();
+                    $data['shareForwNub'] = $objPHPExcel->getActiveSheet()->getCell("G".$c)->getValue();
+                    $data['micChanNub'] = $objPHPExcel->getActiveSheet()->getCell("H".$c)->getValue();                   
+                    $data['shijian']=strtotime(date('Y-m-d'));
+                    if(!empty($data['id']))
+                    {
+                        M('countdate')->save($data);
+                    }else{
+                        M('countdate')->add($data);
+                         
+                    }
+                     
+                }  
+                
+                
+            }
+           
+            }
+             
+            }
+           
+    
+    
+ 
+    //根据地市查询区县
+    public function pub_area_info(){
+        //通过city查询area
+        $result = array();
+        $city = urldecode(I('city'));
+        $result = M('cityarea_info') -> query("select * from wx_cityarea_info where type=2 and city='".$city."' ;");
+        $this->ajaxReturn($result);
+        //echo json_encode($result);
+    } 
+
+  public function  sudDate()
+  {   
+        $info=M('pub_account')->select();
+        if(!empty($info))
+        {
+            foreach ($info as $v)
+            {                                   
+                $manage = A('Manage');
+                $id=$v['id'];
+                $accessToken = $manage::get_token($id);
+                $queryUrl1='https://api.weixin.qq.com/datacube/getusersummary?access_token='.$accessToken;    
+                $queryUrl2='https://api.weixin.qq.com/datacube/getusercumulate?access_token='.$accessToken;             
+                 $res1=$this->weixinApi($queryUrl1,$n=1);         
+                 $res2=$this->weixinApi($queryUrl2,$n=2);        
+                 $num=count($res2['list'])-1;
+                 $numTwo=count($res2['list'])-2;
+                 $wxTime=$res1['list'][0]['ref_date'];
+                 $time=date("Y-m-d",strtotime("-2 day"));
+                 $lastTime=date("Y-m-d",strtotime("-8 day"));
+                 if($wxTime==$time)
+                 {
+                    $bas['sudNumber']=$v['school_pnum'];
+                    $bas['SerNumber']=$res2['list'][$num]['cumulate_user'];
+                    $atten=$res2['list'][0]['cumulate_user']/$v['school_pnum'];
+                    $bas['AttentNum']=number_format($atten,2);
+                    $bas['newDay']=$res1['list'][0]['new_user'];
+                    $bas['remove']=$res1['list'][0]['cancel_user'];
+                    $bas['NerGrowth']=$res2['list'][$num]['cumulate_user']-$res1['list'][0]['cancel_user'];
+                 }
+
+                $endDate=$res2['list'][0]['ref_date'];
+
+                 if($time==$endDate)
+                 {
+
+                     $cumUser=$res2['list'][0]['cumulate_user'];
+                 }
+                 if($lastTime==$endDate)
+                 {
+
+                     $lastCumuser=$res2['list'][$num]['cumulate_user'];
+                 }
+                $onThe=$bas['NerGrowth']/$res2['list'][$numTwo]['cumulate_user'];    
+                $bas['onTheNet']= number_format($onThe,2);    
+                $week=($lastCumuser-$cumUser)/$cumUser;
+                $bas['weekNum']=number_format($week,2);
+                $bas['mothNum']=number_format($week,2);
+                $bas['shijian']=strtotime($time);
+                $bas['PubName']=$v['nick_name'];
+                $bas['district']=$v['city'].' '.$v['area'];
+               $b=M('pubdate')->add($bas);
+              echo "<pre>";
+              var_dump($bas);die;
+              echo "</pre>";
+            }
+        }
+    
+  
+  }
+  public function weixinApi($queryUrl,$n)
+  {   
+        $time=date("Y-m-d",strtotime("-2 day"));
+        if($n==1)
+        {
+            $lastTime=date("Y-m-d",strtotime("-3 day"));
+        }else{
+            $lastTime=date("Y-m-d",strtotime("-8 day"));
+        }
+        $da='{
+          "begin_date": "%s",
+          "end_date": "%s"
+          }';
+        $da=sprintf($da,$lastTime,$time);
+        $result = new \Org\Util\curl;
+        return $res = $result::callWebServer($queryUrl,$da, 'POST', 1 , 0);    
+
+     
+      
+  }
+  
+  public function excelImport()
+  {
+    if (! empty ( $_FILES ['file_stu'] ['name'] )) 
+    {
+        $tmp_file = $_FILES ['file_stu'] ['tmp_name'];
+        $file_types = explode ( ".", $_FILES ['file_stu'] ['name'] );
+        $file_type = $file_types [count ( $file_types ) - 1];
+
+         /*判别是不是.xls文件，判别是不是excel文件*/
+         if (strtolower ($file_type) != "xlsx")              
+        {
+            $this->error ( '不是Excel文件，重新上传!' );
+        }
+
+        /*设置上传路径*/
+         $savePath = './Uploads/Excel/';
+
+        /*以时间来命名上传的文件*/
+         $str = date ( 'Ymdhis' ); 
+         $file_name = $str . "." . $file_type;
+
+         /*是否上传成功*/
+        if (!copy ($tmp_file, $savePath . $file_name)) 
+        {
+            $this->error ( '上传失败' );
+        }
+
+        /*
+          *对上传的Excel数据进行处理生成编程数据,这个函数会在下面第三步的ExcelToArray类中
+          注意：这里调用执行了第三步类里面的read函数，把Excel转化为数组并返回给$res,再进行数据库写入
+        */
+        // $res = Service ( 'ExcelToArray' )->read ( $savePath . $file_name );
+          $res = read ( $savePath . $file_name );
+
+       /*
+            重要代码 解决Thinkphp M、D方法不能调用的问题   
+            如果在thinkphp中遇到M 、D方法失效时就加入下面一句代码
+        */
+       //spl_autoload_register ( array ('Think', 'autoload' ) );
+
+       /*对生成的数组进行数据库的写入*/
+       foreach ( $res as $k => $v ) 
+       {
+           if ($k != 0) 
+          {
+            $data ['uid'] = $v [0];
+            $data ['password'] = sha1 ( '111111' );
+            $data ['email'] = $v [1];
+            $data ['uname'] = $v [3];
+            $data ['institute'] = $v [4];
+            $result = M ( 'user' )->add ( $data );
+            if (!$result) 
+            {
+                $this->error ( '导入数据库失败' );
+            }
+          }
+       }
+
+    }
+  }
+  
+  
+}
+
+

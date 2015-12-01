@@ -1,0 +1,85 @@
+[ 2015-11-26T09:45:51+08:00 ] ::1 /backup/wxtest/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2015-11-26T09:45:52+08:00 ] ::1 /backup/wxtest/Home/Manage/pub_primary_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `wx_account` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_account` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_account` SET `access_token`=NULL,`token_c_time`='1448502351',`token_e_time`=NULL WHERE ( id=1 ) [ RunTime:0.2106s ]
+SQL: UPDATE `wx_account` SET `preauthcode`=NULL,`preauthcode_c_time`='1448502351',`preauthcode_e_time`=NULL WHERE ( id=1 ) [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `wx_pub_account` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_pub_account` WHERE (  1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0065s ]
+SQL: select id,gname from wx_group where type = 1 order by id; [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_pub_account` WHERE (  1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_pub_account` WHERE (  1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_pub_account` WHERE ( pub_group = 0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wx_cityarea_info` [ RunTime:0.0070s ]
+SQL: select * from wx_cityarea_info where type=1; [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000811s ]
+NOTIC: [8] Undefined variable: pubGroup D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 104 行.
+NOTIC: [8] Undefined variable: primaryCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 106 行.
+NOTIC: [8] Undefined variable: juniorCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 107 行.
+NOTIC: [8] Undefined variable: seniorCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 108 行.
+NOTIC: [8] Undefined variable: kinderCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 109 行.
+NOTIC: [8] Undefined variable: kindersmallCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 110 行.
+NOTIC: [8] Undefined variable: smallCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 111 行.
+NOTIC: [8] Undefined variable: highCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 112 行.
+NOTIC: [8] Undefined variable: kindersCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 113 行.
+NOTIC: [8] Undefined variable: systemCount D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 114 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 174 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 176 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 178 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 179 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 174 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 176 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 178 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 179 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 174 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 176 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 178 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 179 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 196 行.
+NOTIC: [8] Use of undefined constant pub_id - assumed 'pub_id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 235 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\65741df52db7aea56e08d007550f2849.php 第 235 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+

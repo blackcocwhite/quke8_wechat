@@ -1,0 +1,42 @@
+[ 2015-11-11T16:10:37+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:10:55+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:10:58+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:40:02+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:40:05+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/images/img.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:40:21+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008029s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-11T16:40:21+08:00 ] ::1 /backup/wxtest/Application/Home/View/Public/bianjiqi/images/img.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+ERR: 无法加载模块:Application
+

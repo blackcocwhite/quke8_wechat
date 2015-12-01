@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="__PUBLIC__/css/main.css" type="text/css" rel="stylesheet">
+</head>
+<style type="text/css">
+    *{margin:0;padding:0;list-style-type:none;}
+    a,img{border:0;}
+    body{ margin:0 20px;font:14px/180% '微软雅黑 Bold', '微软雅黑';}
+    a{
+        color:#060;
+        text-decoration:none;
+    }
+    a:hover{
+        color:#F30;
+        text-decoration:none;
+    }
+    .header{ width: 100%; height: 40px; background: #E4E4E4; border: 1px solid #dddddd; position: relative; font-size: 14px; margin-top: 10px; margin-bottom: 10px;}
+    .header .header-left{ float:left; width:60%; margin:5px 5px; padding: 0;}  
+	.header .header-left button{ width:120px; height:30px; line-height:30px; background-color:#5ea60f; color:#fff;}
+    .header .header-right{ margin: 5px 0px; padding: 0; position: absolute; left: 450px; top:0px;}
+	.header-right2{float:left; line-height:40px;}
+	.header-right2 input{ width:200px; height:30px; line-height:30px; background-color:#5ea60f; color:#fff;}
+    .header .header-left select{width: 100px; height: 30px; }
+    .header .header-left input.inp{border: 1px solid #dddddd; height:26px; width: 200px; }
+    .header-left .add{ width: 120px; height: 30px;  background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';cursor:pointer;}
+    .fenzu{ width: 120px; height: 30px;  background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';cursor:pointer;}
+	.biaoge{background:#eee; margin:10px auto; padding:5px;}
+	.biaoge select{width: 75px; height: 30px; }
+	.biaoge button{ width:120px; height:30px; line-height:30px; background-color:#5ea60f; color:#fff;}
+
+    /* tabbtn */
+    .tabbtn{height:35px;}
+    .tabbtn li{float:left;position:relative;margin:0; top: 2px; border-left:#eee 1px solid; border-right:#eee 1px solid; border-top:#eee 1px solid;}
+    .tabbtn li a{display:block;float:left;height:33px;line-height:33px;overflow:hidden;width:120px;text-align:center;font-size:14px;cursor:pointer;}
+    .tabbtn li.current a{height:33px;line-height:33px;background:#5ea60f;color:#fff;font-weight:800;}
+    /* tabcon */
+    .tabcon{border:1px #ddd solid;position:relative;/*必要元素*/height:auto;overflow:hidden; width: 100%; height:auto;}
+    .tabcon .subbox{position:absolute;/*必要元素*/left:0;top:0;}
+    .tabcon .sublist{padding:5px 10px;height:auto;}
+    /*表格颜色*/
+    .tdcolor{background: #f4f4f4;}
+    .page{margin-top:20px; position: absolute; left: 380px;}
+    .page ul li{float: left; display: block; width: 40px;}
+    .put1{
+	
+    	opacity:0;filter:alpha(opacity=0);
+    	position: absolute; 
+    	right:456px;
+    	top:8px;
+    	width:95px;
+    	height:20px;
+    	z-index:9;
+    	
+    }
+     .header .header-left  button.select1{position:absolute; right:450px;top:5px;  width: 100px; height: 30px;   background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';}  
+    .header .header-left  button.select2{ position:absolute; right:330px;top:5px;width: 100px; height: 30px;   background: #5ea60f; border: none; color: #fff; font: 14px bold '微软雅黑 Bold', '微软雅黑';}  
+	.text-title td{ padding:0 10px;}
+    
+</style>
+<body>
+<div id='fat'>
+    <div class="sublist" id="sub2">
+        <ul>
+            <div id="u40" class="text-title">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
+                    <tbody id='yuedu'>                  
+                        <tr>
+                            <td width='250' height="30" align="center" valign="middle"><strong>文章标题</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>推送账号数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>推送次数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>送达人数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>阅读人数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>阅读率</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>阅读次数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>原文人数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>原文次数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>转发人数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>转发次数</strong></td>
+                            <td width='40' height="30" align="center" valign="middle"><strong>收藏人数</strong></td>
+                        </tr>
+                        <foreach name='result' item="vo"> 
+                            <tr>
+                                <td width='250' height="30" align="center" valign="middle"><strong>{$vo.title}</strong></td>
+                                <td width='40' align="center" valign="middle">{$vo.count_id}</td>
+                                <td width='40' align="center" valign="middle">{$vo.count_title}</td>
+                                <td width='40' align="center" valign="middle">{$vo.care_num}</td>
+                                <td width='40' align="center" valign="middle">{$vo.int_page_read_user}</td>
+                                <td width='40' align="center" valign="middle"><?php echo round($vo['int_page_read_user']/$vo['care_num'],4)*100;?>&#37;</td><!-阅读率-->
+                                <td width='40' align="center" valign="middle">{$vo.int_page_read_count}</td>
+                                <td width='40' align="center" valign="middle">{$vo.ori_page_read_user}</td>
+                                <td width='40' align="center" valign="middle">{$vo.ori_page_read_count}</td>
+                                <td width='40' align="center" valign="middle">{$vo.share_user}</td>
+                                <td width='40' align="center" valign="middle">{$vo.share_count}</td>
+                                <td width='40' align="center" valign="middle">{$vo.add_to_fav_user}</td>
+                            </tr>
+                        </foreach>
+                        <tr>
+                            <td id='lo' style="border:0;" colspan="7" align="center" valign="middle">{$show}</td>
+                        </tr>                  
+                    </tbody>
+                </table>
+            </div>
+        </ul>
+    </div>
+<!-- </form> -->
+<p id="p2"></p>
+</div>
+<script src="__PUBLIC__/js/jquery1.42.min.js"></script>
+<script src="__PUBLIC__/js/jquery.tabso_yeso.js"></script>
+<script src="__PUBLIC__/js/ajaxfileupload.js"></script>
+<script src="__PUBLIC__/My97DatePicker/WdatePicker.js"></script>
+
+<script>
+    
+        function selectData(id)
+       {
+           //文章标题名称
+           var artitle_title = encodeURI($('#artitle_title').val());//最后一个传
+            if(artitle_title == ""||artitle_title == null)
+               artitle_title = 'artitle_title';
+           //推送账号数
+           var pub_num= encodeURI($("[name=pub_num]").val());
+           //送达人数
+           var care_num= encodeURI($("[name=care_num]").val());
+           //阅读人数
+           var read_num= encodeURI($("[name=read_num]").val());
+           
+
+            $.get("__CONTROLLER__/artitle_query_index/artitle_title/"+artitle_title+"/pub_num/"+pub_num+"/care_num/"+care_num+"/read_num/"+read_num, null, function(html)
+            {
+                $("#u40").empty().html(html);
+            });             
+
+        }  
+
+</script>
+</body>
+</html>

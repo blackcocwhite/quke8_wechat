@@ -1,0 +1,30 @@
+[ 2015-10-22T09:57:20+08:00 ] ::1 /backup/wxtest/caiji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.060294s ]
+ERR: 无法加载模块:Caiji
+
+[ 2015-10-22T09:57:32+08:00 ] ::1 /backup/wxtest/caiji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:Caiji
+
+[ 2015-10-22T09:57:34+08:00 ] ::1 /backup/wxtest/caiji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+ERR: 无法加载模块:Caiji
+
+[ 2015-10-22T09:58:04+08:00 ] ::1 /backup/wxtest/caiji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Caiji
+
+[ 2015-10-22T10:18:33+08:00 ] ::1 /backup/wxtest/caiji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Caiji
+

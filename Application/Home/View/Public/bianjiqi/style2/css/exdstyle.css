@@ -1,0 +1,6 @@
+.skin-1 .ibox-content:last-child {
+    border-style: none;
+}
+.skin-1 .ibox-title, .skin-1 .ibox-content {
+    border-width: 0px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>权限管理</title>
+<link href="main.css" type="text/css" rel="stylesheet">
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="function.js" type="text/javascript"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7">
+</head>
+<body class="warp">
+<div id="artlist">
+	<div class="mod kjnav">
+		<a href="#">添加会员组</a>
+			</div>   	
+</div>
+<div class="cr"></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
+	  <tbody><tr>
+		<td width="70">ID</td>
+		<td width="150">用户组名称</td>
+		<td width="150">价格</td>
+		<td>自义定图文条数</td>
+		<td width="100">请求次数</td>
+		<td width="150">是否显示版权</td>
+		<td width="150">活动创建次数</td>
+		<td width="70">状态</td>
+		<td width="100">管理操作</td>
+	  </tr>
+	    <tr>
+				<td align="center">1</td>
+				<td>vip0</td>
+				<td>0</td>
+				<td>2000</td>
+				<td align="center">2000</td>
+				<td align="center">否</td>
+				<td align="center">0</td>
+				<td align="center"><font color="red">√</font> 
+				</td>
+				<td align="center">
+					<a href="#">修改</a>
+					| <a href="javascript:void(0)" onclick="#">删除</a>	
+                </td>
+			</tr><tr>
+				<td align="center">2</td>
+				<td>VIP1</td>
+				<td>10</td>
+				<td>3000</td>
+				<td align="center">3000</td>
+				<td align="center">是</td>
+				<td align="center">2</td>
+				<td align="center"><font color="red">√</font> 
+				</td>
+				<td align="center">
+					<a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=edit&id=2">修改</a>
+					| <a href="javascript:void(0)" onclick="return confirmurl(&#39;/pigcms/index.php?g=System&amp;m=User_group&amp;a=del&amp;id=2;;&#39;,&#39;确定删除该用户吗?&#39;)">删除</a>				</td>
+			</tr><tr>
+				<td align="center">3</td>
+				<td>vip2</td>
+				<td>150</td>
+				<td>40000</td>
+				<td align="center">40000</td>
+				<td align="center">是</td>
+				<td align="center">4</td>
+				<td align="center"><font color="red">√</font> 
+				</td>
+				<td align="center">
+					<a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=edit&id=3">修改</a>
+					| <a href="javascript:void(0)" onclick="return confirmurl(&#39;/pigcms/index.php?g=System&amp;m=User_group&amp;a=del&amp;id=3;;&#39;,&#39;确定删除该用户吗?&#39;)">删除</a>				</td>
+			</tr><tr>
+				<td align="center">4</td>
+				<td>vip3</td>
+				<td>200</td>
+				<td>50000</td>
+				<td align="center">50000</td>
+				<td align="center">是</td>
+				<td align="center">5</td>
+				<td align="center"><font color="red">√</font> 
+				</td>
+				<td align="center">
+					<a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=edit&id=4">修改</a>
+					| <a href="javascript:void(0)" onclick="return confirmurl(&#39;/pigcms/index.php?g=System&amp;m=User_group&amp;a=del&amp;id=4;;&#39;,&#39;确定删除该用户吗?&#39;)">删除</a>				</td>
+			</tr>     <tr bgcolor="#FFFFFF"> 
+      <td colspan="8"><div class="listpage"> 4 条记录 1/1 页          </div></td>
+	  <td></td>
+    </tr>
+   
+</tbody></table>
+
+<div class="bottom">
+<span><b>选择：</b><a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=index&pid=48&level=3#">全选</a> <a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=index&pid=48&level=3#">反选</a> <a href="http://localhost/pigcms/index.php?g=System&m=User_group&a=index&pid=48&level=3#">不选</a></span>
+<span><b>属性设定：</b><select><option value="">正常</option></select></span>
+<span><b>取消属性：</b><select><option value="">推荐</option></select></span>
+<span><b>批量转移：</b> 由 <select><option value="">栏目名称</option></select> 移动到 <select><option value="">栏目名称2</option></select></span>
+</div>
+
+
+</body></html>

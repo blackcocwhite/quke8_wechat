@@ -1,0 +1,241 @@
+body{
+	background-color: #fafafa;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.viewBox{
+	width: 400px;
+	height: 800px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.viewCon{
+	width: 320px;
+	height: 565px;
+
+	background-color: #fff;
+	word-break: break-all;
+	position: absolute;
+	left: 30px;
+	top: 120px;
+}
+.viewCon img{
+	width: 100%;
+}
+
+i{
+	font-style: normal;
+}
+/*多图文*/
+.appmsg-content{
+	width: 100%;
+	overflow: hidden;
+}
+.over-mark{
+	width: 320px;
+	height: 565px;
+	overflow-y:auto;
+	overflow-x:hidden
+}
+.appmsg-item{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding:10px 0;
+}
+.appmsg-h6{
+	color: #8d8d8d;
+}
+.disget-text{
+	color: #808080;
+	padding: 5px 0;
+	height: 46px;
+	line-height: 23px;
+}
+.padding-10{
+	padding:10px;
+
+}
+.padding-10 .appmsg-thumb{
+	overflow: hidden;
+	width: 100%;
+	height: 160px;
+}
+.appmsg-wrap{
+	position: relative;
+	overflow: hidden;
+}
+.padding-10 .appmsg-thumb img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.appmsg-thumb img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 78px;
+	height: 78px;
+}
+.padding-10 .appmsg-titleh4{
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	background:rgba(0,0,0,0.7);
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	margin:0;
+	z-index: 2;
+	height: 40px;
+	line-height: 24px;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.padding-10 .appmsg-default-suo{
+	width: 100%;
+	height: 160px;
+	background-color: #ececec;
+	color: #ccc2c0;
+	text-align: center;
+	display: block;
+	padding-top: 60px;
+	font-size: 16px;
+}
+.appmsg-default-suo{
+	width: 78px;
+	height: 78px;
+	background-color: #ececec;
+	color: #ccc2c0;
+	text-align: center;
+	display: block;
+	padding-top: 30px;
+	font-size: 16px;
+}
+.appmsg-mark{
+	width: 100%;
+	height: 100%;
+	background: rgba(243,243,243,0.85);
+	position: absolute;
+	top:0;
+	left: 0;
+	text-align: center;
+	padding-top:12%;
+	color: #696666;
+	display: none;
+	z-index: 3;
+	cursor: move;
+}
+.J_move{
+	position: absolute;
+	bottom: 5px;
+	left: 100px;
+	font-size: 12px!important;
+}
+.ui-state-highlight {
+	height: 99px;
+	background: #c6dcef!important;
+	border-color: #428bca!important;
+}
+.padding-10 .appmsg-mark{
+	padding-top: 25%;
+}
+.hover .appmsg-mark{
+	display: block;
+}
+.padding-10 .appmsg-mark{
+	width: 300px;
+	height: 160px;
+	left: 10px;
+	top: 10px;
+}
+.appmsg-mark a{
+	font-size: 20px;
+	text-decoration: none;
+	margin-right: 5px;
+	color: #b2b2b2;
+}
+.appmsg-mark a:hover{
+	color: #373636;
+}
+.appmsg-titleh4{
+	float: left;
+	width:68%;
+	height: 50px;
+	line-height: 21px;
+	overflow: hidden;
+	font-size: 14px;
+	padding:10px 0 10px 10px;
+	color: #8d8d8d;
+}
+.appmsg-thumb{
+	float: left;
+	width: 78px;
+	height: 78px;
+	overflow: hidden;
+	position: relative;
+}
+.has_thumb img{
+	display: block;
+}
+.create-access{
+	width: 300px;
+	padding:25px 10px;
+	text-align: center;
+	border:2px dotted #d9dadc;
+	display: inline-block;
+	margin: 10px;
+	color: #d9dadc;
+	font-size: 20px;
+}
+.create-access:hover{
+	border-color: #b3b3b3;
+	color: #b3b3b3;
+}
+.editorBox{
+    width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+#loginForm .form-control{
+	width: 80%;
+	display: inline-block;
+}
+#loginForm label{
+	width: 80px;
+	text-align: right;
+}
+#captcha{
+	width: 40%!important;
+}
+.check-code{
+	width: 85px;
+	height: 34px;
+	margin: 0 5px;
+}
+.login-signup-forgot-link{
+	font-size: 12px;
+	margin-left: 85px;
+}
+#loginForm{
+	margin-bottom: -35px;
+}
+.modal-footer{
+	text-align: center;
+}
+.item-del{
+	cursor:hand;
+}
+.item-edit{
+	cursor:hand;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>权限管理</title>
+    <link href="__PUBLIC__/css/main.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+</head>
+<body class="warp">
+<div id="artlist">
+    <div class="mod kjnav" style="font-size:16px; font-weight:bold; color:#F60">
+        用户列表
+    </div>
+</div>
+<div class="cr"></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
+    <tbody>
+    <tr>
+        <td width="70">ID</td>
+        <td width="150">角色名称</td>
+        <td width="250">角色描述</td>
+        <td width="250">开启状态</td>
+        <td width="100" align="conter">操作</td>
+    </tr>
+    <foreach name="role" item="vo">
+    <tr>
+        <td align="center">{$vo.id}</td>
+        <td align="center">{$vo.name}</td>
+        <td align="center">{$vo.remark}</td>
+        <td align="center">
+            {$vo['status'] ? '开启' : '关闭'}
+        </td>
+        <td align="center">{$vo['role']['remark']}</td>
+        <td align="center">
+            <a href="{:U('access',array('rid'=>$vo['id']))}">配置权限</a>
+        </td>
+    </tr>
+    </foreach>
+
+    <tr bgcolor="#FFFFFF">
+        <td colspan="2"><button添加用户</td>
+        <td colspan="6">
+            <div class="listpage"> 4 条记录 1/1 页</div>
+        </td>
+
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

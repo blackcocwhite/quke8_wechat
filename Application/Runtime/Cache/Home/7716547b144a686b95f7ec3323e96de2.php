@@ -1,0 +1,185 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<style type="text/css">
+    *{margin:0;padding:0;list-style-type:none;}
+    a,img{border:0;}
+    body{ margin:0 20px;font:14px/180% '微软雅黑 Bold', '微软雅黑';}
+    a{
+	color:#060;
+	text-decoration:none;
+}
+    a:hover{
+	color:#F30;
+	text-decoration:none;
+}
+    .header{ width: 600px; height:auto; font-size: 16px; margin:20px auto; border:1px #ddd solid; padding:20px 50px;}
+	.header input{ border:1px #ccc solid; height:28px;}
+	.tx{margin:20px; line-height:30px; font-size:14px; color:#999;}
+	.bc-2{ float:left;margin:20px 20px; width:100px; height:30px; line-height:30px; text-align:center; font-size:14px; background-color:#f60; color:#fff;}
+	.bc-2:hover{background-color:#f40; cursor:pointer;}
+	.bc-2 a { color:#fff;}
+	.qx{ float:left;margin:20px auto; width:100px; height:30px; line-height:30px; text-align:center; font-size:14px; background-color:#888; color:#fff;}
+	.qx:hover{background-color:#666; cursor:pointer;}
+	.qx a{ color:#fff;}
+	.bc{ margin:20px auto; width:100px; height:30px; line-height:30px; text-align:center; font-size:14px; background-color:#f60; color:#fff;}
+	.bc:hover{background-color:#f40; cursor:pointer;}
+	.bc a { color:#fff;}
+	
+	.header-2{display:none;position:absolute;top:15%;left:35%;width:600px;height:auto;padding:16px;border:2px solid #f60;margin:-32px;background-color:white;z-index:1002;overflow:auto;}
+	.header-2 input{ border:1px #ccc solid; height:28px;}
+	.header-2 .title{ font-size:16px; color:#222;}
+	.xzsc{margin:20px auto; width:450px; height: auto;}
+	.xzsc-1{ float:left; width:160px; height:180px; text-align:center; margin:10px 30px; border:1px #ccc dotted;}
+	.xzsc-1 a{ color:#999;}
+	.xzsc-1 a:hover{ color:#999; text-decoration:underline;}
+	.xzsc-bg{ width:45px; height:45px; margin:0 auto; margin-top:60px; margin-bottom:10px;background:url("/Application/Home/View/Public/images/ico.png") 0 -2960px no-repeat}
+</style>
+    <script language="javascript" type="text/javascript">
+    function moveselect(obj,target,all){
+    if (!all) all=0
+    if (obj!="[object]") obj=eval("document.all."+obj)
+    target=eval("document.all."+target)
+    if (all==0)
+    {
+    while (obj.selectedIndex>-1){
+    //alert(obj.selectedIndex)
+    mot=obj.options[obj.selectedIndex].text
+    mov=obj.options[obj.selectedIndex].value
+    obj.remove(obj.selectedIndex)
+    var newoption=document.createElement("OPTION");
+    newoption.text=mot
+    newoption.value=mov
+    target.add(newoption)
+    }
+    }
+    else
+    {
+    //alert(obj.options.length)
+    for (i=0;i<obj.length;i++)
+    {
+    mot=obj.options[i].text
+    mov=obj.options[i].value
+    var newoption=document.createElement("OPTION");
+    newoption.text=mot
+    newoption.value=mov
+    target.add(newoption)
+    }
+    obj.options.length=0
+    }
+    }
+    function dakai(){
+    document.getElementById('light').style.display='block';
+    //document.getElementById('fade').style.display='block'
+    }
+    function guanbi(){
+    //把右边select的值传到文本框内
+    var yuanGong=document.getElementById("yuanGong")
+    yuanGong.value=""//如果不加这句，则每次选择的结果追加
+    var huoQu=document.getElementById("D2")
+    for(var k=0;k<huoQu.length;k++)
+    yuanGong.value=yuanGong.value + huoQu.options[k].value + " "//" "中间为空格，字符分隔符，可以改成别的
+    document.getElementById('light').style.display='none';
+    //document.getElementById('fade').style.display='none'
+    }
+    </script>
+<body>
+
+<div class="header">
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="35" align="center">&nbsp;</td>
+    <td align="center"><span style="color:#999;">左</span></td>
+    <td align="center"><span style="color:#999;">中</span></td>
+    <td align="center"><span style="color:#999;">右</span></td>
+  </tr>
+  <tr>
+    <td height="45" align="center">一级菜单：</td>
+  <?php if(is_array($button)): foreach($button as $key=>$vo): ?><td align="center"><input name="" type="text" id="yuanGong" onclick="dakai()" value="<?php echo ($vo["name"]); ?>"></td><?php endforeach; endif; ?>
+  <?php
+ $one_count = 3-count($button); for ($i=0;$i<$one_count;$i+=1) { ?>
+           <td align="center"><input name="" type="text" id="yuanGong" onclick="dakai()"></td>
+   <?php
+ } ?>
+  </tr>
+  <tr>
+    <td height="45" align="center" valign="top">二级菜单：</td>
+  <?php if(is_array($button)): foreach($button as $key=>$vo): ?><td align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <?php if(is_array($vo["sub_button"]["list"])): foreach($vo["sub_button"]["list"] as $key=>$vos): ?><tr>
+                    <td height="45" align="center"><input name="input" type="text" value="<?php echo ($vos["name"]); ?>"></td>
+                 </tr><?php endforeach; endif; ?>    
+              <?php
+ $count = 5-count($vo['sub_button']['list']); for ($i=0;$i<$count;$i+=1) { ?>
+                 <tr>
+                    <td height="45" align="center"><input name="input" type="text"></td>
+                 </tr>      
+              <?php  } ?>
+          </table>
+      </td><?php endforeach; endif; ?>
+  <?php
+ $two_count = 3-count($button); for ($i=0;$i<$two_count;$i+=1) { ?>
+        <td align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <?php
+ for ($j=0;$j<5;$j+=1) { ?>
+                    <tr>
+                        <td height="45" align="center"><input name="input" type="text"></td>
+                    </tr>
+                <?php
+ } ?>
+            </table>
+        </td>
+   <?php
+ } ?>
+  </tr>
+  </table>
+  <div class="bc"><a href="#">保存并发布</a></div>
+  <div class="tx"><p>提醒：</p>
+<p>1、可创建最多3个一级菜单，每个一级菜单下可创建最多5个二级菜单。</p>
+<p>2、一级菜单名不多于4个汉字或8个字母；二级菜单不多于8个汉字或16个字母。</p>
+</div>
+</div>
+
+<div id="light" class="header-2">
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="50" class="title" align="center">菜单标题：</td>
+    <td><input name="" type="text"></td>
+    </tr>
+  <tr>
+    <td height="50" class="title" align="center">菜单链接：</td>
+    <td><input type="text" size="60"></td>
+    </tr>
+  </table>
+  <div class="xzsc">
+  	<div class="xzsc-1">
+    	<div class="xzsc-bg"></div>
+    	<p><a href="#" onClick="javascript:window.open('<?php echo U('Menu/menuThree',array('id'=>$id));?>','newwindow','width=1000,height=780, top=100, left=300, toolbar=no, status=no, menubar=no, resizable=no, scrollbars=no, location=no');return false;">从素材库选择</a></p>
+    </div>
+    <div class="xzsc-1">
+   	  <div class="xzsc-bg"></div>
+    	<p><a href="#" onClick="javascript:window.open('<?php echo U('Menu/menuWen');?>','newwindow','width=1000,height=780, top=100, left=300, toolbar=no, status=no, menubar=no, resizable=no, scrollbars=no, location=no');return false;">选择文章</a></p>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+  <div style="margin-left:200px;" class="bc-2"><a href="javascript:void(0)" onclick="guanbi()">确定保存</a></div>
+  <div class="qx"><a onclick="hidediv()" href="javascript:void(0);">取消</a></div>
+  <div style="clear:both"></div>
+  <div class="tx"><p>提醒：</p>
+<p>1、可创建最多3个一级菜单，每个一级菜单下可创建最多5个二级菜单。</p>
+<p>2、一级菜单名不多于4个汉字或8个字母；二级菜单不多于8个汉字或16个字母。</p>
+</div>
+</div>
+
+<script>
+function hidediv(){
+     document.getElementById("light").style.display="none";
+}
+</script>
+</body>
+</html>

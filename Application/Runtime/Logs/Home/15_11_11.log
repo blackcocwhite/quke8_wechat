@@ -1,0 +1,727 @@
+[ 2015-11-11T16:10:27+08:00 ] ::1 /backup/wxtest/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.073950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010347s ]
+
+[ 2015-11-11T16:10:27+08:00 ] ::1 /backup/wxtest/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007281s ]
+
+[ 2015-11-11T16:10:30+08:00 ] ::1 /backup/wxtest/Home/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0946s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','登录','登录','dologin','0.0.0.0','1447229430') [ RunTime:0.0779s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `wx_user` WHERE `user_name` = 'admin' LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `wx_user` SET `user_logtime`='1447229430' WHERE ( id=1 ) [ RunTime:0.0579s ]
+
+[ 2015-11-11T16:10:30+08:00 ] ::1 /backup/wxtest/Home/Login/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+
+[ 2015-11-11T16:10:30+08:00 ] ::1 /backup/wxtest/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2015-11-11T16:10:31+08:00 ] ::1 /backup/wxtest/Home/Manage/pub_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+SQL: SHOW COLUMNS FROM `wx_account` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `wx_account` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0511s ]
+SQL: SELECT * FROM `wx_account` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_account` SET `access_token`=NULL,`token_c_time`='1447229431',`token_e_time`=NULL WHERE ( id=1 ) [ RunTime:0.0318s ]
+SQL: UPDATE `wx_account` SET `preauthcode`=NULL,`preauthcode_c_time`='1447229431',`preauthcode_e_time`=NULL WHERE ( id=1 ) [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `wx_pub_account` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: gid D:\wamp\www\backup\wxtest\Application\Home\Controller\ManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: gid D:\wamp\www\backup\wxtest\Application\Home\Controller\ManageController.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_pub_account` LIMIT 1   [ RunTime:0.0394s ]
+NOTIC: [8] Undefined index: gid D:\wamp\www\backup\wxtest\Application\Home\Controller\ManageController.class.php 第 26 行.
+SQL: SELECT * FROM `wx_pub_account` ORDER BY create_time LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0050s ]
+SQL: select '全部' gname,0 gid ,count(1) groupno  from wx_pub_account union (select IFNULL(b.gname,'待分组') gname,IFNULL(b.id,0) gid,count(1) groupno  from wx_pub_account a left join  (select * from wx_group where type=1) b   on  a.pub_group = b.id group by b.gname order by a.pub_group); [ RunTime:0.0498s ]
+SQL: select id,gname from wx_group where type = 1 order by id; [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_cityarea_info` [ RunTime:0.0041s ]
+SQL: select * from wx_cityarea_info where type=1; [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Use of undefined constant gid - assumed 'gid' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 98 行.
+NOTIC: [8] Use of undefined constant gid - assumed 'gid' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 98 行.
+NOTIC: [8] Use of undefined constant gid - assumed 'gid' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 158 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 159 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 176 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 158 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 159 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 176 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 158 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 159 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 176 行.
+NOTIC: [8] Use of undefined constant pub_id - assumed 'pub_id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 220 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\c618b6a8bf343c6c90dcc71db2f99d53.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2015-11-11T16:10:35+08:00 ] ::1 /backup/wxtest/Home/Material/article_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_article_manage` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select t1.*,t.remark from (select * from wx_article_manage a where a.is_del=0) t1 left join  
+                (select b.user_name,c.remark from wx_user b ,wx_role c,wx_role_user d where b.id=d.user_id and d.role_id=c.id) t  
+            on t1.article_publisher = t.user_name  order by t1.pub_time desc limit 0,20 [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0040s ]
+SQL: select id,gname from wx_group where type = 2 order by id; [ RunTime:0.0003s ]
+SQL: select id,gname from wx_group where type = 3 order by id; [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 150 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2015-11-11T16:10:36+08:00 ] ::1 /backup/wxtest/Home/Material/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0042s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447229436') [ RunTime:0.0376s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001705s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001893s ]
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 474 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 498 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 508 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 521 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 531 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 532 行.
+NOTIC: [8] Undefined variable: root D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 543 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 543 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0647s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0041s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1966 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.214647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.214849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2015-11-11T16:10:37+08:00 ] ::1 /backup/wxtest/Home/Material/images/tuwen/20150301164627_aejum.thumb.180_180_c.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+ERR: 非法操作:images
+
+[ 2015-11-11T16:10:37+08:00 ] ::1 /backup/wxtest/Home/Material/style/css/iframe.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+ERR: 非法操作:style
+
+[ 2015-11-11T16:10:38+08:00 ] ::1 /backup/wxtest/Home/Material/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1447229438339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+ERR: 非法操作:ueditor
+
+[ 2015-11-11T16:10:51+08:00 ] ::1 /backup/wxtest/Home/Material/article_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_article_manage` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select t1.*,t.remark from (select * from wx_article_manage a where a.is_del=0) t1 left join  
+                (select b.user_name,c.remark from wx_user b ,wx_role c,wx_role_user d where b.id=d.user_id and d.role_id=c.id) t  
+            on t1.article_publisher = t.user_name  order by t1.pub_time desc limit 0,20 [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0034s ]
+SQL: select id,gname from wx_group where type = 2 order by id; [ RunTime:0.0003s ]
+SQL: select id,gname from wx_group where type = 3 order by id; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 150 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\a2592b6662e81bd3ff3d9071dd0ec136.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2015-11-11T16:10:54+08:00 ] ::1 /backup/wxtest/Home/Material/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447229453') [ RunTime:0.0692s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001312s ]
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 474 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 498 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 508 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 517 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 521 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 529 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 531 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 532 行.
+NOTIC: [8] Undefined variable: root D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 543 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 543 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1966 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2015-11-11T16:10:55+08:00 ] ::1 /backup/wxtest/Home/Material/images/tuwen/20150301164627_aejum.thumb.180_180_c.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+ERR: 非法操作:images
+
+[ 2015-11-11T16:10:55+08:00 ] ::1 /backup/wxtest/Home/Material/style/css/iframe.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+ERR: 非法操作:style
+
+[ 2015-11-11T16:10:57+08:00 ] ::1 /backup/wxtest/Home/Material/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1447229456356
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+ERR: 非法操作:ueditor
+
+[ 2015-11-11T16:40:01+08:00 ] ::1 /backup/wxtest/Home/Material/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0052s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447231201') [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001348s ]
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 480 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 504 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 515 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 528 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 539 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 541 行.
+NOTIC: [8] Undefined variable: root D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 552 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 552 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0053s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0008s ]
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: link D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1681 行.
+NOTIC: [8] Undefined variable: ma D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1685 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2015-11-11T16:40:03+08:00 ] ::1 /backup/wxtest/Home/Material/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1447231203103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+ERR: 非法操作:ueditor
+
+[ 2015-11-11T16:40:03+08:00 ] ::1 /backup/wxtest/Home/Material/js/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1439172085753
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+ERR: 非法操作:js
+
+[ 2015-11-11T16:40:04+08:00 ] ::1 /backup/wxtest/Home/Material/images/tuwen/20150301164627_aejum.thumb.180_180_c.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+ERR: 非法操作:images
+
+[ 2015-11-11T16:40:19+08:00 ] ::1 /backup/wxtest/Home/Material/publish/pid/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447231219') [ RunTime:0.0315s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `wx_article_manage` WHERE ( id='35' ) LIMIT 1   [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0049s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000703s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0009s ]
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: link D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2015-11-11T16:40:21+08:00 ] ::1 /backup/wxtest/Home/Material/publish/pid/images/tuwen/20150301164627_aejum.thumb.180_180_c.jpeg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0057s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447231221') [ RunTime:0.0189s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `wx_article_manage` WHERE ( id='images' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0059s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001781s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002545s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0064s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0053s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0047s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0013s ]
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: link D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2015-11-11T16:40:22+08:00 ] ::1 /backup/wxtest/Home/Material/publish/pid/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1447231221732
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0048s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447231222') [ RunTime:0.0258s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `wx_article_manage` WHERE ( id='ueditor' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0056s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001637s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0055s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0048s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0048s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0014s ]
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: link D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2015-11-11T16:40:23+08:00 ] ::1 /backup/wxtest/Home/Material/publish/pid/js/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1439172085753
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `wx_opera_log` [ RunTime:0.0071s ]
+SQL: INSERT INTO `wx_opera_log` (`user_name`,`module`,`method`,`operation`,`bak`,`opera_time`) VALUES ('admin','文章管理','发表文章编辑','publish','','1447231222') [ RunTime:0.0279s ]
+SQL: SHOW COLUMNS FROM `wx_article_manage` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `wx_article_manage` WHERE ( id='js' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wx_group` [ RunTime:0.0045s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `gname` FROM `wx_group` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_group` WHERE ( type=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 524 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 536 行.
+SQL: SHOW COLUMNS FROM `wx_wxstyle` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 1 ORDER BY id desc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 2 ORDER BY id desc  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 3 ORDER BY id desc  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 5 ORDER BY id desc  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 4 ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 6 ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 7 ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 8 ORDER BY id desc  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 9 ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 10 ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 11 ORDER BY id desc  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 12 ORDER BY id desc  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 13 ORDER BY id desc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 14 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wx_wxstyle` WHERE `type` = 15 ORDER BY id desc  [ RunTime:0.0011s ]
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [8] Undefined variable: link D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, null given D:\wamp\www\backup\wxtest\Application\Runtime\Cache\Home\7013cb0e56d26c832b94fccff668f55f.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+

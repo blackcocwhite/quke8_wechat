@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel='stylesheet' href='__PUBLIC__/css/styleb.css' media='screen' />
+	<link rel="stylesheet" href='__PUBLIC__/css/lanrenzhijia.css' media="all">
+	<!--<link rel="stylesheet" href="../Public/js/开发包/skin/WdatePicker.css" type="text/css"/>-->
+
+	<script src="__PUBLIC__/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script>
+
+		// 预览
+		jQuery(document).ready(function($) {
+			$('.theme-login-view').click(function(){
+				$('.theme-popover-mask-view').fadeIn(100);
+				$('.theme-popover-view').slideDown(200);
+			})
+			$('.theme-poptit-view .close').click(function(){
+				$('.theme-popover-mask-view').fadeOut(100);
+				$('.theme-popover-view').slideUp(200);
+			})
+
+		})
+
+		// 保存素材
+		jQuery(document).ready(function($) {
+			$('.theme-login-bc').click(function(){
+				$('.theme-popover-mask-bc').fadeIn(100);
+				$('.theme-popover-bc').slideDown(200);
+			})
+			$('.theme-poptit-bc .close').click(function(){
+				$('.theme-popover-mask-bc').fadeOut(100);
+				$('.theme-popover-bc').slideUp(200);
+			})
+
+		})
+
+		// 群发素材
+		jQuery(document).ready(function($) {
+			$('.theme-login-qf').click(function(){
+				$('.theme-popover-mask-qf').fadeIn(100);
+				$('.theme-popover-qf').slideDown(200);
+			})
+			$('.theme-poptit-qf .close').click(function(){
+				$('.qf-li').remove();
+				$('.theme-popover-mask-qf').fadeOut(100);
+				$('.theme-popover-qf').slideUp(200);
+			})
+
+		})
+
+		// 删除
+		jQuery(document).ready(function($) {
+			$('.theme-login-sc').click(function(){
+				$('.theme-popover-mask-sc').fadeIn(100);
+				$('.theme-popover-sc').slideDown(200);
+			})
+			$('.theme-poptit-sc .close').click(function(){
+				$('.theme-popover-mask-sc').fadeOut(100);
+				$('.theme-popover-sc').slideUp(200);
+			})
+
+		})
+	</script>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="__PUBLIC__/js/blocksit.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//blocksit define
+			$(window).load( function() {
+				$('#container').BlocksIt({
+					numOfCol: 4,
+					offsetX: 8,
+					offsetY: 8,
+					blockElement: '.grid'
+				});
+			});
+
+			//window resize
+			var currentWidth = 1200;
+			$(window).resize(function() {
+				var winWidth = $(window).width();
+				var conWidth;
+				if(winWidth < 760) {
+					conWidth = 440;
+					col = 2
+				} else if(winWidth < 880) {
+					conWidth = 760;
+					col = 3
+				} else if(winWidth < 1200) {
+					conWidth = 980;
+					col = 4;
+				} else {
+					conWidth = 1200;
+					col = 5;
+				}
+
+				if(conWidth != currentWidth) {
+					currentWidth = conWidth;
+					$('#container').width(conWidth);
+					$('#container').BlocksIt({
+						numOfCol: col,
+						offsetX: 8,
+						offsetY: 8
+					});
+				}
+			});
+		});
+	</script>
+	<style>
+		.box{ width:500px; margin:0 auto; background:url(__PUBLIC__/images/img.png) no-repeat center 40%;}
+		.left-box{ width:200px; float:left; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		ul{margin: 0;padding: 0;}
+		ul li{ list-style:none; line-height:30px; cursor:pointer; padding:0px 5px;}
+		ul li:hover{ background:#f60; color:#FFF;}
+		.right-box{ width:200px; float:right; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		.clear{ clear:both;}
+		.leftnum{ width:180px; text-align:center; float:left; line-height:30px;}
+		.leftnum p{ line-height:20px;}
+		.rightnum{ width:180px; text-align:center; float:right; line-height:30px;}
+		.rightnum p{ line-height:20px;}
+		.btn{ display:block; width:150px; line-height:30px; background:#F60; color:#FFF; font-size:15px; font-weight:bold; border:none; margin:0 auto; outline:none; cursor:pointer;}
+		.search {height:36px; margin:10px auto}
+		.search select{ width:80px;height:32px;}
+		.search input{ width:160px;height:30px; border:1px #abadb3 solid;}
+		.search button{ width:60px;height:30px; border:1px #abadb3 solid;}
+		.qf-left-box{ width:200px; float:left; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		.qf-right-box{ width:200px; float:right; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
+		.qf-leftnum{ width:180px; text-align:center; float:left; line-height:30px;}
+		.qf-leftnum p{ line-height:20px;}
+		.qf-rightnum{ width:180px; text-align:center; float:right; line-height:30px;}
+		.qf-rightnum p{ line-height:20px;}
+		.alert-info{  position: fixed; top: 50%;  left: 15%; z-index: 10; display: none; box-shadow: 5px 5px 5px #888888;  width: 800px;height: 100px; background: white; padding: 35px;text-align: center; }
+		.alert-info p {margin-top:20px; font-family: 微软雅黑; font-size: 20px;}
+		.qf-info{  position: fixed; top: 50%;  left: 15%; z-index: 10; display: none; box-shadow: 5px 5px 5px #888888;  width: 800px;height: 100px; background: white; padding: 35px;text-align: center; }
+		.qf-info p {margin-top:20px; font-family: 微软雅黑; font-size: 20px;}
+	</style>
+</head>
+<body>
+<div class="alert-info">
+	<p>素材正在保存，保存完毕后会返回结果。请耐心等待不要关闭此页面！</p>
+</div>
+<div class="qf-info">
+	<p>素材正在保存，保存完毕后会返回结果。请耐心等待不要关闭此页面！</p>
+</div>
+<!-- 预览给个人 -->
+<form action='{:U("preview")}' method='post'>
+	<div class="theme-popover-view">
+		<div class="theme-poptit-view">
+			<a href="javascript:;" title="关闭" class="close">×</a>
+			<h3 style=" color:red; font-size:18px; font-weight:bold; text-align:center;">创建素材预览给个人</h3>
+		</div>
+		<div class="theme-popbod-view dform-view">
+			<div class="wx-left">
+				<div class="wx-gongzonghao">
+					<select style="width:235px; height:30px; border:1px #aeaeae solid; padding-left:10px;" name="pres" id="pres">
+
+					</select>
+				</div>
+			</div>
+			<div class="wx-right">
+				<div class="wx-gongzonghao"><input type="text" name="wxname" id="wxname" placeholder="请输入该订阅号中用户openid"></div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="wx-button-view"><input name="提 交" type="submit" value="预 览"> </div>
+		</div>
+	</div>
+</form>
+<!-- 预览给个人 END-->
+
+<!-- 删除 -->
+<div class="theme-popover-sc">
+	<div style="height:60px; line-height:60px;border-bottom:none;" class="theme-poptit-sc">
+		<a href="javascript:;" title="关闭" class="close">×</a>
+		<h3 style=" color:red; font-size:18px; font-weight:bold; text-align:center;">抱歉，只有管理员才可以删除素材，您没有权限！</h3>
+	</div>
+</div>
+<!-- 删除 END-->
+<div><p></p></div>
+
+
+<!-- 保存素材-->
+<div class="theme-popover-bc">
+	<div class="theme-poptit-bc">
+		<a href="javascript:" title="关闭" class="close">×</a>
+		<h3 style=" color:red; font-size:18px; font-weight:bold; text-align:center;">保存素材</h3>
+	</div>
+	<div class="theme-popbod-bc dform-bc">
+		<div class="box">
+			<div class="search">
+				<select id="city" name="city">
+					<option selected value="0">全部</option>
+					<foreach   name='city' item='vo'>
+						<option value="{$vo.city}">{$vo.city}</option>
+					</foreach>
+				</select>
+				<select id="area" name="area">
+					<option selected value="0">全部</option>
+				</select>
+				<select id='pub_group' name="pub_group">
+					<foreach   name='pubGroupId' item='vo'>
+						<option value="{$vo.id}">{$vo.gname}</option>
+					</foreach>
+				</select>
+				<input type="text" id="pub_name" name="pub_name" placeholder="请输入订阅号名称">
+				<button class="select" type="button" onclick="material_search()">查询</button>
+			</div>
+			<div id="pub_box" class="left-box">
+				<ul>
+					<li></li>
+					<foreach name='pub' item='p'>
+						<li><input type='hidden' value='{$p.id}'>{$p.nick_name}</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="right-box">
+				<ul><li></li></ul>
+			</div>
+			<div class="clear"></div>
+			<div class="leftnum">剩余<span></span>个公众号<p><a href="####"><font color="red">选择所有公众号</font></a></p></div>
+			<div class="rightnum">已选择<span></span>个公众号<p><a href="####"><font color="red">取消所有公众号</font></a></p></div>
+			<div style="margin-bottom:10px;" class="clear"></div>
+
+			<a class="btn"  href='javascript:save()'>保存到微信素材库</a>
+		</div>
+
+		<script>
+			$(function(){
+				numLi();//初始化数据
+			});
+
+			//左边全选
+			$('.leftnum a').click(function(){
+				var liIndex = 0;//定义一个变量计算下标，用于把第一个空的li剔除
+				$('.left-box li').each(function(){
+					liIndex ++ ;
+					if(liIndex != 1){
+						var tempHtml = $(this).html();
+						$('.right-box ul li:last').after("<li>" + tempHtml +"</li>");
+						$('.right-box ul li:last input').attr('name','pid');
+						$(this).remove();
+						numLi();
+					}
+				});
+			});
+
+			//右边全选
+			$('.rightnum a').click(function(){
+				var liIndex = 0;//定义一个变量计算下标，用于把第一个空的li剔除
+				$('.right-box li').each(function(){
+					liIndex ++ ;
+					if(liIndex != 1){
+						var tempHtml = $(this).html();
+						$('.left-box ul li:last').after("<li>" + tempHtml +"</li>");
+						$('.left-box ul li:last input').removeAttr('name');
+						$(this).remove();
+						numLi();
+					}
+				});
+			});
+
+			//左边绑定事件
+			$('.left-box ul li').live("click",function(){
+				var tempHtml = $(this).html();
+				$('.right-box ul li:last').after("<li>" + tempHtml +"</li>");
+				$('.right-box ul li:last input').attr('name','pid');
+				$(this).remove();
+				numLi();
+			});
+
+			//右边绑定事件
+			$('.right-box ul li').live("click",function(){
+				var tempHtml = $(this).html();
+				$('.left-box ul li:last').after("<li>" + tempHtml +"</li>");
+				$('.left-box ul li:last input').removeAttr('name');
+				$(this).remove();
+				numLi();
+			});
+
+			//计算两边的公众号个数
+			function numLi(){
+				var leftNum = 0;
+				var rightNum = 0;
+				$('.left-box ul li').each(function(){
+					leftNum ++ ;
+				});
+				$('.right-box ul li').each(function(){
+					rightNum ++ ;
+				});
+
+				//因为一开始便于获取到指定位置，多一个空li，所以减1
+				$('.leftnum span').html(leftNum - 1);
+				$('.rightnum span').html(rightNum - 1);
+			}
+
+		</script>
+	</div>
+</div>
+<!-- 保存素材 END-->
+
+<!-- 群发素材 -->
+<div class="theme-popover-qf">
+	<div class="theme-poptit-qf">
+		<a href="javascript:" title="关闭" class="close">×</a>
+		<h3 style=" color:red; font-size:18px; font-weight:bold; text-align:center;">群发素材</h3>
+	</div>
+	<div class="theme-popbod-qf dform-qf">
+		<div class="box">
+			<div class="search">
+				<select id="city" name="city">
+					<option selected value="0">全部</option>
+					<foreach   name='city' item='vo'>
+						<option value="{$vo.city}">{$vo.city}</option>
+					</foreach>
+				</select>
+				<select id="area" name="area">
+					<option selected value="0">全部</option>
+				</select>
+				<select id='pub_group' name="pub_group">
+					<foreach   name='pubGroupId' item='vo'>
+						<option value="{$vo.id}">{$vo.gname}</option>
+					</foreach>
+				</select>
+				<input type="text" id="pub_name" name="pub_name" placeholder="请输入订阅号名称">
+				<button class="select" type="button" onclick="material_search()">查询</button>
+			</div>
+			<div id="pub_box" class="qf-left-box">
+				<ul class="qf-ul">
+					<li></li>
+				</ul>
+			</div>
+			<div class="qf-right-box">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="qf-leftnum">剩余<span></span>个公众号<p><a href="####"><font color="red">选择所有公众号</font></a></p></div>
+			<div class="qf-rightnum">已选择<span></span>个公众号<p><a href="####"><font color="red">取消所有公众号</font></a></p></div>
+			<div style="margin-bottom:10px;" class="clear"></div>
+
+			<a class="btn"  href='javascript:massall();'>群发到公众号</a>
+
+		</div>
+		<script>
+			$(function(){
+				qfnumLi();//初始化数据
+			});
+
+			//左边全选
+			$('.qf-leftnum a').click(function(){
+				var liIndex = 0;//定义一个变量计算下标，用于把第一个空的li剔除
+				$('.qf-left-box li').each(function(){
+					liIndex ++ ;
+					if(liIndex != 1){
+						var tempHtml = $(this).html();
+						$('.qf-right-box ul li:last').after("<li class='qf-li'>" + tempHtml +"</li>");
+						$('.qf-right-box ul li:last input').attr('name','qf_pid');
+						$(this).remove();
+						qfnumLi();
+					}
+				});
+			});
+
+			//右边全选
+			$('.qf-rightnum a').click(function(){
+				var liIndex = 0;//定义一个变量计算下标，用于把第一个空的li剔除
+				$('.qf-right-box li').each(function(){
+					liIndex ++ ;
+					if(liIndex != 1){
+						var tempHtml = $(this).html();
+						$('.qf-left-box ul li:last').after("<li>" + tempHtml +"</li>");
+						$('.qf-left-box ul li:last input').removeAttr('name');
+						$(this).remove();
+						qfnumLi();
+					}
+				});
+			});
+
+			//左边绑定事件
+			$('.qf-left-box ul li').live("click",function(){
+				var tempHtml = $(this).html();
+				$('.qf-right-box ul li:last').after("<li class='qf-li'>" + tempHtml +"</li>");
+				$('.qf-right-box ul li:last input').attr('name','qf_pid');
+				$(this).remove();
+				qfnumLi();
+			});
+
+			//右边绑定事件
+			$('.qf-right-box ul li').live("click",function(){
+				var tempHtml = $(this).html();
+				$('.qf-left-box ul li:last').after("<li class='qf-li'>" + tempHtml +"</li>");
+				$('.qf-left-box ul li:last input').removeAttr('name');
+				$(this).remove();
+				qfnumLi();
+			});
+
+			//计算两边的公众号个数
+			function qfnumLi(){
+				var qfleftNum = 0;
+				var qfrightNum = 0;
+				$('.qf-left-box ul li').each(function(){
+					qfleftNum ++ ;
+				});
+				$('.qf-left-box ul li').each(function(){
+					qfrightNum ++ ;
+				});
+
+				//因为一开始便于获取到指定位置，多一个空li，所以减1
+				$('.qf-leftnum span').html(qfleftNum - 1);
+				$('.qf-rightnum span').html(qfrightNum - 1);
+			}
+
+		</script>
+	</div>
+</div>
+<!-- 群发素材 END-->
+
+
+<!-- Content -->
+<div id="container">
+	<!-- 循环 Star -->
+	<foreach name='mat_infos' item='mat'>
+		<?php
+            $article = M('article_manage');
+            //$art_infos = $article -> query("select *  from wx_article_manage where id in (".$mat['article_id'].");");
+
+		unset($articles);
+		$pid = explode(',', $mat['article_id']);
+		foreach ($pid as $k => $v) {
+		if($k == 0){
+		$articles[] = $article->where(array('id'=>$v))->find();
+		$articles[$k]['istop'] = 1;
+		}else{
+		$articles[] = $article->where(array('id'=>$v))->find();
+		}
+
+		}
+
+		?>
+		<div class="grid">
+			<form method="post" action='{:U("save_test")}'>
+				<div class="top-time">{$mat.ptime|date='Y-m-d H:i:s',###}</div>
+				<div class="bottom10"></div>
+				<foreach name='articles' item='art'>
+					<if condition='$art.istop eq 1'>
+						<div class="imgholder"><img src="/{$art.fm_url}" />
+							<div class="top-title"></div><span class="title2"><a href="{:U('pview',array('id'=>$art['id']))}" target="_blank">{$art.article_title}</a></span>
+						</div>
+
+						<else />
+						<div class="title-img">
+							<p><a href="{:U('pview',array('id'=>$art['id']))}" target="_blank">{$art.article_title}</a></p>
+							<img src="/{$art.fm_url}" />
+						</div>
+					</if>
+					<input type="hidden" name='aid[]' value='{$aid.id}'>
+				</foreach>
+				<div class="meta2">
+					<span><a class="theme-login-view" href="javascript:preview({$mat.id});">预览给个人</a></span>
+					<span><a class="theme-login-bc" href="javascript:sel_pub({$mat.id});" >保存素材</a></span>
+					<span><a class='qf theme-login-qf' mid="{$mat.id}" href="javascript:qf_pub({$mat.id});">群发素材</a></span>
+					<span class="shanchu"><a class="theme-login-sc" herf="javascript:;">删除</a></span>
+				</div>
+		</div>
+		</form>
+
+	</foreach>
+</div>
+<script type="text/javascript">
+	function save(){
+		$('.theme-popover-bc').hide();
+		$('.alert-info').show();
+
+		var mid = $('#mid').val();
+		var pid = $("[name=pid]");
+		var pub_accounts = '';
+		for(var f = 0;f<pid.length;f++){
+			pub_accounts += pid[f].value+",";
+		}
+		if(pid==""){
+			return false;
+		}else{
+			pub_accounts=pub_accounts.substr(0,pub_accounts.length-1);
+			window.location.href="__URL__/save_m/mid/"+mid+"/pids/"+pub_accounts;
+		}
+	}
+
+	function massall(){
+		$('.theme-popover-qf').hide();
+		$('.qf-info').show();
+		var mid = $('#qf_mid').val();
+		var pid = $("[name=qf_pid]");
+		var pub_accounts = '';
+		for(var f = 0;f<pid.length;f++){
+			pub_accounts += pid[f].value+",";
+		}
+		if(pid==""){
+			return false;
+		}else{
+			pub_accounts=pub_accounts.substr(0,pub_accounts.length-1);
+			window.location.href="__URL__/massall/mid/"+mid+"/pids/"+pub_accounts;
+		}
+	}
+
+	function sel_pub(mid){
+
+		$('.left-box ul li:last').after("<input type='hidden' value='"+mid+"' id='mid' name='mid'>");
+		$('.close').click(function(){
+			$('input').remove('#mid');
+		});
+	}
+
+	function qf_pub(mid){
+
+		$('.qf-left-box ul li:last').after("<input type='hidden' value='"+mid+"' id='qf_mid' name='qf_mid'>");
+		$('.close').click(function(){
+			$('input').remove('#qf_mid');
+		});
+	}
+
+		$('.qf').click(function(){
+			var mid =$(this).attr('mid');
+			$.ajax({
+				cache: true,
+				type: "POST",
+				url:"__CONTROLLER__/massall/mid/"+mid,
+				data:{mid:mid},
+				async: false,
+				error: function(data) {
+					alert("失败");
+				},
+				success: function(data) {
+
+					var obj = eval(data);
+					$.each(obj, function(key,val) {
+						var name= val["nick_name"];
+						var id = val["id"];
+						$('.qf-ul').append("<li class='qf-li'>"+name+"<input type='hidden' value='"+id+"'></li>")
+					});
+				}
+			});
+		});
+
+
+
+//	//update by xuyx，预览给个人
+	function preview(mid){
+		//先查询该素材已经保存给了哪些订阅号
+		$.ajax({
+			url:'__CONTROLLER__/material_to_pub/mid/'+mid,
+			dataType:'json',
+                        error: function(data) {
+                                alert("失败");
+                        },                        
+			success:function(data){
+				$("#pres").empty();
+				var count = data.length;
+				if(count==0)
+					var b="<option value='0'>无可选择公众号，请先保存素材到公账号！</option>";
+
+				for(var i=0;i<count;i++){
+					b+="<option value='"+data[i].id+"'>"+data[i].nick_name+"</option>";
+				}
+				$("#pres").append(b);
+			}
+		});
+
+
+		$('.wx-gongzonghao').after("<input type='hidden' value='"+mid+"' id='mid' name='mid'>");
+		$('.close').click(function(){
+			$('input').remove('#mid');
+		});
+	}
+
+
+	//地市区县关联   by xuyx
+	$('#city').click(function(){
+				$(this).change(function(){
+					var city = encodeURI($("[name=city]").val());
+					$.ajax({
+						url:'__CONTROLLER__/pub_area_info/city/'+city,
+						dataType:'json',
+						success:function(data){
+							$("#area").empty();
+							var count = data.length;
+							var i = 0;
+							var b="<option selected value='0'>全部</option>";
+							for(i=0;i<count;i++){
+								b+="<option value='"+data[i].area+"'>"+data[i].area+"</option>";
+							}
+							$("#area").append(b);
+						}
+					});
+				});
+			}
+	);
+
+	//订阅号查询
+	function material_search(){
+		var city= encodeURI($("[name=city]").val());
+		var area= encodeURI($("[name=area]").val());
+		var pub_group= encodeURI($("[name=pub_group]").val());
+		var pub_name= encodeURI($("[name=pub_name]").val());
+
+		//$.get("__CONTROLLER__/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
+		$.get("__CONTROLLER__/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
+		{
+			$("#pub_box").empty().html(html);
+		});
+
+	}
+
+
+
+</script>
+</body>
+</html>
