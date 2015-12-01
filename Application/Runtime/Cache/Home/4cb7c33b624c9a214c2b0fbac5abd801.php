@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/backup/wxtest/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
 </head>
 <style type="text/css">
     *{margin:0;padding:0;list-style-type:none;}
@@ -57,68 +57,57 @@
 <body>
 <div id="fat">
     <ul class="tabbtn" id="fadetab">
-        <li class="current"><a href="#">订阅号统计</a></li>
-        <li><a href="/backup/wxtest/Home/DataStatistics/indexTwo">素材阅读统计</a></li>
+        <li><a href="/Home/DataStatistics/pub_index">订阅号统计日报表</a></li>
+        <li><a href="/Home/DataStatistics/article_index">文章阅读统计</a></li>
+        <li  class="current"><a href="#">总表</a></li>        
     </ul><!--tabbtn end-->
-
-    <div class="header">
-        <div class="header-left">
-            <input name="sj" type="text" value="<?php echo ($shi); ?>"  onClick="WdatePicker()"  id="date" style="width: 120px; text-align: center;" placeholder="<?php echo date('Y-m-d'); ?>">
-            <select id="city" name="city"> 
-                <option value="">全部</option>      
-                <?php if(is_array($city)): foreach($city as $key=>$vo): if($cs == $vo['city']): ?><option selected='selected' value="<?php echo ($vo["city"]); ?>"><?php echo ($vo["city"]); ?></option>
-                <?php else: ?>            
-                <option value="<?php echo ($vo["city"]); ?>"><?php echo ($vo["city"]); ?></option><?php endif; endforeach; endif; ?>   
-            </select>
-            <select id="area" name="area">
-                <?php if(strlen($qu) > 0): ?><option selected value=""><?php echo ($qu); ?></option>
-                  <?php else: ?> 
-                  <option selected value="">全部</option><?php endif; ?>       
-            </select>
-            <input id="gz" name="gz" class="inp" value="<?php echo ($atName); ?>" type="text" placeholder="请输入公众号名称">
-            <button class="select" type="button" onClick="selectData()">查询</button>
-            <input type="hidden" name="table" value="tablename"/> 
-            <input onChange="imgUrl()" id="put1" class="put1" type="file" name="import"/>      
-            <button   class="select1" type="button">导入CSV</button>
-            <a onClick="daoChu(this)" href="#" ><button class="select2" type="button">导出CSV</button></a>
-        </div>
-    </div>
     <div class="tabcon" id="fadecon">
         <div class="sublist" id="sub1">
             <ul>
                 <div id="u40" class="text-title">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
                         <tbody >                  
-                        <tr id='head'>
-                            <td height="30" align="center" valign="middle"><strong>公众号名称</strong></td>
-                            <td height="30" colspan="2" align="center" valign="middle"><strong>地区</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>学生数</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>关注数</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>关注率</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>日新增</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>取消</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>净增</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>日净增(%)</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>周净增(%)</strong></td>
-                            <td height="30" align="center" valign="middle"><strong>月净增(%)</strong></td>
-                          </tr>
-                       <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>					
-                            <td width="180" height="30" align="center" valign="middle"><strong><?php echo ($v["pubname"]); ?></strong></td>
-                            <td width="30" align="center" valign="middle"><?php echo (strstr($v["district"],' ',true)); ?>市</td>
-                            <td width="30" align="center" valign="middle"><?php echo (strstr($v["district"],' ')); ?></td>
-                            <td width="70" align="center" valign="middle"><?php echo ($v["sudnumber"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["sernumber"]); ?></td>                     
-                            <td width="50" align="center" valign="middle"><?php echo ($v["netgrowth"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["newday"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["remove"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["netgrowth"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["onthenet"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["weeknum"]); ?></td>
-                            <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        <tr>
-                            <td style="border:0;" colspan="12" align="center" valign="middle"><?php echo ($show); ?></td>
-                        </tr>
+                            <tr id='head'>
+                                <td height="30" align="center" valign="middle"><strong>日期</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>订阅号数量</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>总学生数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>平均学生数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>总关注数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>平均关注数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>平均关注率</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>新增关注数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>新增百分比(%)</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>取消关注数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>取消百分比(%)</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>取消关注数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>总阅读数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>新增阅读数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>新增百分比</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>平均阅读数</strong></td>
+                                <td height="40" align="center" valign="middle"><strong>平均阅读率</strong></td>
+                            </tr>
+                           <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>					
+                                    <td width="180" height="30" align="center" valign="middle"><strong><?php echo ($v["pubname"]); ?></strong></td>
+                                    <td width="30" align="center" valign="middle"><?php echo (strstr($v["district"],' ',true)); ?>市</td>
+                                    <td width="30" align="center" valign="middle"><?php echo (strstr($v["district"],' ')); ?></td>
+                                    <td width="70" align="center" valign="middle"><?php echo ($v["sudnumber"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["sernumber"]); ?></td>                     
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["netgrowth"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["newday"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["remove"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["netgrowth"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["onthenet"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["weeknum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                    <td width="50" align="center" valign="middle"><?php echo ($v["mothnum"]); ?></td>
+                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <tr>
+                                <td style="border:0;" colspan="12" align="center" valign="middle"><?php echo ($show); ?></td>
+                            </tr>
                         </tbody>
                     </table> 
                 </div>
@@ -126,18 +115,18 @@
         </div>
     </div>
 
-<p id="p2"></p>
+    <p id="p2"></p>
 </div>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
+<script src="/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
 
 <script>
     
         function index(id){    //user函数名 一定要和action中的第三个参数一致上面有
             var id = id;         
-               $.get('/backup/wxtest/Home/DataStatistics/index', {'p':id,'sj':$('#date').val(),'shi':$("#city").val(),'qu':$('#area').val(),'gz':$('#gz').val()}, function(data){  //用get方法发送信息到UserAction中的user方法
+               $.get('/Home/DataStatistics/index', {'p':id,'sj':$('#date').val(),'shi':$("#city").val(),'qu':$('#area').val(),'gz':$('#gz').val()}, function(data){  //用get方法发送信息到UserAction中的user方法
                 $("#fat").replaceWith("<div  id='fat'>"+data+"</div>"); //user一定要和tpl中的一致
            });
         }
@@ -146,14 +135,14 @@
         function imgUrl()
         {	
              $.ajaxFileUpload({    	   	
-                 url:'/backup/wxtest/Home/DataStatistics/impUser', 
+                 url:'/Home/DataStatistics/impUser', 
                  type:"post",
                  secureuri:false,
                  fileElementId:'put1',
                  dataType: 'text',
                  success: function (data)
                  {
-                    window.location.href="/backup/wxtest/Home/DataStatistics/index";
+                    window.location.href="/Home/DataStatistics/index";
                  }
             }); 
 
@@ -170,40 +159,34 @@
             if(time=='')
             {
                 time=1;   			       			   
-            };
+            }
             if(city=='')
             {    			
                 city=1;
-            };
+            }
             if(area==0||area=='')
             {
                 area=1;
-
             }
             if(gz=='')
             {    			
                 gz=1;
-            };
-
-            dao.href="/backup/wxtest/Home/DataStatistics/index/csv/1/tm/"+time+"/city/"+city+"/area/"+area+"/gz/"+gz; 
-
-
+            }
+            dao.href="/Home/DataStatistics/index/csv/1/tm/"+time+"/city/"+city+"/area/"+area+"/gz/"+gz; 
         }
     
         //订阅号统计查询按钮
          function selectData()
         {		 					 	
             $.ajax({
-            type: "GET",
-            url: "/backup/wxtest/Home/DataStatistics/index",
-            data : {'sj':$('#date').val(),'shi':$("#city").val(),'qu':$('#area').val(),'gz':$('#gz').val()},
-            dataType: "html",
-            success: function(data){
-
-                $("#fat").replaceWith("<div  id='fat'>"+data+"</div>"); //user一定要和tpl中的一致
-            }
+                type: "GET",
+                url: "/Home/DataStatistics/index",
+                data : {'sj':$('#date').val(),'shi':$("#city").val(),'qu':$('#area').val(),'gz':$('#gz').val()},
+                dataType: "html",
+                success: function(data){
+                    $("#fat").replaceWith("<div  id='fat'>"+data+"</div>"); //user一定要和tpl中的一致
+                }
             }); 
-
          }  
  
         //地市区县关联   
@@ -211,7 +194,7 @@
                    $(this).change(function(){
                        var city = encodeURI($("[name=city]").val());
                        $.ajax({
-                           url:'/backup/wxtest/Home/DataStatistics/pub_area_info/city/'+city,
+                           url:'/Home/DataStatistics/pub_area_info/city/'+city,
                            dataType:'json',
                            success:function(data){
                                $("#area").empty();

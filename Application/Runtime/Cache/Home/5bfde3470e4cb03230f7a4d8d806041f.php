@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
 </head>
 <style type="text/css">
     *{margin:0;padding:0;list-style-type:none;}
@@ -47,9 +47,6 @@
     .page ul li{float: left; display: block; width: 40px;}
 </style>
 <body>
-<div class="sublist">
-    <ul>
-        <div id="u40" class="text-title">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
                 <tbody>
                 <tr>
@@ -102,12 +99,9 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
-    </ul>
-</div>
-<script src="/Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
-<script language="javascript" type="text/javascript" src="/Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script language="javascript" type="text/javascript" src="/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
 <script>
     $("#fadetab").tabso({
         cntSelect:"#fadecon",
@@ -148,29 +142,6 @@
     }
     
     //分组查询
-    function groupSearch()
-    {
-        
-        var date = $("[name=pubGroupDate]").val().toString();
-        var dateEnd = $("[name=pubGroupDateEnd]").val().toString();
-        
-        if(date == "" || date == null)
-            date = 0;
-        if(dateEnd == "" || dateEnd == null)
-            dateEnd = 0;        
-        var age = $("[name=pubGroupAge]").val();
-        var pub_class = $("[name=pubClassId]").val();
-        //输入的文章名称
-        var article_name=encodeURI($("[name=articleName]").val());
-
-       // $.get("/Home/Material/group_search/date/" + date +"/date_end/" + dateEnd + "/age/" + age + "/pub_class/" + pub_class+"/article_name/"+article_name, null, function(html)
-        $.get("/Home/Material/group_search/date/" + date +"/date_end/" + dateEnd + "/age/" + age + "/pub_class/" + pub_class+"/article_name/"+article_name, null, function(html)
-        {
-            //alert(html);
-            $("#u40").empty().html(html);
-        });        
-        
-    }
     
 
     //删除

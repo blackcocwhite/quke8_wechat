@@ -237,29 +237,31 @@ class MaterialController extends CommonController{
         //exit;
       }
       $cj=trim($cj);
+      $this->ajaxReturn($cj);
+      
 
-      $str2 = <<< END
+//       $str2 = <<< END
 
 
-        <script type="text/javascript">
-              var ue = UE.getEditor('editor');
-          ue.ready(function() {
-            setTimeout(function(){
-              ue.blur();
-              ue.execCommand('cleardoc');
-              ue.setContent('$cj');  
-            },1000);  
+//         <script type="text/javascript">
+//               var ue = UE.getEditor('editor');
+//           ue.ready(function() {
+//             setTimeout(function(){
+//               ue.blur();
+//               ue.execCommand('cleardoc');
+//               ue.setContent('$cj');  
+//             },1000);  
          
-          });
+//           });
           
-         </script>
-END;
-      $ageClass=M('group')->where("type=2")->select();
-      $class=M('group')->where("type=3")->select();           
-      $this->assign("ageClass",$ageClass);
-      $this->assign("class",$class);  
-      $this->display('publish');
-      echo $str2;
+//          </script>
+// END;
+//       $ageClass=M('group')->where("type=2")->select();
+//       $class=M('group')->where("type=3")->select();           
+//       $this->assign("ageClass",$ageClass);
+//       $this->assign("class",$class);  
+//       $this->display('publish');
+//       echo $str2;
     }
     //素材列表
     public function tuwen(){  
@@ -731,4 +733,19 @@ END;
     $this->ajaxReturn($result);
 
   } 
+  //通过订阅号查询订阅号id
+    public function self_media(){
+        $result = array();
+        $pubName = urldecode(I('pubName'));
+        $result = M('pub_account') -> query("select * from wx_pub_account where nick_name like '%".$pubName."%' ;");
+        if(count($result) > 0)
+            $this->ajaxReturn($result);
+        else
+        {
+            $arr = array ('id'=>0);
+            $this->ajaxReturn($arr);               
+            
+        }
+    }   
+  
 }

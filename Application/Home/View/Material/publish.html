@@ -513,12 +513,10 @@
                             <input value="{$ma.id}" name="txt_id" type="hidden">
 
                             <div class="tuwei-left">
-                                <!--<div class="tuwei-left-test">
-                                <form action="{:U('zhuaqu')}" method="post">
-                                    <input name='caijiurl' type="text" placeholder="必须为微信发表文章URL"><span><button style="width:150px; height:40px; line-height:40px; margin-left:5px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;cursor:pointer;"type="submit">抓取</button></span>
-                                </form>
-                                </div>-->
-                                <div class="tuwei-left-test" style="margin-top:25px;">
+                                <div class="tuwei-left-test">
+                                    <input name='caijiurl' id="caijiurl" type="text" placeholder="必须为微信发表文章URL"><span><button style="width:150px; height:40px; line-height:40px; margin-left:5px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;cursor:pointer;"type="button" id="grab">抓取</button></span>
+                                </div>
+                                <div class="tuwei-left-test">
                                     <select name="article_type" class="sel">
 
                                         <if condition="$ma.article_class GT 0">
@@ -1144,7 +1142,7 @@
                                                         <!--<div class="loginbox" id="tongbu" title="登录到微信"><a href="https://mp.weixin.qq.com" target="_blank">发布</a></div> -->
                                                         <div class="clear-editor" title="清空编辑器内容">清空</div>
                                                         <!--<div id="kefu"><a href="http://www.weixin2010.com" target="_blank" title="编辑器使用帮助">教程</a></div>-->
-                                                        <div id="caiji" title="采集微信文章内容">采集</div>
+                                                        <!-- <div id="caiji" title="采集微信文章内容">采集</div> -->
                                                     </div>
                                                 </div>
                                                 <!--editor2 end-->
@@ -1813,6 +1811,31 @@
             }
         });
     }
+
+    $('#grab').click(function(){
+        var caijiurl = $('#caijiurl').val();
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url:"__CONTROLLER__/zhuaqu",
+            data:{caijiurl:caijiurl},
+            async: false,
+            success:function(data){
+                var ue = UE.getEditor('editor');
+                ue.ready(function() {
+                    setTimeout(function(){
+                        ue.blur();
+                        ue.execCommand('cleardoc');
+                        ue.setContent(data);
+                    },1000);
+
+                });
+            },
+            error: function(err){
+                alert("错误");
+            }
+        });
+    });
 
 
 </script>

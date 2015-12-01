@@ -15,7 +15,7 @@ return array(
     'DB_TYPE' => 'mysql',
     'DB_NAME' => 'wxtest',
     'DB_USER' => 'root',
-    'DB_PWD'  => '',
+    'DB_PWD'  => 'xxx333',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'wx_',
 

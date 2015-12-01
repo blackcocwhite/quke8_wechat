@@ -1,0 +1,18 @@
+[ 2015-11-25T09:34:51+08:00 ] 121.42.0.18 /admin/ecshopfiles.md5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+ERR: 无法加载控制器:Ecshopfiles.md5
+
+[ 2015-11-25T09:34:52+08:00 ] 121.42.0.18 /admin/help/zh_cn/database.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载控制器:Help
+

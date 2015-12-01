@@ -1,0 +1,174 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>汉字英雄热身赛</title>
+<link rel="stylesheet" type="text/css" href="__GAME__/css/index.css">
+</head>
+
+<body>
+
+	<div class="contain">
+		<div class="ad">
+    	<img src="__GAME__/images/datiye480_01.jpg">
+    	</div>
+    	<div class="fs">
+   		    <div class="ad-left">
+            	<div class="ad-left-m" id="second_show">30</div>
+                <div class="ad-left-f">{$point_count}</div>
+            </div>
+            <div class="ad-right"><img src="__GAME__/images/datiye480_03.jpg"></div>
+            <div class="clear"></div>
+    	</div>
+	</div>
+    
+    <div class="timu" id="questionid" >{$result.id}</div>
+    <div class="content">
+    	<div class="content-t" id="headline">“{$result.headline}”</div>
+        <div class="content-m" id="subtitle">{$result.subtitle}</div>
+        <div class="content-an" id="answerA" anid="{$result.answera}">A.{$result.answera}</div>
+        <div class="content-an" id="answerB" bnid="{$result.answerb}">B.{$result.answerb}</div>
+        <div class="mb-100"></div>
+        <input type="hidden" id="rid"  value="{$result.answer}">
+    </div>
+
+    <!--答题解析-->
+    <div class="content" style="display:none">
+        <div class="content-t">大侠请再接再励</div>
+        <div class="content-j">便（bian）宜行事</div>
+        <div class="content-x">— — 根据绝世秘籍《成语密码》详解</div>
+        <div class="content-x"><img src="images/xiayiti.png" width="190" height="57"></div>
+        <div class="content-x"><img src="images/dtjs.png" width="190" height="57"></div>
+        <div class="mb-100"></div>
+    </div>
+    <div id="analy">{$result.analy}</div>
+    <input type="hidden" id="uid" userid="{$userid}">
+    <!--<div>-->
+        <!--{$result.answer}正确答案-->
+    <!--</div>-->
+    <!--<div>-->
+       <!--解析：{$result.analy}-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--{$userid}。。。{:U('Game/dati')}-->
+    <!--</div>-->
+
+<!--<footer>
+	<div class="foot act">
+    	<img src="images/foot/ft_1_1.png">
+        <p>推荐</p>
+    </div>
+	<div class="foot">
+    	<img src="images/foot/ft_2.png">
+        <p>目的地</p>
+    </div>
+	<div class="foot">
+    	<img src="images/foot/ft_3.png">
+        <p>帖子</p>
+    </div>
+	<a href="person/person.html"><div class="foot">
+    	<img src="images/foot/ft_4.png">
+        <p>我的</p>
+    </div></a>
+</footer>-->    
+
+
+<script src="__GAME__/js/jquery-1.11.2.min.js"></script>
+<script src="__GAME__/js/time.js"></script>
+    <script>
+
+    //    倒计时
+
+    var intDiff = parseInt(30);
+
+    function timer(intDiff){
+        window.setInterval(function(){
+            var second=0;
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff);
+            }
+            if (second <= 9) second = '0' + second;
+            $('#second_show').html('<s></s>'+second);intDiff--;}, 1000);
+    }
+
+    $(function(){
+        $("#answerA").on("click",function(){
+            var answerA= $(this).attr('anid');
+            var rightId= $('#rid').val();
+            var userId= $('#uid').attr('userid');
+            var questionId= $('#questionid').html();
+            if(answerA==rightId){
+                var selectId = 1;
+                $.ajax({
+                    cache: true,
+                    type: 'POST',
+                    url: '__CONTROLLER__/ajaxDati',//1正确，0错误
+                    ///userid/' + userId + '/questionid/' + questionId + '/selectid/' + selectId
+                    data:{userid:userId,questionid:questionId,selectid:selectId},
+                    async: false,
+                    success: function (data) {
+                        var obj = eval(data);
+                        $.each(obj, function(key,val) {
+                            var id = val["id"];
+                            var headline = val["“"+"headline"+"”"];
+                            var subtitle = val["subtitle"];
+                            var answera = val["answera"];
+                            var answerb = val["answerb"];
+                            var answer = val["answer"];
+                            var analy = val["analy"];
+                            $('#questionid').html(id);
+                            $('#headline').html(headline);
+                            $('#subtitle').html(subtitle);
+                            $('#answerA').html('A.'+ answera);
+                            $('#answerB').html('B.'+ answerb);
+                            $('#rid').val(answer);
+                            $('analy').html(analy);
+                            var intDiff = parseInt(30);
+                        });
+                    },
+                    error: function(request) {
+                        alert("修改失败11"+request);
+
+                    }
+                });
+            }else{
+                var selectId = 0;
+                $.ajax({
+                    url: '__CONTROLLER__/ajaxDati/userid/' + userId + '/questionid/' + questionId + '/selectid/' + 0,//1正确，0错误
+                    dataType: 'json',
+                    success: function (data) {
+
+                    }
+                    ,error: function(request) {
+                        alert("修改失败2");
+                    }
+                });
+            }
+
+        });
+        $('#answerB').click(function(){
+            var answerB= $(this).attr('bnid');
+            var rightId= $('#rid').attr('rightid');
+            if(answerB==rightId){
+                alert('回答正确');
+            }else{
+                alert('回答错误');
+            }
+
+        });
+
+//        倒计时方法执行
+        timer(intDiff);
+    });
+
+
+
+
+</script>
+</body>
+</html>

@@ -10,18 +10,18 @@
     <meta name="copyright" content="2010">
     <link href="favicon.ico" rel="SHORTCUT ICON">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <link href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/common.css" type="text/css" rel="stylesheet">
-    <link href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/index.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/editor-min.css" type="text/css">
-    <link href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/jquery-1.10.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/guoyoo.css">
-    <link rel="stylesheet" type="text/css" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/jquery.jgrowl.css">
+    <link href="/./Application/Home/View/Public/bianjiqi/style/css/common.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/bianjiqi/style/css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/./Application/Home/View/Public/bianjiqi/style/css/editor-min.css" type="text/css">
+    <link href="/./Application/Home/View/Public/bianjiqi/style/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/./Application/Home/View/Public/bianjiqi/style/js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/./Application/Home/View/Public/bianjiqi/style/css/guoyoo.css">
+    <link rel="stylesheet" type="text/css" href="/./Application/Home/View/Public/bianjiqi/style/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/./Application/Home/View/Public/bianjiqi/style/css/jquery.jgrowl.css">
     <!--[if lt IE 9]>
     <script src="style/js/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" charset="utf-8" src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/./Application/Home/View/Public/bianjiqi/style/js/bootstrap.min.js"></script>
     <script>
         var BASEURL = "";
         var current_editor;
@@ -96,9 +96,9 @@
         width: 800px;
         height: 400px;
     }</style>
-    <link href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/ueditor.css" type="text/css" rel="stylesheet">
-    <script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/codemirror.js" type="text/javascript" defer></script>
-    <link rel="stylesheet" type="text/css" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/codemirror.css">
+    <link href="/./Application/Home/View/Public/bianjiqi/style/css/ueditor.css" type="text/css" rel="stylesheet">
+    <script src="/./Application/Home/View/Public/bianjiqi/style/js/codemirror.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="/./Application/Home/View/Public/bianjiqi/style/css/codemirror.css">
 
     <style type="text/css">
         * {
@@ -484,9 +484,9 @@
 </head>
 
 <body>
-<?php if($ma["id"] > 0): ?><form id="form" action="/backup/wxtest/Home/Material/modify" enctype="multipart/form-data" method="post">
+<?php if($ma["id"] > 0): ?><form id="form" action="/Home/Material/modify" enctype="multipart/form-data" method="post">
         <?php else: ?>
-        <form id="form" action="/backup/wxtest/Home/Material/publish" enctype="multipart/form-data" method="post"><?php endif; ?>
+        <form id="form" action="/Home/Material/publish" enctype="multipart/form-data" method="post"><?php endif; ?>
 
 <div class="all">
     <div class="all-right">
@@ -511,12 +511,10 @@
                             <input value="<?php echo ($ma["id"]); ?>" name="txt_id" type="hidden">
 
                             <div class="tuwei-left">
-                                <!--<div class="tuwei-left-test">
-                                <form action="<?php echo U('zhuaqu');?>" method="post">
-                                    <input name='caijiurl' type="text" placeholder="必须为微信发表文章URL"><span><button style="width:150px; height:40px; line-height:40px; margin-left:5px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;cursor:pointer;"type="submit">抓取</button></span>
-                                </form>
-                                </div>-->
-                                <div class="tuwei-left-test" style="margin-top:25px;">
+                                <div class="tuwei-left-test">
+                                    <input name='caijiurl' id="caijiurl" type="text" placeholder="必须为微信发表文章URL"><span><button style="width:150px; height:40px; line-height:40px; margin-left:5px; background:#5ea60f; color:#fff; font-size:14px; font-weight:bold; text-align:center;cursor:pointer;"type="button" id="grab">抓取</button></span>
+                                </div>
+                                <div class="tuwei-left-test">
                                     <select name="article_type" class="sel">
 
                                         <?php if($ma["article_class"] > 0): ?><option selected="selected" value="<?php echo ($ma["article_class"]); ?>">
@@ -580,43 +578,43 @@
                                                 <div class="n1">分类</div>
                                                 <ul class="n1-1" style="height: 280px;">
                                                     <li id="guanzhu-tpl-trigger" class="active"><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-guanzhu" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-guanzhu" role="tab"
                                                             data-toggle="tab" aria-expanded="true"> 顶关注 </a></li>
                                                     <li id="title-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-title" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-title" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 标题 </a></li>
                                                     <li id="body-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-body" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-body" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 卡片 </a></li>
                                                     <li id="img-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-img" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-img" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 分割线 </a></li>
                                                     <li id="hutui-tpl-trigger"><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-hutui" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-hutui" role="tab"
                                                             data-toggle="tab"> 互推账号 </a></li>
                                                     <li id="yuanwen-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-yuanwen" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-yuanwen" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 底提示 </a></li>
                                                     <li id="backg-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-backg" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-backg" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 背景 </a></li>
                                                     <li id="pic-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-pic" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-pic" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 图文图片 </a></li>
                                                     <li id="fuhao-tpl-trigger"><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-fuhao" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-fuhao" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> iconfont </a></li>
                                                     <li id="video-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-video" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-video" role="tab"
                                                             data-toggle="tab" aria-expanded="false"> 音视频 </a></li>
                                                     <li id="mb-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-mb" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-mb" role="tab"
                                                             data-toggle="tab"> 模板 </a></li>
                                                     <li id="zan-tpl-trigger" class=""><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-zan" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-zan" role="tab"
                                                             data-toggle="tab">点赞分享</a></li>
                                                     <li id="sucai-tpl-trigger"><a
-                                                            href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#style-sucai" role="tab"
+                                                            href="/./Application/Home/View/Public/bianjiqi/#style-sucai" role="tab"
                                                             data-toggle="tab">素材+节日</a></li>
 
 
@@ -964,7 +962,7 @@
                                                         <!--<div class="loginbox" id="tongbu" title="登录到微信"><a href="https://mp.weixin.qq.com" target="_blank">发布</a></div> -->
                                                         <div class="clear-editor" title="清空编辑器内容">清空</div>
                                                         <!--<div id="kefu"><a href="http://www.weixin2010.com" target="_blank" title="编辑器使用帮助">教程</a></div>-->
-                                                        <div id="caiji" title="采集微信文章内容">采集</div>
+                                                        <!-- <div id="caiji" title="采集微信文章内容">采集</div> -->
                                                     </div>
                                                 </div>
                                                 <!--editor2 end-->
@@ -1072,7 +1070,7 @@
                                                                     style="border-width: 0px;"><br></p>
                                                                 <section data-id="685" class="v3editor"><p
                                                                         style="border-width: 0px;">&nbsp; &nbsp;<img
-                                                                        src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/z9433rAGTDfiaaFED4iaX8CS6OIzViaEWFdYHqxw1jAtyo5296wzicjyFWsricb7jd6uRbdNdTZOFcIqveC0ISpbClg/0?wx_fmt=gif"
+                                                                        src="/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/z9433rAGTDfiaaFED4iaX8CS6OIzViaEWFdYHqxw1jAtyo5296wzicjyFWsricb7jd6uRbdNdTZOFcIqveC0ISpbClg/0?wx_fmt=gif"
                                                                         style="border-radius: 4px; max-width: 100%; padding: 4px; border-width: 0px; background-color: rgb(255, 255, 255);">
                                                                 </p></section>
                                                                 <p style="border-width: 0px;"><br></p>
@@ -1088,7 +1086,7 @@
                                                                                 class="" data-type="gif"
                                                                                 data-ratio="0.8571428571428571"
                                                                                 data-w="7" _width="7px"
-                                                                                src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/SlzGSgJicOCyyFCCia7KrgN9uruqH8dB461o9ZgmIVbOdRSicIpLRPBuciaGl0YKedcIfpXGI9TEia3a14TFWdLNrgQ/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1"
+                                                                                src="/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/SlzGSgJicOCyyFCCia7KrgN9uruqH8dB461o9ZgmIVbOdRSicIpLRPBuciaGl0YKedcIfpXGI9TEia3a14TFWdLNrgQ/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1"
                                                                                 data-width="7px"></span>
                                                                         <section class="v3brush"
                                                                                  style="max-width: 100%; padding: 16px; width: 560px; font-size: 14px; line-height: 1.4; border-width: 0px; box-sizing: border-box !important; word-wrap: break-word !important;"
@@ -1328,7 +1326,7 @@
                                                         <div id="previews"><p style="border-width: 0px;"><br></p>
                                                             <section data-id="685" class="v3editor"><p
                                                                     style="border-width: 0px;">&nbsp; &nbsp;<img
-                                                                    src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/z9433rAGTDfiaaFED4iaX8CS6OIzViaEWFdYHqxw1jAtyo5296wzicjyFWsricb7jd6uRbdNdTZOFcIqveC0ISpbClg/0?wx_fmt=gif"
+                                                                    src="/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/z9433rAGTDfiaaFED4iaX8CS6OIzViaEWFdYHqxw1jAtyo5296wzicjyFWsricb7jd6uRbdNdTZOFcIqveC0ISpbClg/0?wx_fmt=gif"
                                                                     style="border-radius: 4px; max-width: 100%; padding: 4px; border-width: 0px; background-color: rgb(255, 255, 255);">
                                                             </p></section>
                                                             <p style="border-width: 0px;"><br></p>
@@ -1344,7 +1342,7 @@
                                                                             class="" data-type="gif"
                                                                             data-ratio="0.8571428571428571" data-w="7"
                                                                             _width="7px"
-                                                                            src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/SlzGSgJicOCyyFCCia7KrgN9uruqH8dB461o9ZgmIVbOdRSicIpLRPBuciaGl0YKedcIfpXGI9TEia3a14TFWdLNrgQ/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1"
+                                                                            src="/./Application/Home/View/Public/bianjiqi/https://mmbiz.qlogo.cn/mmbiz/SlzGSgJicOCyyFCCia7KrgN9uruqH8dB461o9ZgmIVbOdRSicIpLRPBuciaGl0YKedcIfpXGI9TEia3a14TFWdLNrgQ/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1"
                                                                             data-width="7px"></span>
                                                                     <section class="v3brush"
                                                                              style="max-width: 100%; padding: 16px; width: 560px; font-size: 14px; line-height: 1.4; border-width: 0px; box-sizing: border-box !important; word-wrap: break-word !important;"
@@ -1383,26 +1381,26 @@
                                 <!-- /.modal -->
                                 <!--adend-->
                                 <script type="text/javascript"
-                                        src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/ueditor/ueditor.config.js"></script>
+                                        src="/./Application/Home/View/Public/bianjiqi/ueditor/ueditor.config.js"></script>
                                 <script type="text/javascript"
-                                        src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/ueditor/ueditor.all.min.js"></script>
-                                <script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/gjs02.js" type="text/javascript"></script>
-                                <script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/jquery.Jcrop.js"></script>
-                                <link rel="stylesheet" href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/css/jquery.Jcrop.css"
+                                        src="/./Application/Home/View/Public/bianjiqi/ueditor/ueditor.all.min.js"></script>
+                                <script src="/./Application/Home/View/Public/bianjiqi/style/js/gjs02.js" type="text/javascript"></script>
+                                <script src="/./Application/Home/View/Public/bianjiqi/style/js/jquery.Jcrop.js"></script>
+                                <link rel="stylesheet" href="/./Application/Home/View/Public/bianjiqi/style/css/jquery.Jcrop.css"
                                       type="text/css">
 
                                 <!--[if lt IE 9]>
                                 <script src="style/js/html6.js"></script>
                                 <![endif]-->
-                                <script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/gjs01.js" type="text/javascript"></script>
+                                <script src="/./Application/Home/View/Public/bianjiqi/style/js/gjs01.js" type="text/javascript"></script>
                                 <script type="text/javascript"
-                                        src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/less-1.7.0.min.js"></script>
+                                        src="/./Application/Home/View/Public/bianjiqi/style/js/less-1.7.0.min.js"></script>
                                 <script type="text/javascript"
-                                        src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/ZeroClipboard.min.js"></script>
+                                        src="/./Application/Home/View/Public/bianjiqi/style/js/ZeroClipboard.min.js"></script>
                                 <script>
                                     //$('#myad').modal('show');
                                     $('#loginModal').modal('show');</script>
-                                <script type="text/javascript" src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/style/js/instoo.js"></script>
+                                <script type="text/javascript" src="/./Application/Home/View/Public/bianjiqi/style/js/instoo.js"></script>
                                 <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container"
                                      style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;">
                                     <object id="global-zeroclipboard-flash-bridge"
@@ -1490,7 +1488,7 @@
                         <div class="tuwei" id="alist">
                             <div class="content-font">
                                 <div class="content-img"><input style=" cursor:pointer;" type="file">
-                                    <img src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/images/img.jpg"><br>（大小: 不超过2M, 格式: bmp, png, jpeg,
+                                    <img src="/./Application/Home/View/Public/bianjiqi/images/img.jpg"><br>（大小: 不超过2M, 格式: bmp, png, jpeg,
                                     jpg, gif）
                                 </div>
                             </div>
@@ -1516,7 +1514,7 @@
                         <div class="tuwei" id="alist">
                             <div class="content-font">
                                 <div class="content-img"><input style=" cursor:pointer;" type="file">
-                                    <img src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/images/music.jpg"><br>（大小: 不超过2M, 格式: bmp, png, jpeg,
+                                    <img src="/./Application/Home/View/Public/bianjiqi/images/music.jpg"><br>（大小: 不超过2M, 格式: bmp, png, jpeg,
                                     jpg, gif）
                                 </div>
                             </div>
@@ -1553,7 +1551,7 @@
 
                                         <p style="width:420px; height:320px; margin-top:30px; border:1px #ddd solid;">
                                             <input style=" cursor:pointer;" type="file">
-                                            <img src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/images/media.jpg"></p>
+                                            <img src="/./Application/Home/View/Public/bianjiqi/images/media.jpg"></p>
                                     </div>
                                 </div>
                             </div>
@@ -1579,12 +1577,12 @@
 </form>
 <div id="zeroClipBoard-helper" class="hidden"></div>
 
-<a href="/backup/wxtest/./Application/Home/View/Public/bianjiqi/#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
+<a href="/./Application/Home/View/Public/bianjiqi/#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
 
-<script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/bianjiqi/js/jquery.tabso_yeso.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/uploadPreview.js"></script>
+<script src="/./Application/Home/View/Public/bianjiqi/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/bianjiqi/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
+<script src="/./Application/Home/View/Public/js/uploadPreview.js"></script>
 <script>
 
 
@@ -1609,7 +1607,7 @@
 
         }
         $.ajaxFileUpload({
-            url: '/backup/wxtest/Home/Material/uploads',
+            url: '/Home/Material/uploads',
             type: "post",
             secureuri: false,
             fileElementId: 'fiUrl',
@@ -1632,6 +1630,31 @@
             }
         });
     }
+
+    $('#grab').click(function(){
+        var caijiurl = $('#caijiurl').val();
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url:"/Home/Material/zhuaqu",
+            data:{caijiurl:caijiurl},
+            async: false,
+            success:function(data){
+                var ue = UE.getEditor('editor');
+                ue.ready(function() {
+                    setTimeout(function(){
+                        ue.blur();
+                        ue.execCommand('cleardoc');
+                        ue.setContent(data);
+                    },1000);
+
+                });
+            },
+            error: function(err){
+                alert("错误");
+            }
+        });
+    });
 
 
 </script>

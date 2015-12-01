@@ -174,26 +174,26 @@ current_editor.ready(function(){
 	setTimeout(function(){
 			current_editor.execCommand( 'focus' );
 			var editor_document = current_editor.selection.document;
-			if( window.localStorage){ // 本地临时存储编辑器内容
-				if(typeof window.localStorage._v3content != "undefined"){
-					//alert(window.localStorage._v3content);
-					if(isnew=="new"){
-						setEditorHtml("");
-					}else{
-					    setEditorHtml(window.localStorage._v3content);
-					}
-					$(editor_document).find('.v3editor').each(function(){
-						//$(this).removeAttr('style');
-						$(this).css({'border':'0 none','padding':'0'});
-					});
-				}
-				if(typeof window.localStorage._edit_msg_id != "undefined"){
-					current_edit_msg_id = window.localStorage._edit_msg_id;
-				}
-				setInterval(function(){
-					window.localStorage._v3content = getEditorHtml();
-				},10000);			
-			}
+			// if( window.localStorage){ // 本地临时存储编辑器内容
+			// 	if(typeof window.localStorage._v3content != "undefined"){
+			// 		//alert(window.localStorage._v3content);
+			// 		if(isnew=="new"){
+			// 			setEditorHtml("");
+			// 		}else{
+			// 		    setEditorHtml(window.localStorage._v3content);
+			// 		}
+			// 		$(editor_document).find('.v3editor').each(function(){
+			// 			//$(this).removeAttr('style');
+			// 			$(this).css({'border':'0 none','padding':'0'});
+			// 		});
+			// 	}
+			// 	if(typeof window.localStorage._edit_msg_id != "undefined"){
+			// 		current_edit_msg_id = window.localStorage._edit_msg_id;
+			// 	}
+			// 	setInterval(function(){
+			// 		window.localStorage._v3content = getEditorHtml();
+			// 	},10000);			
+			// }
 	},100);
     current_editor.addListener('contentChange', function () {
             $("#preview").html(current_editor.getContent());

@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/backup/wxtest/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
 </head>
 <style type="text/css">
     *{margin:0;padding:0;list-style-type:none;}
@@ -104,6 +104,13 @@
         <button type="button" style="cursor:pointer;" onclick="batchGroup()"><span style="color:#fff;">+创建素材</span></a></button>
         <span>(注意：创建素材最多勾选8条文章)</span>
         <button type="button" style="cursor:pointer;"><a href="<?php echo U('publish');?>"><span style="color:#fff;">发表文章</span></a></button>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">自媒体：</span>
+        <input type="text" placeholder="请输入订阅号名称" id="pubName" name="pubName">
+        <button class="select" type="submit" onclick="selfMedia()">确定</button>
+        <button id="selfButton" name="selfButton" type="button" hidden="true" style="cursor:pointer;"></button>        
     </div>
 
     <!-- <div class="header-right">
@@ -157,8 +164,8 @@
                             <td align="center" valign="middle">暂无数据</td>
                             <td align="center" valign="middle">暂无数据</td>
                             <td width="50" align="center" valign="middle">
-                            <a href="/backup/wxtest/Home/Material/publish/pid/<?php echo ($vo["id"]); ?>">编辑</a></td>
-                            <td width="50" align="center" valign="middle"><a target='_blank'  href="/backup/wxtest/Home/Material/pview/id/<?php echo ($vo["id"]); ?>">预览</a></td>
+                            <a href="/Home/Material/publish/pid/<?php echo ($vo["id"]); ?>">编辑</a></td>
+                            <td width="50" align="center" valign="middle"><a target='_blank'  href="/Home/Material/pview/id/<?php echo ($vo["id"]); ?>">预览</a></td>
                             <td width="50" align="center" valign="middle"><a href="javascript:;" onClick="delcfm(<?php echo ($vo["id"]); ?>)">删除</a></td>
                         </tr><?php endforeach; endif; ?>
 
@@ -171,9 +178,9 @@
         </ul>
     </div>
 </div>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
-<script language="javascript" type="text/javascript" src="/backup/wxtest/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script language="javascript" type="text/javascript" src="/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
 <script>
     $("#fadetab").tabso({
         cntSelect:"#fadecon",
@@ -209,7 +216,7 @@
        	    return false;       	
         	}else{
                     article_id=article_id.substr(0,article_id.length-1);                     
-                    window.location.href="/backup/wxtest/Home/Material/create_material/aids/"+article_id;
+                    window.location.href="/Home/Material/create_material/aids/"+article_id;
             }
     }
     
@@ -232,7 +239,7 @@
             article_name = "article_name";
 
         //$.get("http://localhost:8080/wx/Home/Material/group_search/date/" + date +"/date_end/" + dateEnd + "/age/" + age + "/pub_class/" + pub_class+"/article_name/"+article_name, null, function(html)
-        $.get("/backup/wxtest/Home/Material/group_search/date/" + date +"/date_end/" + dateEnd + "/age/" + age + "/pub_class/" + pub_class+"/article_name/"+article_name, null, function(html)
+        $.get("/Home/Material/group_search/date/" + date +"/date_end/" + dateEnd + "/age/" + age + "/pub_class/" + pub_class+"/article_name/"+article_name, null, function(html)
         {
             alert(html);
             $("#u40").empty().html(html);
@@ -247,7 +254,7 @@
         }else
         {
             //$.get("http://localhost:8080/wx/Home/Material/delete_material/article_id/" + article_id , null, function(data)
-            $.get("/backup/wxtest/Home/Material/delete_article/article_id/" + article_id , null, function(data)
+            $.get("/Home/Material/delete_article/article_id/" + article_id , null, function(data)
             {
                 if (data == 1)
                 {
@@ -259,6 +266,41 @@
 
             });                        
         }
+        
+        
+    }
+    
+    //发表自媒体文章
+    function selfMedia()
+    {
+        var pubName = encodeURI($("[name=pubName]").val());
+        if(pubName == "" || pubName == null)
+            alert("订阅号名称不可以为空！");
+        
+            $.ajax({
+                url:'/Home/Material/self_media/pubName/'+pubName,
+                dataType:'json',
+                success:function(data){
+                    $("#selfButton").empty();
+                    
+                    var obj = eval(data);
+                    $.each(obj, function (key, val) {
+                        var id = val["id"];     
+                        if(id == "" || id == "undefined" || id == null)
+                        {
+                            
+                        }else
+                        {
+                            selfButton.show();
+                            b = "<a href='<?php echo U('publish');?>'><span style='color:#fff;'>发表文章</span></a>";
+                            $("#selfButton").append(b);
+                        }
+                    });
+
+                         //  b="<option value='"+data[i].area+"'>"+data[i].area+"</option>";
+
+                }
+            });        
         
         
     }

@@ -24,14 +24,216 @@ class MenuController extends CommonController{
                 $button = $resultUser['selfmenu_info']['button'];
 
        } 
+
        
         $this->button = $button;
-        $this->id=$pub_id;
+        $this->pub_id=$pub_id;
         $this->display();            
     }
     
-    //菜单修改
-    
+    //菜单保存
+    //先做最简单的url
+    public function saveMenu()
+    {
+        if(IS_POST){
+            $pub_id = I('pub_id');
+            $data = array();
+            $subdata = array();
+            $view = "view";
+            if(!empty(I('button_one') ))
+            {
+                //$button_one = urldecode(urlencode(I('button_one')));
+                $button_one = urlencode(I('button_one'));
+                $button_one_url = I('button_one_url');  
+                $data['button'][0]['name'] = $button_one;   
+                if(!empty(I('subone_one')))
+                {
+                    $subone_one = urlencode(I('subone_one'));
+                    $subone_one_url = urlencode(I('subone_one_url'));
+                    $subdata['type'] = $view; 
+                    $subdata['name'] = $subone_one; 
+                    $subdata['url'] = $subone_one_url; 
+                    $data['button'][0]['sub_button'][0] = $subdata; 
+                    if(!empty(I('subone_two')))
+                    {
+                        $subone_two = urlencode(I('subone_two'));
+                        $subone_two_url = I('subone_two_url');   
+                        $subdata['type'] = $view; 
+                        $subdata['name'] = $subone_two; 
+                        $subdata['url'] = $subone_two_url;
+                        $data['button'][0]['sub_button'][1] = $subdata; 
+                        if(!empty(I('subone_thr')))
+                        {
+                            $subone_thr = urlencode(I('subone_thr'));
+                            $subone_thr_url = I('subone_thr_url');  
+                            $subdata['type'] = $view; 
+                            $subdata['name'] = $subone_thr; 
+                            $subdata['url'] = $subone_thr_url; 
+                            $data['button'][0]['sub_button'][2] = $subdata; 
+                            if(!empty(I('subone_for')))
+                            {
+                                $subone_for = urlencode(I('subone_for'));
+                                $subone_for_url = I('subone_for_url'); 
+                                $subdata['type'] = $view; 
+                                $subdata['name'] = $subone_for; 
+                                $subdata['url'] = $subone_for_url; 
+                                $data['button'][0]['sub_button'][3] = $subdata; 
+                                if(!empty(I('subone_five')))
+                                {
+                                    $subone_five = urlencode(I('subone_five'));
+                                    $subone_five_url = I('subone_five_url');   
+                                    $subdata['type'] = $view; 
+                                    $subdata['name'] = $subone_five; 
+                                    $subdata['url'] = $subone_five_url; 
+                                    $data['button'][0]['sub_button'][4] = $subdata; 
+                                }                                    
+                            }                             
+                        }                        
+                        
+                    }
+                    
+                }else
+                 $data['button'][0]['url'] = $button_one_url;     
+               
+            }
+
+            if(!empty(I('button_two') ))
+            {
+                $button_two = urlencode(I('button_two'));
+                $button_two_url = I('button_two_url');
+                $data['button'][1]['name'] = $button_two;  
+                if(!empty(I('subtwo_one')))
+                {
+                    $subtwo_one = urlencode(I('subtwo_one'));
+                    $subtwo_one_url = I('subtwo_one_url');
+                    $subdata['type'] = $view; 
+                    $subdata['name'] = $subtwo_one; 
+                    $subdata['url'] = $subtwo_one_url;    
+                    $data['button'][1]['sub_button'][0] = $subdata; 
+                    if(!empty(I('subtwo_two')))
+                    {
+                        $subtwo_two = urlencode(I('subtwo_two'));
+                        $subtwo_two_url = I('subtwo_two_url');   
+                        $subdata['type'] = $view; 
+                        $subdata['name'] = $subtwo_two; 
+                        $subdata['url'] = $subtwo_two_url;  
+                        $data['button'][1]['sub_button'][1] = $subdata; 
+                        if(!empty(I('subtwo_thr')))
+                        {
+                            $subtwo_thr = urlencode(I('subtwo_thr'));
+                            $subtwo_thr_url = I('subtwo_thr_url');   
+                            $subdata['type'] = $view; 
+                            $subdata['name'] = $subtwo_thr; 
+                            $subdata['url'] = $subtwo_thr_url;      
+                            $data['button'][1]['sub_button'][2] = $subdata; 
+                            if(!empty(I('subtwo_for')))
+                            {
+                                $subtwo_for = urlencode(I('subtwo_for'));
+                                $subtwo_for_url = I('subtwo_for_url');   
+                                $subdata['type'] = $view; 
+                                $subdata['name'] = $subtwo_for; 
+                                $subdata['url'] = $subtwo_for_url;    
+                                $data['button'][1]['sub_button'][3] = $subdata; 
+                                if(!empty(I('subtwo_five')))
+                                {
+                                    $subtwo_five = urlencode(I('subtwo_five'));
+                                    $subtwo_five_url = I('subtwo_five_url');   
+                                    $subdata['type'] = $view; 
+                                    $subdata['name'] = $subtwo_five; 
+                                    $subdata['url'] = $subtwo_five_url;     
+                                    $data['button'][1]['sub_button'][4] = $subdata; 
+                                }                                    
+                            }                             
+                        }                        
+                        
+                    }
+                    
+                }  else {
+                    $data['button'][1]['name'] = $button_two_url; 
+                } 
+                
+               
+            }
+
+            
+            if(!empty(I('button_thr') ))
+            {
+                $button_thr = urlencode(I('button_thr'));
+                $button_thr_url = I('button_thr_url');
+                $data['button'][2]['name'] = $button_thr;
+                if(!empty(I('subthr_one')))
+                {
+                    $subthr_one = urlencode(I('subthr_one'));
+                    $subthr_one_url = I('subthr_one_url');
+                    $subdata['type'] = $view; 
+                    $subdata['name'] = $subthr_one; 
+                    $subdata['url'] = $subthr_one_url;      
+                    $data['button'][2]['sub_button'][0] = $subdata; 
+                    if(!empty(I('subthr_two')))
+                    {
+                        $subthr_two = urlencode(I('subthr_two'));
+                        $subthr_two_url = I('subthr_two_url');   
+                        $subdata['type'] = $view; 
+                        $subdata['name'] = $subthr_two; 
+                        $subdata['url'] = $subthr_two_url;  
+                        $data['button'][2]['sub_button'][1] = $subdata;
+                        if(!empty(I('subthr_thr')))
+                        {
+                            $subthr_thr = urlencode(I('subthr_thr'));
+                            $subthr_thr_url = I('subthr_thr_url');   
+                            $subdata['type'] = $view; 
+                            $subdata['name'] = $subthr_thr; 
+                            $subdata['url'] = $subthr_thr_url;      
+                            $data['button'][2]['sub_button'][2] = $subdata;
+                            if(!empty(I('subthr_for')))
+                            {
+                                $subthr_for = urlencode(I('subthr_for'));
+                                $subthr_for_url = I('subthr_for_url');   
+                                $subdata['type'] = $view; 
+                                $subdata['name'] = $subthr_for; 
+                                $subdata['url'] = $subthr_for_url;    
+                                $data['button'][2]['sub_button'][3] = $subdata;
+                                if(!empty(I('subthr_five')))
+                                {
+                                    $subthr_five = urlencode(I('subthr_five'));
+                                    $subthr_five_url = I('subthr_five_url');   
+                                    $subdata['type'] = $view; 
+                                    $subdata['name'] = $subthr_five; 
+                                    $subdata['url'] = $subthr_five_url; 
+                                    $data['button'][2]['sub_button'][4] = $subdata;
+                                }                                    
+                            }                             
+                        }                        
+                        
+                    }
+                    
+                }
+                else
+                    $data['button'][2]['name'] = $button_thr_url;
+            }
+            
+            $manage = new ManageController();
+            $access_token = $manage->get_token($pub_id);          
+            $queryUrl = 'https://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$access_token;
+            $queryAction = 'post';
+            
+            
+            $data = urldecode(json_encode($data));
+
+            $curl = new \Org\Util\curl;
+            $this->result =  $curl::callWebServer($queryUrl,$data,$queryAction);   
+
+            if($this->result['errcode'] == 0)
+                $this->redirect('menu', array('id' =>$pub_id), 1, '菜单修改成功...');      
+            else
+                 $this->success('菜单修改失败！');         
+            
+            
+            
+        }
+        
+        
+    }
     
     
     public function menuThree()
@@ -257,10 +459,10 @@ class MenuController extends CommonController{
     public static function get_groups($pub_id){
      
         $manage = new ManageController();
-        $access_token = $manage->get_token($pub_id);          
+        $access_token = $manage->get_token($pub_id);   
         $queryGroupsUrl = 'https://api.weixin.qq.com/cgi-bin/groups/get?access_token='.$access_token;
         $queryGroupsAction = 'GET';
-        
+
         $curl = new \Org\Util\curl;
         $resultGroups =  $curl::callWebServer($queryGroupsUrl,'',$queryGroupsAction); 
         return $resultGroups;
@@ -295,9 +497,10 @@ class MenuController extends CommonController{
         $log = wx_opera_log(session('username'),'订阅号管理','订阅号粉丝','','pub_fans');
         $this->pub_id=I('get.id',0,'intval');  
 
+
         //$data['pub_id'] = $this->pub_id;
         //$id_in_msg = M('pub_wechat')->where($data)->getField('pub_id');
-        
+
         //获取所有分组
         $resultGroups = self::get_groups($this->pub_id);
         $this->groups = $resultGroups[groups];
@@ -306,7 +509,7 @@ class MenuController extends CommonController{
             $this->countAll = $this->countAll + $value[count];
         }
         $this->pageAll = (int)floor($this->countAll/100)+1;//总页数
-        
+
 
         $this->currentPage = 1;//当前页
         //每10000个都是1到10页

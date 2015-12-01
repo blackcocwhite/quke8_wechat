@@ -45,7 +45,7 @@
 <div class="header">
 	<div class="sucai">选择素材</div>
 	<div class="search">
-  		<div class="search-1"><input type="text" placeholder="标题/作者/摘要"><span class="ss"><a href="#"><img src="/Application/Home/View/Public/images/search.jpg"></a></span></div>
+  		<div class="search-1"><input type="text" placeholder="标题/作者/摘要"><span class="ss"><a href="#"><img src="/./Application/Home/View/Public/images/search.jpg"></a></span></div>
     	<div class="search-right"><a href="publish.html" target="_blank">+ 新建图文消息</a></div>
 	</div>
 	<div class="content-1">

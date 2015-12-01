@@ -3,9 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="/Application/Home/View/Public/css/lanrenzhijia.css" media="all">
-    <script src="/Application/Home/View/Public/js/jquery.min.js"></script>
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/./Application/Home/View/Public/css/lanrenzhijia.css" media="all">
+    <script src="/./Application/Home/View/Public/js/jquery.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             $('.theme-login-admin').click(function () {
@@ -437,8 +437,8 @@
         </ul>
     </div>
 </div>
-<script src="/Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
 <script>
     $("#fadetab").tabso({
         cntSelect: "#fadecon",

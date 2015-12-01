@@ -3,9 +3,9 @@
 <head>
 <title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel='stylesheet' href='/backup/wxtest/./Application/Home/View/Public/css/styleb.css' media='screen' />
-<link rel="stylesheet" href='/backup/wxtest/./Application/Home/View/Public/css/lanrenzhijia.css' media="all">
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<link rel='stylesheet' href='/./Application/Home/View/Public/css/styleb.css' media='screen' />
+<link rel="stylesheet" href='/./Application/Home/View/Public/css/lanrenzhijia.css' media="all">
+<script src="/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script>
 
 // 预览
@@ -22,11 +22,11 @@ jQuery(document).ready(function($) {
 })
 
 </script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="/backup/wxtest/./Application/Home/View/Public/js/blocksit.min.js"></script>
+<script src="/./Application/Home/View/Public/js/blocksit.min.js"></script>
 <script>
 $(document).ready(function() {
 	 
@@ -103,25 +103,27 @@ $(document).ready(function() {
 <!-- Content -->
 <div id="container">
    <!-- 循环 Star -->
-   <?php if(is_array($mat_infos)): foreach($mat_infos as $key=>$mat): $article = M('article_manage'); unset($articles); $pid = explode(',', $mat['article_id']); foreach ($pid as $k => $v) { if($k == 0){ $articles[] = $article->where(array('id'=>$v))->find(); $articles[$k]['istop'] = 1; }else{ $articles[] = $article->where(array('id'=>$v))->find(); } } ?>
-   	<div class="grid">
-            <div class="top-time"><?php echo (date('Y-m-d H:i:s',$mat["ptime"])); ?><p style='float:right; margin-right:10px;'><?php echo ($mat["article_publisher"]); ?></p></div> 
-            <?php if(is_array($articles)): foreach($articles as $key=>$art): if($art["istop"] == 1): ?><div class="imgholder"><img src="/<?php echo ($art["fm_url"]); ?>" />
-                        <div class="top-title"></div><span class="title2"><a target="_blank" href="<?php echo U('pview',array('id'=>$art['id']));?>"><?php echo ($art["article_title"]); ?></a></span>
-                     </div>
-            		<div class="bottom10"></div>
-                <?php else: ?>         
-                    <div class="title-img">
-                        <p><a href="<?php echo U('pview',array('id'=>$art['id']));?>" target="_blank"><?php echo ($art["article_title"]); ?></a></p>
-                        <img src="/<?php echo ($art["fm_url"]); ?>" />
-                    </div><?php endif; endforeach; endif; ?>
-            <div class="meta">
-            	<!--<span><a class="theme-login-view" href="javascript:;">预览给个人</a></span>
-                <span><a href="#">保存素材</a></span>-->
-                <span style='margin-left:85px'><a href="<?php echo U('update_audite',array('id'=>$mat['id']));?>">审核</a></span>
-                <span class="shanchu" ><a href="<?php echo U('del_material',array('id'=>$mat['id']));?>">删除</a></span>
-            </div>
-	</div><?php endforeach; endif; ?>
+<?php if($count_mat == 0 ): ?><font size="20">没有未审核的素材！</font>
+<?php else: ?>
+<?php if(is_array($mat_infos)): foreach($mat_infos as $key=>$mat): $article = M('article_manage'); unset($articles); $pid = explode(',', $mat['article_id']); foreach ($pid as $k => $v) { if($k == 0){ $articles[] = $article->where(array('id'=>$v))->find(); $articles[$k]['istop'] = 1; }else{ $articles[] = $article->where(array('id'=>$v))->find(); } } ?>
+     <div class="grid">
+         <div class="top-time"><?php echo (date('Y-m-d H:i:s',$mat["ptime"])); ?><p style='float:right; margin-right:10px;'><?php echo ($mat["article_publisher"]); ?></p></div> 
+         <?php if(is_array($articles)): foreach($articles as $key=>$art): if($art["istop"] == 1): ?><div class="imgholder"><img src="/<?php echo ($art["fm_url"]); ?>" />
+                     <div class="top-title"></div><span class="title2"><a target="_blank" href="<?php echo U('pview',array('id'=>$art['id']));?>"><?php echo ($art["article_title"]); ?></a></span>
+                  </div>
+                     <div class="bottom10"></div>
+             <?php else: ?>         
+                 <div class="title-img">
+                     <p><a href="<?php echo U('pview',array('id'=>$art['id']));?>" target="_blank"><?php echo ($art["article_title"]); ?></a></p>
+                     <img src="/<?php echo ($art["fm_url"]); ?>" />
+                 </div><?php endif; endforeach; endif; ?>
+         <div class="meta">
+             <!--<span><a class="theme-login-view" href="javascript:;">预览给个人</a></span>
+             <span><a href="#">保存素材</a></span>-->
+             <span style='margin-left:85px'><a href="<?php echo U('update_audite',array('id'=>$mat['id']));?>">审核</a></span>
+             <span class="shanchu" ><a href="<?php echo U('del_material',array('id'=>$mat['id']));?>">删除</a></span>
+         </div>
+     </div><?php endforeach; endif; endif; ?>
 </div>
 <script>
     

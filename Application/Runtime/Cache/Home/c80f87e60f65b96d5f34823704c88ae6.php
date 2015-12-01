@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/backup/wxtest/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
 </head>
 <style type="text/css">
     *{margin:0;padding:0;list-style-type:none;}
@@ -64,9 +64,9 @@
 <div id='fat'>
 <!-- <form action="" method="post"> -->
     <ul class="tabbtn" id="fadetab">
-        <li><a href="/backup/wxtest/Home/DataStatistics/index">总表</a></li>
-        <li class="current"><a href="#">订阅号统计</a></li>
-        <li><a href="/backup/wxtest/Home/DataStatistics/article_index">文章阅读统计</a></li>
+        <li class="current"><a href="#">订阅号统计日报表</a></li>
+        <li><a href="/Home/DataStatistics/article_index">文章阅读统计</a></li>
+        <li><a href="/Home/DataStatistics/index">总表</a></li>        
     </ul><!--tabbtn end-->
 
     <div class="biaoge">
@@ -200,21 +200,21 @@
                             </tr>
                             <?php if(is_array($result)): foreach($result as $key=>$vo): ?><tr>
                                     <td width='100' height="30" align="center" valign="middle"><strong><?php echo ($vo["ref_date"]); ?></strong></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["city"]); ?>-<?php echo ($vo["area"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["city"]); ?>-<?php echo ($vo["area"]); ?></td>
                                     <td width='100' align="center" valign="middle"><?php echo ($vo["nick_name"]); ?></td>
                                     <td width='50' align="center" valign="middle"><?php echo ($vo["pub_group"]); ?></td>
-                                    <td width='50' align="center" valign="middle">
+                                    <td width='40' align="center" valign="middle">
                                         <?php switch($vo["is_vip"]): case "A": ?>重点<?php break;?>    
                                             <?php case "B": ?>普通<?php break;?>    
                                             <?php default: ?>垃圾<?php endswitch;?>
                                     </td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["is_certify"]); ?></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["stu_num"]); ?></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["care_num"]); ?></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["care_rate"]); ?>&#37;</td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["daily_add"]); ?></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["daily_cancel"]); ?></td>
-                                    <td width='50' align="center" valign="middle"><?php echo ($vo["daily_rate"]); ?>&#37;</td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["is_certify"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["stu_num"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["care_num"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["care_rate"]); ?>&#37;</td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["daily_add"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["daily_cancel"]); ?></td>
+                                    <td width='40' align="center" valign="middle"><?php echo ($vo["daily_rate"]); ?>&#37;</td>
                                 </tr><?php endforeach; endif; ?>
                             <tr>
                                 <td id='lo' style="border:0;" colspan="7" align="center" valign="middle"><?php echo ($show); ?></td>
@@ -228,10 +228,10 @@
 <!-- </form> -->
 <p id="p2"></p>
 </div>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/ajaxfileupload.js"></script>
+<script src="/./Application/Home/View/Public/My97DatePicker/WdatePicker.js"></script>
 
 <script>
     
@@ -258,7 +258,7 @@
            var care_num= encodeURI($("[name=care_num]").val());
            
 
-            $.get("/backup/wxtest/Home/DataStatistics/pub_query_index/pub_date/"+pub_date+"/city/"+city
+            $.get("/Home/DataStatistics/pub_query_index/pub_date/"+pub_date+"/city/"+city
                                             +"/area/"+area+"/group/"+group+"/vip/"+vip+"/certify/"+certify
                                             +"/stu_num/"+stu_num+"/care_num/"+care_num+"/pub_name/"+pub_name, null, function(html)
             {
@@ -272,7 +272,7 @@
                    $(this).change(function(){
                        var city = encodeURI($("[name=city]").val());
                        $.ajax({
-                           url:'/backup/wxtest/Home/DataStatistics/pub_area_info/city/'+city,
+                           url:'/Home/DataStatistics/pub_area_info/city/'+city,
                            dataType:'json',
                            success:function(data){
                                $("#area").empty();

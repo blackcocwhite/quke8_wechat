@@ -3,11 +3,11 @@
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel='stylesheet' href='/backup/wxtest/./Application/Home/View/Public/css/styleb.css' media='screen' />
-	<link rel="stylesheet" href='/backup/wxtest/./Application/Home/View/Public/css/lanrenzhijia.css' media="all">
+	<link rel='stylesheet' href='/./Application/Home/View/Public/css/styleb.css' media='screen' />
+	<link rel="stylesheet" href='/./Application/Home/View/Public/css/lanrenzhijia.css' media="all">
 	<!--<link rel="stylesheet" href="../Public/js/开发包/skin/WdatePicker.css" type="text/css"/>-->
 
-	<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
 	<script>
 
 		// 预览
@@ -63,11 +63,11 @@
 
 		})
 	</script>
-	<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.min.js"></script>
+	<script src="/./Application/Home/View/Public/js/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src="/backup/wxtest/./Application/Home/View/Public/js/blocksit.min.js"></script>
+	<script src="/./Application/Home/View/Public/js/blocksit.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			//blocksit define
@@ -112,7 +112,7 @@
 		});
 	</script>
 	<style>
-		.box{ width:500px; margin:0 auto; background:url(/backup/wxtest/./Application/Home/View/Public/images/img.png) no-repeat center 40%;}
+		.box{ width:500px; margin:0 auto; background:url(/./Application/Home/View/Public/images/img.png) no-repeat center 40%;}
 		.left-box{ width:200px; float:left; height:300px; border:#ccc solid 1px; overflow-x:visible; overflow-y:scroll;}
 		ul{margin: 0;padding: 0;}
 		ul li{ list-style:none; line-height:30px; cursor:pointer; padding:0px 5px;}
@@ -453,7 +453,7 @@
 			return false;
 		}else{
 			pub_accounts=pub_accounts.substr(0,pub_accounts.length-1);
-			window.location.href="/backup/wxtest/Home/Material/save_m/mid/"+mid+"/pids/"+pub_accounts;
+			window.location.href="/Home/Material/save_m/mid/"+mid+"/pids/"+pub_accounts;
 		}
 	}
 
@@ -470,7 +470,7 @@
 			return false;
 		}else{
 			pub_accounts=pub_accounts.substr(0,pub_accounts.length-1);
-			window.location.href="/backup/wxtest/Home/Material/massall/mid/"+mid+"/pids/"+pub_accounts;
+			window.location.href="/Home/Material/massall/mid/"+mid+"/pids/"+pub_accounts;
 		}
 	}
 
@@ -495,7 +495,7 @@
 			$.ajax({
 				cache: true,
 				type: "POST",
-				url:"/backup/wxtest/Home/Material/massall/mid/"+mid,
+				url:"/Home/Material/massall/mid/"+mid,
 				data:{mid:mid},
 				async: false,
 				error: function(data) {
@@ -519,7 +519,7 @@
 	function preview(mid){
 		//先查询该素材已经保存给了哪些订阅号
 		$.ajax({
-			url:'/backup/wxtest/Home/Material/material_to_pub/mid/'+mid,
+			url:'/Home/Material/material_to_pub/mid/'+mid,
 			dataType:'json',
                         error: function(data) {
                                 alert("失败");
@@ -550,7 +550,7 @@
 				$(this).change(function(){
 					var city = encodeURI($("[name=city]").val());
 					$.ajax({
-						url:'/backup/wxtest/Home/Material/pub_area_info/city/'+city,
+						url:'/Home/Material/pub_area_info/city/'+city,
 						dataType:'json',
 						success:function(data){
 							$("#area").empty();
@@ -574,8 +574,8 @@
 		var pub_group= encodeURI($("[name=pub_group]").val());
 		var pub_name= encodeURI($("[name=pub_name]").val());
 
-		//$.get("/backup/wxtest/Home/Material/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
-		$.get("/backup/wxtest/Home/Material/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
+		//$.get("/Home/Material/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
+		$.get("/Home/Material/material_search/city/" + city + "/area/" + area + "/pub_group/" + pub_group + "/pub_name/" + pub_name, null, function(html)
 		{
 			$("#pub_box").empty().html(html);
 		});

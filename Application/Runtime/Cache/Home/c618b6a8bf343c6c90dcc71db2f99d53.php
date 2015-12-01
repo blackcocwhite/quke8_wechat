@@ -4,8 +4,8 @@
     <!--<meta charset="UTF-8">-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="/backup/wxtest/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="/backup/wxtest/./Application/Home/View/Public/css/lanrenzhijia.css" media="all">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/./Application/Home/View/Public/css/lanrenzhijia.css" media="all">
 </head>
     <style type="text/css">
         *{margin:0;padding:0;list-style-type:none;}
@@ -39,7 +39,7 @@
         .tabbtn{height:35px;}
         .tabbtn li{float:left;position:relative;margin:0; top: 2px; border-left:#eee 1px solid; border-right:#eee 1px solid; border-top:#eee 1px solid;}
         .tabbtn li a{display:block;float:left;height:33px;line-height:33px;overflow:hidden;width:120px;text-align:center;font-size:14px;cursor:pointer;}
-        .tabbtn li.current a{height:33px;line-height:33px;color:#5ea60f;font-weight:800;}
+        .tabbtn li.current a{height:33px;line-height:33px;background:#5ea60f;color:#fff;font-weight:800;}
 
         /* tabcon */
 
@@ -77,6 +77,11 @@
         <button type="button" style="cursor:pointer;" onclick="batchGroup()">批量分组</button>
     </div>
     <div class="header-right">
+        <select id="verify" name="verify">
+            <option selected value="1">全部</option>
+            <option value="0">已认证</option>
+            <option value="2">未认证</option>
+        </select>
         <select id="city" name="city">
             <option selected value="0">全部</option>
             <?php if(is_array($city)): foreach($city as $key=>$vo): ?><option value="<?php echo ($vo["city"]); ?>"><?php echo ($vo["city"]); ?></option><?php endforeach; endif; ?>   
@@ -86,7 +91,7 @@
         </select>
         <input type="text" id="materName" name="materName" placeholder="请输入订阅号名称">
         <button class="select" type="button" onclick="pubQueryByCondition()">查询</button>
-        <a href="<?php echo ($url); ?>"><img src="/backup/wxtest/./Application/Home/View/Public/images/icon_button3_2.png" alt="微信登陆授权"></a>
+        <a href="<?php echo ($url); ?>"><img src="/./Application/Home/View/Public/images/icon_button3_2.png" alt="微信登陆授权"></a>
     </div>
 </div>
 
@@ -95,13 +100,28 @@
 
 <!--分组区域-->
 <ul class="tabbtn" id="fadetab">
+    <!--
             <?php if(is_array($pubGroup)): foreach($pubGroup as $key=>$pubGroup): ?><li><a href="<?php echo U('pub_list',array('gid' =>$pubGroup[gid] ));?>"><?php echo ($pubGroup["gname"]); ?>（<span><?php echo ($pubGroup["groupno"]); ?></span>）</a></li><?php endforeach; endif; ?>
+    -->
+        <li><a href="/Home/Manage/pub_primary_index">小学（<span><?php echo ($primaryCount); ?></span>）</a></li>
+        <li><a href="/Home/Manage/pub_junior_index">初中（<span><?php echo ($juniorCount); ?></span>）</a></li>
+        <li><a href="/Home/Manage/pub_senior_index">高中（<span><?php echo ($seniorCount); ?></span>）</a></li>   
+        <li><a href="/Home/Manage/pub_kinder_index">幼儿园（<span><?php echo ($kinderCount); ?></span>）</a></li>     
+        <li><a href="/Home/Manage/pub_kindersmall_index">幼小（<span><?php echo ($kindersmallCount); ?></span>）</a></li>     
+        <li><a href="/Home/Manage/pub_small_index">小初（<span><?php echo ($smallCount); ?></span>）</a></li>      
+        <li><a href="/Home/Manage/pub_high_index">初高（<span><?php echo ($highCount); ?></span>）</a></li>   
+        <li><a href="/Home/Manage/pub_kinders_index">幼小初（<span><?php echo ($kindersCount); ?></span>）</a></li> 
+        <li><a href="/Home/Manage/pub_system_index">小初高（<span><?php echo ($systemCount); ?></span>）</a></li>  
+        <li class="current"><a href="#">全部（<span><?php echo ($allCount); ?></span>）</a></li>
+        <li><a href="/Home/Manage/pub_group_index">待分组（<span><?php echo ($groupCount); ?></span>）</a></li>
+    <!--
             <form action='<?php echo U("addGroup");?>' method="post">
                 <li><input style="margin-left:10px; margin-top:5px; height:22px; border:1px #ddd solid" type="text" placeholder="+新建分组" name="gname" >
                      <input style="margin-left:10px; margin-top:5px; height:22px; border:1px #ddd solid" type="text" placeholder="+新建分组" name="type" value="1"  hidden="true">
                     <button class="fenzu" >确认</button>
                 </li>
             </form>
+    -->
 </ul>
 
 <div class="tabcon" id="fadecon">
@@ -145,11 +165,11 @@
                         <!--<td width="50" align="center" valign="middle"><a class="theme-login-bj" href="javascript:;">编辑</a></td>-->
                         <td width="3%" align="center" valign="middle"><a class="theme-login-bj1"
                                 href="<?php echo U('com_info',array('id'=>$vo['id']));?>">编辑</a></td>                       
-                        <!--<td width="50" align="center" valign="middle" ><a href="/backup/wxtest/./Application/Home/View/Publicfans.html">粉丝</a></td>-->
-                        <!--<td width="50" align="center" valign="middle"><a href="/backup/wxtest/./Application/Home/View/Publicmaterial.html">群发</a></td>-->
+                        <!--<td width="50" align="center" valign="middle" ><a href="/./Application/Home/View/Publicfans.html">粉丝</a></td>-->
+                        <!--<td width="50" align="center" valign="middle"><a href="/./Application/Home/View/Publicmaterial.html">群发</a></td>-->
                         <!--<td width="50" align="center" valign="middle"><a href="#">回复</a></td>-->
-                        <!--<td width="50" align="center" valign="middle"><a href="/backup/wxtest/./Application/Home/View/Publicstats.html">统计</a></td>-->
-                        <!--<td width="50" align="center" valign="middle"><a href="/backup/wxtest/./Application/Home/View/Publichttps://mp.weixin.qq.com/">菜单</a></td>-->
+                        <!--<td width="50" align="center" valign="middle"><a href="/./Application/Home/View/Publicstats.html">统计</a></td>-->
+                        <!--<td width="50" align="center" valign="middle"><a href="/./Application/Home/View/Publichttps://mp.weixin.qq.com/">菜单</a></td>-->
 
                         <td width="50" align="center" valign="middle" ><a href="<?php echo U('Menu/pub_fans',array('id'=>$vo[id]));?>">粉丝</a></td>
                         <td width="50" align="center" valign="middle"><a href="<?php echo U('material/singleqf',array('id'=>$vo[id]));?>">群发</a></td>
@@ -195,14 +215,9 @@
     </ul>
 </div>
 </div>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
 <script>
-    $("#fadetab").tabso({
-        cntSelect: "#fadecon",
-        tabEvent: "click",
-        tabStyle: "fade"
-    });
     function selectAll(checkbox) {
         $('input[type=checkbox]').attr('checked', $(checkbox).attr('checked'));
     }
@@ -216,19 +231,17 @@
             if (pubCheckBox[j].checked == true)
             {
                     pub_id = pubCheckBox[j].value;
-                    // alert(" /backup/wxtest ");
+                    // alert("  ");
                     // $.get( "<?php echo U('manage/updatePubGroup',array('pub_id'=>pub_id,'group_id'=>group_id)) ; ?>",null,function(data)
 
                     //$.get("http://localhost:8080/wx/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
-                    $.get("/backup/wxtest/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
+                    $.get("/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
                     {
                         if (data == 1)
                         {
                             alert("更新成功");
-                        } else if (data == 2)
-                        {
-                            alert("更新成功2");
-                        } else
+                            window.location.reload();
+                        }  else
                         {
                             alert(data);
                         }
@@ -259,7 +272,7 @@
         var group_id = $("[name="+pub_id+"]").val();
         
         //$.get("http://localhost:8080/wx/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
-        $.get("/backup/wxtest/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
+        $.get("/Home/Manage/updatePubGroup/pub_id/" + pub_id + "/group_id/" + group_id, null, function(data)
         {
             if (data == 1)
             {
@@ -313,9 +326,13 @@
         var area= encodeURI($("[name=area]").val());
        // var materName= $("[name=materName]").val();
         var materName= encodeURI($("[name=materName]").val());
+        var verify= encodeURI($("[name=verify]").val());
+        if(materName == "" || materName == null)
+            materName = "materName";
+        var gid = 0;        
         
         //$.get("http://localhost:8080/wx/Home/Manage/pub_query/city/" + city + "/area/" + area + "/materName/" + materName, null, function(html)
-        $.get("/backup/wxtest/Home/Manage/pub_query/city/" + city + "/area/" + area + "/materName/" + materName, null, function(html)
+        $.get("/Home/Manage/pub_query/city/" + city + "/area/" + area + "/materName/" + materName + "/gid/" + gid + "/verify/" + verify, null, function(html)
         {
             $("#u40").empty().html(html);
         });        
@@ -328,7 +345,7 @@
             $(this).change(function(){
                 var city = encodeURI($("[name=city]").val());
                 $.ajax({
-                    url:'/backup/wxtest/Home/Manage/pub_area_info/city/'+city,
+                    url:'/Home/Manage/pub_area_info/city/'+city,
                     dataType:'json',
                     success:function(data){
                         $("#area").empty();

@@ -108,6 +108,13 @@
         <button type="button" style="cursor:pointer;" onclick="batchGroup()"><span style="color:#fff;">+创建素材</span></a></button>
         <span>(注意：创建素材最多勾选8条文章)</span>
         <button type="button" style="cursor:pointer;"><a href="{:U('publish')}"><span style="color:#fff;">发表文章</span></a></button>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">&nbsp;</span>
+        <span style="margin-left:5px;">自媒体：</span>
+        <input type="text" placeholder="请输入订阅号名称" id="pubName" name="pubName">
+        <button class="select" type="submit" onclick="selfMedia()">确定</button>
+        <button id="selfButton" name="selfButton" type="button"  style="cursor:pointer; display:none;"></button>        
     </div>
 
     <!-- <div class="header-right">
@@ -269,6 +276,45 @@
 
             });                        
         }
+        
+        
+    }
+    
+    //发表自媒体文章
+    function selfMedia()
+    {
+        var pubName = encodeURI($("[name=pubName]").val());
+        if(pubName == "" || pubName == null)
+            alert("订阅号名称不可以为空！");
+        
+            $.ajax({
+                url:'__CONTROLLER__/self_media/pubName/'+pubName,
+                dataType:'json',
+                success:function(data){
+                    $("#selfButton").empty();
+                    
+                    var obj = eval(data);
+                    $.each(obj, function (key, val) {
+                        var id = val["id"];     
+                        if(id == "" || id == "undefined" || id == null)
+                        {
+                            
+                        }else
+                        {
+                            var currentBtn = document.getElementById(selfButton);
+                            
+                            //selfButton.hidden = "false";
+                            currentBtn.style.display = "block";
+                            b = "<a href='{:U('publish')}'><span style='color:#fff;'>发表文章</span></a>";
+                            $("#selfButton").append(b);
+                            alert(id);
+                        }
+                    });
+
+                         //  b="<option value='"+data[i].area+"'>"+data[i].area+"</option>";
+
+                }
+            });        
         
         
     }

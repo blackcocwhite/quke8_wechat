@@ -1,0 +1,36 @@
+[ 2015-11-15T11:41:23+08:00 ] 36.32.0.248 /yx/dati%E2%80%932.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Yx
+
+[ 2015-11-15T12:28:28+08:00 ] 36.32.0.248 /yx/datijieshu.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+ERR: 无法加载模块:Yx
+
+[ 2015-11-15T15:10:32+08:00 ] 60.173.216.125 /browserconfig.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+ERR: 无法加载模块:Browserconfig
+
+[ 2015-11-15T16:16:45+08:00 ] 36.32.0.248 /yx/%7B:U('dati')%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+ERR: 无法加载模块:Yx
+
+[ 2015-11-15T16:23:44+08:00 ] 101.226.125.117 /yx/{:U('dati')}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Yx
+
+[ 2015-11-15T16:23:44+08:00 ] 180.153.214.190 /yx/{:U('dati')}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+ERR: 无法加载模块:Yx
+

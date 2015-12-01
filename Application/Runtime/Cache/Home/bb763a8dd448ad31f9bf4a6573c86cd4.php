@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/backup/wxtest/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/./Application/Home/View/Public/css/main.css" type="text/css" rel="stylesheet">
 </head>
 <style type="text/css">
     *{margin:0;padding:0;list-style-type:none;}
@@ -32,6 +32,7 @@
 <form action="<?php echo U('com_info');?>" method="post">
 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="alist">
                     <tbody>
+                        <div class="wx-gongzonghao" hidden="true"><input type="text" name="pub_id" value='<?php echo ($id); ?>'></div>
                     <tr class="tdcolor">
                         <td width="150" height="30" valign="middle"><h3 style=" color:red; font-size:18px; font-weight:bold;">编辑微信公众号</h3></td>
                     </tr>
@@ -54,18 +55,30 @@
                         <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" value="<?php echo ($result['user_name']); ?>" disabled="disabled"></div></td>
                     </tr>
                     <tr>
-                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人姓名" value="<?php echo ($result["uname"]); ?>"></div></td>
+                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人姓名" value="<?php echo ($result["uname"]); ?>" disabled="disabled"></div></td>
                       </tr>
                     <tr>
-                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人手机" value="<?php echo ($result["user_phone"]); ?>"></div></td>
+                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人手机" value="<?php echo ($result["user_phone"]); ?>" disabled="disabled"></div></td>
                       </tr>
                     <tr>
-                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人邮箱" value="<?php echo ($result["user_email"]); ?>"></div>
+                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="添加人邮箱" value="<?php echo ($result["user_email"]); ?>" disabled="disabled"></div>
             </td>
                       </tr>
                     <tr>
-                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="学校名称" name="school_name" value='<?php echo ($result["school_name"]); ?>'></div></td>
+                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text"  placeholder="学校名称" name="school_name" value='<?php echo ($result["school_name"]); ?>' class="school_name"></div></td>
                       </tr>
+                    <tr>
+                        <td width="150" height="30" align="center" valign="middle">
+                            <div class="wx-gongzonghao">
+                                <select style="width:310px; height:32px; border:1px #bbb solid; padding-left:10px;" id="owner" name="owner">
+                                    <option  value="<?php echo ($session_user); ?>"><?php echo ($session_user); ?></option>
+                                    <?php if(is_array($user)): foreach($user as $key=>$vop): ?><option 
+                                            <?php if($result['owner'] == $vop['user_name']) echo selected;?>
+                                            value="<?php echo ($vop["user_name"]); ?>"><?php echo ($vop["user_name"]); ?></option><?php endforeach; endif; ?>   
+                                </select>
+                            </div>
+                        </td>
+                    </tr>                      
                     <tr>
                         <td width="150" height="30" align="center" valign="middle">
                             <div class="wx-gongzonghao">
@@ -86,14 +99,14 @@
                         </td>
                       </tr>
                     <tr>
-                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="学校人数" name="school_pnum" value='<?php echo ($result["school_pnum"]); ?>'></div>
+                        <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" placeholder="学校人数" name="school_pnum" class="school_pnum" value='<?php echo ($result["school_pnum"]); ?>'></div>
             </td>
                       </tr>
                     <tr>
                         <td width="150" height="30" align="center" valign="middle"><div class="wx-gongzonghao">
                             <select style="width:310px; height:32px; border:1px #bbb solid; padding-left:10px;" name='pub_group'>
                                 <option  value="">请选择分组</option>
-                                <?php if(is_array($group)): foreach($group as $key=>$g): if($result["gid"] == $g['id']): ?><option  selected value="<?php echo ($g["id"]); ?>"><?php echo ($g["gname"]); ?></option>
+                                <?php if(is_array($group)): foreach($group as $key=>$g): if($result["id"] == $g['id']): ?><option  selected value="<?php echo ($g["id"]); ?>"><?php echo ($g["gname"]); ?></option>
                                         <?php else: ?>
                                         <option value="<?php echo ($g["id"]); ?>"><?php echo ($g["gname"]); ?></option><?php endif; endforeach; endif; ?>
                             </select>
@@ -109,13 +122,8 @@
                       <td height="30" align="center" valign="middle"><div class="wx-gongzonghao"><input type="text" value='<?php echo ($result["contact_email"]); ?>' placeholder="学校负责人邮箱" name="contact_email"></div></td>
                     </tr>
                     <tr>
-                      <td height="30" align="center" valign="middle">
-                      <input type="checkbox"  name='is_vip'  value="1" />&nbsp;&nbsp;<span style='color:red'>*标记为重点学校</span>
-                      </td>
-                    <tr>
                       <td height="30" align="center" valign="middle"><div class="wx-button">
-                        
-                          <input type="hidden" value="<?php echo ($result["id"]); ?>" name='id' />
+                          <input type="hidden" value="<?php echo ($result["aid"]); ?>" name='id' />
                           <input name="提 交" type="submit" value="提 交">
                           <input name="取消"  onClick="javascript :history.back(-1)" class="qx" style="margin-left:30px;" value="取 消">
                       </td>
@@ -123,15 +131,15 @@
                     </tbody>
                 </table>
 </form>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery1.42.min.js"></script>
+<script src="/./Application/Home/View/Public/js/jquery.tabso_yeso.js"></script>
 <script>
    
  $('#city').click(function(){
             $(this).change(function(){
                 var city = encodeURI($("[name=city]").val());
                 $.ajax({
-                    url:'/backup/wxtest/Home/Manage/pub_area_info/city/'+city,
+                    url:'/Home/Manage/pub_area_info/city/'+city,
                     dataType:'json',
                     success:function(data){
                         $("#area").empty();
@@ -146,7 +154,21 @@
                 });
                });
         }
-    );    
+    );
+
+
+
+    $(function(){
+       $('.school_pnum').click(function(){
+           var schoolp = $('.school_pnum').val();
+          if(isNaN(schoolp)){
+              alert('学校人数必须为大于3位数的数字!');
+          }else if(schoolp.length <3){
+              alert('学校人数必须为大于3位数的数字!');
+          }
+       });
+    });
+
     
       
     

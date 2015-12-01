@@ -4,12 +4,12 @@
 <title>微信公众号后台管理系统</title>
 <meta name="keywords" content="多用户微信营销后台管理系统">
 <meta name="description" content="多用户微信营销后台管理系统">
-<link href="/backup/wxtest/./Application/Home/View/Public/images/style.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="/backup/wxtest/./Application/Home/View/Public/css/lanrenzhijia.css" media="all">
-<script src="/backup/wxtest/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script src="/backup/wxtest/./Application/Home/View/Public/js/frame.js" type="text/javascript"></script>
-<script type="text/javascript" src="/backup/wxtest/./Application/Home/View/Public/js/jquery.artDialog.js"></script>
-<script type="text/javascript" src="/backup/wxtest/./Application/Home/View/Public/js/iframeTools.js"></script>
+<link href="/./Application/Home/View/Public/images/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/./Application/Home/View/Public/css/lanrenzhijia.css" media="all">
+<script src="/./Application/Home/View/Public/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/./Application/Home/View/Public/js/frame.js" type="text/javascript"></script>
+<script type="text/javascript" src="/./Application/Home/View/Public/js/jquery.artDialog.js"></script>
+<script type="text/javascript" src="/./Application/Home/View/Public/js/iframeTools.js"></script>
 <script>
 // 修改资料
 jQuery(document).ready(function($) {
@@ -126,12 +126,12 @@ li{float:left;height:67px;overflow:hidden;}/*水平排列并来点间距吧，�
 #wrapper ul li a{color:#444; font-size:16px;height:67px;}
 #wrapper ul li a:hover{color:#666; font-size:16px; text-decoration:none;}
 
-.normal,.over,.cur{display:inline-block;padding-right:20px;padding-top:23px;*padding-top:0;padding-bottom:13px;*padding-bottom:0;height:67px;background:url(/backup/wxtest/./Application/Home/View/Public/images/button.gif) no-repeat right -66px; text-decoration:none;font-size:12px;color:#666;}
-.normal span,.over span,.cur span{display:inline-block;padding-left:20px;padding-top:10px;*padding-top:0;padding-bottom:13px;*padding-bottom:0;height:67px;line-height:67px;background:url(/backup/wxtest/./Application/Home/View/Public/images/button.gif) no-repeat left top;}
+.normal,.over,.cur{display:inline-block;padding-right:20px;padding-top:23px;*padding-top:0;padding-bottom:13px;*padding-bottom:0;height:67px;background:url(/./Application/Home/View/Public/images/button.gif) no-repeat right -66px; text-decoration:none;font-size:12px;color:#666;}
+.normal span,.over span,.cur span{display:inline-block;padding-left:20px;padding-top:10px;*padding-top:0;padding-bottom:13px;*padding-bottom:0;height:67px;line-height:67px;background:url(/./Application/Home/View/Public/images/button.gif) no-repeat left top;}
 .normal,.normal span,.over,.over span,.cur,.cur span{display:inline;cursor:pointer;}
 
-.cur{background:url(/backup/wxtest/./Application/Home/View/Public/images/button.gif) no-repeat right -150px; padding-bottom:23px;}
-.cur span{background:url(/backup/wxtest/./Application/Home/View/Public/images/button.gif) no-repeat left -158px;color:#fff;}
+.cur{background:url(/./Application/Home/View/Public/images/button.gif) no-repeat right -150px; padding-bottom:23px;}
+.cur span{background:url(/./Application/Home/View/Public/images/button.gif) no-repeat left -158px;color:#fff;}
 .blog{clear:both;margin:0px auto;text-align:center;width:640px;color:#fff;}
 </style>
     
@@ -145,7 +145,7 @@ li{float:left;height:67px;overflow:hidden;}/*水平排列并来点间距吧，�
     <td height="100%" bgcolor="#ffffff"><table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" bordercolor="#ff0000">
         <tbody>
           <tr>
-            <td nowrap="" id="frmTitle" bgcolor="#ff0000" width="213"><iframe frameborder="0" id="left" name="left" scrolling="auto" src="/backup/wxtest/./Application/Home/View/Public/images/index.html" style="HEIGHT:100%;VISIBILITY:inherit;width:200px;Z-INDEX:2" allowtransparency="true" cyberarticle_ext_name="Frame_0"></iframe></td>
+            <td nowrap="" id="frmTitle" bgcolor="#ff0000" width="213"><iframe frameborder="0" id="left" name="left" scrolling="auto" src="/./Application/Home/View/Public/images/index.html" style="HEIGHT:100%;VISIBILITY:inherit;width:200px;Z-INDEX:2" allowtransparency="true" cyberarticle_ext_name="Frame_0"></iframe></td>
             <td></td>
             <td width="100%"><table height="100%" cellspacing="0" cellpadding="0" width="100%" align="right" border="0">
                 <tbody>
