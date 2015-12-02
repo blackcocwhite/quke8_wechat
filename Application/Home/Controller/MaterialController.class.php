@@ -3,6 +3,13 @@ namespace Home\Controller;
 use Think\Controller;
 class MaterialController extends CommonController{
     public function article_list() {
+        $id = I('get.id');
+        if($id == "" || $id == NULL)
+            $id = 0;
+        
+        $db = M('article_manage');
+        $count = $db->where("is_del = 0 and pub_id in (0,".$id.")")->count();
+        
         $db = M('article_manage');
         $count = $db->where(array('is_del'=>0))->count();
         $page = new \Think\Page($count,20);
@@ -12,12 +19,12 @@ class MaterialController extends CommonController{
         $page->setConfig('theme','%HEADER% &nbsp;&nbsp;<span style="color:red">%NOW_PAGE%/%TOTAL_PAGE%</span>页&nbsp;&nbsp;%UP_PAGE% %LINK_PAGE% %DOWN_PAGE%');
         $this->show = $page->show(); 
         //$this->result = $db->order('pub_time')->limit($page->firstRow.','.$page->listRows)->select();
-        $sql = "select t1.*,t.remark from (select * from wx_article_manage a where a.is_del=0) t1 left join  
+        $sql = "select t1.*,t.remark from (select * from wx_article_manage a where a.is_del=0 and a.pub_id in (0,".$id.")) t1 left join  
                 (select b.user_name,c.remark from wx_user b ,wx_role c,wx_role_user d where b.id=d.user_id and d.role_id=c.id) t  
             on t1.article_publisher = t.user_name  order by t1.pub_time desc limit ".$page->firstRow.",".$page->listRows;
         $this->result = M('article_manage') -> query($sql);
         
-        
+        $this->pub_id  = $id;
         //查询分组
         $this->ageGroupId = M('group') -> query("select id,gname from wx_group where type = 2 order by id;");
         $this->GroupId = M('group') -> query("select id,gname from wx_group where type = 3 order by id;");
@@ -140,6 +147,11 @@ class MaterialController extends CommonController{
     //创建素材
     public function create_material() {
       $aid = explode(',', I('get.aids'));
+      $pub_id = I('get.pub_id');
+      
+      if($pub_id == "" || $pub_id == NULL)
+          $pub_id = 0;
+      
       if(!empty($_SESSION['num']))
       {
           $num=$_SESSION['num'];
@@ -159,6 +171,7 @@ class MaterialController extends CommonController{
       // p($articles);die;
       $this->assign('articles',$articles);
       $this->pub = M('pub_account')->select();
+      $this->pub_id = $pub_id;
       // p($articles);die;
       $this->display();
     }
@@ -182,19 +195,22 @@ class MaterialController extends CommonController{
     public function publish(){                        
         //抓取文章的方法
         //这个单独写一个方法 @jh
-        $log = wx_opera_log(session('username'),'文章管理','发表文章编辑','','publish');  
+
         // if(!empty($_POST['txt'])&&empty($_POST['txt_id']))
         // {
         //     $sKeys=iconv("utf-8","gb2312",$_POST['txt']);
         //     $fh=file_get_contents($sKeys);
         //     echo $fh;exit();
         // }
-        
         if(IS_POST){
+            $pub_id = I('get.pub_id');
+            $_POST['pub_id'] = $pub_id;
             $post=$_POST;
             $file=$_FILES;
+            $log = wx_opera_log(session('username'),'文章管理','发表文章编辑','','publish');  
             $this->dataFen($post, $file);
         }else{
+		$pub_id = I('get.pub_id');
           if(!empty($_GET['pid'])){
             $pid=$_GET['pid'];          
             $m=M('article_manage')->where("id='$pid'")->find();            
@@ -203,13 +219,15 @@ class MaterialController extends CommonController{
                 $classId=$m['article_class'];
                 $aname=M('group')->where("id='$ageId'")->getField("gname");               
                 $cname=M('group')->where("id='$classId'")->getField("gname");
-            $this->assign("ma",$m);
+                $this->assign("ma",$m);
+                $this->assign('pid',$pub_id);
                 $this->assign("aname",$aname);
                 $this->assign("cname",$cname);
             $this->assign("root",$_SERVER['HTTP_HOST']);        
           }
                 $ageClass=M('group')->where("type=2")->select();
-                $class=M('group')->where("type=3")->select();           
+                $class=M('group')->where("type=3")->select(); 
+                $this->assign('pid',$pub_id);          
                 $this->assign("ageClass",$ageClass);
                 $this->assign("class",$class);  
           $this->display();
@@ -350,6 +368,7 @@ class MaterialController extends CommonController{
        $atr['article_author'] = $post['article_publisher'] ? $post['article_publisher'] : '';
        $atr['article_publisher'] = $_SESSION['username'];
        //$atr['article_publisher'] = I('post.article_publisher') ? I('post.article_publisher') : '';
+       $atr['pub_id'] = $post['pid'];
        $atr['content'] = $post['cont'] ? $post['cont'] : $this->error('请输入文章内容');
        $atr['pub_time'] = time();
        $atr['txt_Url'] = $post['txt_Url'] ? $post['txt_Url'] : '';
@@ -458,6 +477,7 @@ class MaterialController extends CommonController{
        $log = wx_opera_log(session('username'),'文章管理','提交审核','','tosave');  
       if(isset($_GET['aids'])){
           $material['article_id'] = I('get.aids');
+          $material['pub_id'] = I('get.pub_id');
           $material['article_publisher'] = session('username');
           $material['ptime'] = time();
           if(M('material_manage')->add($material)){
@@ -584,6 +604,31 @@ class MaterialController extends CommonController{
         $p = M('pub_account');
         $this->pub = $p->select();
         $this->display();
+  }
+  
+  //判断该素材是不是自媒体素材，如果是返回自媒体订阅号数据，否则返回所有数据
+  public function self_media_pub()
+  {
+        $mid = I('get.mid');
+        
+        $db = M('material_manage');
+        $pub_id = $db->field('pub_id')->where('id='.$mid)->select();
+
+        $p = M('pub_account');
+        $result = array();
+        
+        if($pub_id[0]['pub_id'] == 0)
+            $result = $p->select();
+        else
+            $result = $p->where('id='.$pub_id[0]['pub_id'])->select();
+
+
+        //$result = array ('a'=>$pub_id[0]['pub_id'],'b'=>2,'c'=>3,'d'=>4,'e'=>5);
+      // $result = $p->where('id='.$pub_id[0]['pub_id'])->select();
+        
+        $this->ajaxReturn($result);
+      
+      
   }
   
 //根据素材查询保存给了哪个公众号
@@ -737,7 +782,7 @@ class MaterialController extends CommonController{
     public function self_media(){
         $result = array();
         $pubName = urldecode(I('pubName'));
-        $result = M('pub_account') -> query("select * from wx_pub_account where nick_name like '%".$pubName."%' ;");
+        $result = M('pub_account') -> query("select * from wx_pub_account where nick_name = '".$pubName."' ;");
         if(count($result) > 0)
             $this->ajaxReturn($result);
         else

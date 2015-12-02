@@ -262,6 +262,7 @@
                         <button type="submit" style="cursor:pointer;" onclick='return checkAll();' ><span style="color:#fff;">保存当前文章内容</span></button>
 	                <button type="button" style="cursor:pointer;"> 
 	                <a class="theme-login-sc" href="javascript:save()"><span style="color:#fff;">提交审核</span></a></button>
+                        <input id="pubname" name="pubname" type="text" placeholder="分类名" hidden="true" value="{$pub_id}">
 
 	                <button type="button" style="cursor:pointer;"><a href="http://weixin.quke8.com/Home/Material/article_list.html"><span style="color:#fff;">返回文章管理</span></a></button>
 	                </div>
@@ -308,6 +309,7 @@
     	}
     function save(){
     	var aid = $("[name=aid]");
+        var pub_id = $("[name=pubname]").val();
     	var articles = '';
     	for(var j = 0;j<aid.length;j++){ 		
     		articles += aid[j].value+",";
@@ -315,7 +317,7 @@
 
     		articles=articles.substr(0,articles.length-1);
 
-            window.location.href="__URL__/tosave/aids/"+articles;
+            window.location.href="__URL__/tosave/aids/"+articles+"/pub_id/"+pub_id;
     }
 
     function setContent(isAppendTo) {
